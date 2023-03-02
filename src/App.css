@@ -1,65 +1,53 @@
-/* .App {
-  text-align: center;
+/* Font and some common css */
+body {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.yellow-text {
+  color: #FF9700;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.mr-2 {
+  margin-right: 2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.mr-3 {
+  margin-right: 3rem;
 }
 
-.App-link {
-  color: #61dafb;
+.mr-4 {
+  margin-right: 4rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
-
-
-
-
-
-/* uttrakhand images slider  */
-
-
-/* 
-.slier2-heading-text {
-  font-family: 'Bebas Neue';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 3.5rem;
-  line-height: 4rem;
+.animate__animated {
+  animation-delay: 1s;
 }
 
-.slier2-heading-text2 {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 2rem;
-  line-height: 3rem;
-} */
+@font-face {
+  src: url("./Assets/Medhafonts/Bebas_Neue_Pro_Fonts/BebasNeuePro-Bold.ttf");
+  font-family: BebasNeue;
+}
+
+@font-face {
+  src: url("./Assets/Medhafonts/Lato/Lato-Black.ttf");
+  font-family: Lato;
+}
+
+@font-face {
+  src: url("./Assets/Medhafonts/Lato/Lato-Light.ttf");
+  font-family: Latolight;
+}
+
+@font-face {
+  src: url("./Assets/Medhafonts/Lato/Lato-Regular.ttf");
+  font-family: Latoregular;
+}
+
+@font-face {
+  src: url("./Assets/Medhafonts/Lato/Lato-Thin.ttf");
+  font-family: Latothin;
+}
 
 
 
@@ -72,14 +60,13 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  /* background-color: tomato; */
   background: url('./Assets/Images/Shalini-banner.jpg');
   text-align: center;
-
+  background-position-x: center;
 }
 
 .line {
-  width: 4rem;
+  width: 7rem;
   height: 0;
   border: 2px solid #FF9700;
   margin: 3px;
@@ -88,18 +75,45 @@
 
 .FirstSlide_text {
   position: relative;
-  bottom: 5rem;
+  bottom: 1rem;
   color: #fff;
 }
 
-.Audacious_text {}
+.Audacious_text {
+  font-family: 'BebasNeue';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 6.5rem;
+}
+
+.Annual_text {
+  font-family: 'Latoregular';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.Time_text {
+  font-family: 'Latoregular';
+  font-style: normal;
+  font-size: 20px;
+  background-color: #F2F2F2;
+  width: 12rem;
+  display: block;
+  margin: 0 auto;
+  color: #282828;
+  border-radius: 0.6rem;
+}
+
+.FirstSlide_text>.animate__animated {
+  animation-delay: 2s;
+  margin-bottom: 0;
+}
 
 /* firsrt slide */
 
 /* second Slide */
-.yellow-text {
-  color: #FF9700;
-}
+
 
 .Seond_slide {
   height: 100vh;
@@ -113,12 +127,11 @@
 }
 
 .example-element-visible {
-  font-family: 'Bebas Neue';
+  font-family: 'BebasNeue';
   font-style: normal;
-  font-weight: 400;
-  font-size: 4rem;
+  /* font-weight: 400; */
+  font-size: 4.5rem;
   line-height: 5rem;
-  /* position: relative; */
   animation: backInUp 5s;
   animation-fill-mode: both;
   transform: translateY(100%);
@@ -150,7 +163,7 @@
 .content {
   text-align: justify;
   color: black;
-  font-family: 'Merriweather', serif;
+  font-family: 'BebasNeue', serif;
 
 }
 
@@ -191,19 +204,23 @@
 }
 
 .info_text {
-  font-family: 'Lato';
+  font-family: 'Latolight';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
+  color: #282828;
   font-size: 1.5rem;
-  line-height: 2.5rem;
+  /* line-height: 2.5rem; */
 }
 
 
 .pulse {
   animation: pulse 1s ease-out;
-  animation-iteration-count: 2;
+  animation-iteration-count: 1;
   transform-origin: center;
 }
+
+
+
 
 @keyframes pulse {
   0% {
@@ -247,7 +264,15 @@
 }
 
 
-.first-row-cards {}
+.first-row-cards{
+  position: relative;
+  right:3%;
+  margin-bottom: 1rem !important;
+  /* padding:2rem; */
+}
+.card_1{
+  margin: 1rem;
+}
 
 
 
@@ -342,11 +367,26 @@
   background:
     linear-gradient(90deg, #31B89D66, #31B89D66, #31B89D66), url("./Assets/Images/FAB_Uttarakhand.png") center;
   background-repeat: no-repeat;
-  object-fit: contain;
+  object-fit: cover;
   background-size: 100%;
-  /* filter: url(#31B89D66); */
-  /* background-color: #31B89D66; */
-  /* background-blend-mode: hard-light; */
+  background-position-x: center;
+}
+
+.vert_cards_text {
+  font-family: 'BebasNeue';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4rem;
+  /* line-height: 80px */
+}
+
+.vert_cards_text_lato {
+  font-family: lato;
+  font-size: 3rem;
+}
+
+.vert_cards_text_3rd {
+  font-size: 2.8rem;
 }
 
 .slick-next {
@@ -359,19 +399,18 @@
 
 .circle {
   background: #31B89D;
-  width: 299px;
-  height: 299px;
+  width: 18rem;
+  height: 18rem;
   border-radius: 50%;
   display: flex;
-  /* or inline-flex */
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-family: 'Lato';
+  font-family: 'Latolight';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 1.5rem;
-  line-height: 2.5rem;
+  color: #FFF;
   padding: 0 2rem;
 }
 
@@ -404,8 +443,8 @@
 } */
 
 .vert1-slide1-img {
-  width: 35rem;
-  height: 35rem;
+  width: 45rem;
+  height: 45rem;
   border-radius: 50%;
   transform: scale(1.2);
 }
@@ -415,11 +454,12 @@
 }
 
 .verticalslide1Head-text-1 {
-  font-family: 'Lato';
+  font-family: 'Latolight' !important;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600 !important;
   font-size: 2rem;
-  /* line-height: 50px; */
+  color: #282828 !important;
+
 }
 
 .list li {
@@ -465,20 +505,30 @@
 }
 
 .scaleknoledge {
-  font-family: 'Lato';
+  font-family: 'Latolight';
   font-style: normal;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 50px;
   line-height: 70px;
 }
 
 
 .residenseoursystem {
-  font-family: 'Lato';
+  font-family: 'Latolight';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 1.8rem;
-  /* line-height: 50px; */
+}
+
+.vertical-slide2-img {
+  position: relative;
+  left: 10%;
+}
+
+.verticalslide1Head {
+  position: relative;
+  left: 8%;
+  top: 10%;
 }
 
 .verticalslide1Head3 {
@@ -486,16 +536,17 @@
 }
 
 .verticalslide1Head-text {
-  font-family: 'Bebas Neue';
+  font-family: 'BebasNeue';
   font-style: normal;
   font-weight: 700;
-  font-size: 3.5rem;
-  line-height: 5rem;
+  font-size: 4rem;
+  /* line-height: 5rem; */
 }
 
 .animatedlisticon {
   width: 5rem;
   height: 5rem;
+  background-color: #F2F2F2;
   border-radius: 50%;
 
 }
@@ -531,10 +582,11 @@
 }
 
 .animatedlisttext {
-  font-family: 'Lato';
+  font-family: 'Latolight' !important;
   font-style: normal;
-  font-weight: 400;
-  font-size: 1.8rem;
+  font-weight: 600 !important;
+  font-size: 1.6rem;
+  margin-top: 5rem !important;
   /* line-height: 50px; */
 }
 
@@ -574,16 +626,17 @@
 }
 
 .small-image-vertical2 {
-  width: 12rem;
-  height: 12rem;
+  width: 20rem;
+  height: 20rem;
   border-radius: 50%;
-  margin: 2rem;
+  display: block;
+  margin: 0 auto;
+
 }
 
 .item-list121::before {
   display: block;
   content: "";
-  /* background: rgba(0, 0, 0, 0.5); */
   width: 100%;
   height: 140px;
 }
@@ -593,21 +646,33 @@
   /* color: gray; */
 }
 
-.item-content h3,
-.item-content p {
-  margin: 0;
-}
 
-.item-content h3+p {
-  margin-top: 20px;
-}
 
 .upper-content-3rdslide {
-  display: flex;
-  justify-content: space-around;
-  width: 90%;
+  display: block;
+  /* justify-content: center !important; */
+  width: 100%;
   margin: 0 auto;
+  position: relative;
+  bottom: 2rem;
+  left: 5%;
 }
+
+.cards_3 {
+  position: relative;
+  /* left: 2%; */
+}
+
+.card_3vert2_text {
+  font-family: 'Latolight';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.8rem;
+  /* line-height: 50px; */
+}
+
+/* margin: 0 auto; */
+
 
 .semi-circle {
   width: 75rem;
@@ -655,21 +720,18 @@
   color: #fff;
 }
 
-.upper-content-3rdslide {
-  position: relative;
-  top: 8rem;
-}
+
 
 .uppercontent-head {
   font-family: 'Lato';
   font-style: normal;
-  font-weight: 700;
-  font-size: 50px;
-  line-height: 70px;
+  font-weight: 600;
+  font-size: 3rem;
+  /* line-height: 70px; */
 }
 
 .uppercontent-text {
-  font-family: 'Lato';
+  font-family: 'Latoregular';
   font-style: normal;
   font-weight: 500;
   font-size: 2rem;
@@ -730,7 +792,7 @@
 }
 
 .INNOVATE_SLIDE1_heading_text {
-  font-family: 'Bebas Neue';
+  font-family: 'BebasNeue';
   font-style: normal;
   font-weight: 400;
   font-size: 4rem;
@@ -739,13 +801,28 @@
 }
 
 .INNOVATE_SLIDE1_para_text {
-  font-family: 'Lato';
+  font-family: 'Latolight';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 2rem;
   /* line-height: 50px; */
   color: #fff;
 
+}
+.time_0s{
+  animation-delay: 0.2s;
+}
+.time_1s{
+  animation-delay: 0.6s;
+}
+.time_2s{
+  animation-delay: 1s;
+}
+.time_3s{
+  animation-delay: 1.2s;
+}
+.time_4s{
+  animation-delay: 1.4s;
 }
 
 .w3-animate-top {
@@ -964,18 +1041,18 @@
 }
 
 .slide_1_strength_heading {
-  font-family: 'Bebas Neue';
+  font-family: 'BebasNeue';
   font-style: normal;
   font-weight: 400;
-  font-size: 4.5rem;
+  font-size: 5rem;
   /* line-height: ; */
   text-align: center;
 }
 
 .slide_1_strength_text {
-  font-family: 'Lato';
+  font-family: 'Latolight';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 2rem;
   /* line-height: 50px; */
 }
@@ -987,17 +1064,17 @@
 }
 
 .slide_2_strength_heading {
-  font-family: 'Lato';
+  font-family: 'LatoRegular';
   font-style: normal;
-  font-weight: 900;
+  font-weight: 800;
   font-size: 3rem;
   /* line-height: 70px; */
 }
 
 .slide_2_strength_text {
-  font-family: 'Lato';
+  font-family: 'Latolight';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 2rem;
   /* line-height: 50px; */
 }
@@ -1011,6 +1088,9 @@
   top: 24% !important;
   left: 29%;
   font-size: 1.8rem;
+  font-family: 'Latolight';
+  font-style: normal;
+  font-weight: 600;
 }
 
 .story_head {
@@ -1042,70 +1122,99 @@
   /* left: 12rem; */
   /* z-index: 10; */
 }
-.cursor_slide2{
+
+.cursor_slide2 {
   display: inline-block;
   position: absolute;
   color: #000;
   width: 40rem;
-  /* z-index: 10; */
-  top: 24% !important;
+  top: 27% !important;
   left: 58%;
   font-size: 1.8rem;
+  font-family: 'Latolight';
+  font-weight: 600;
+
 }
-.slide2 >.head_slide_1{
+
+.slide2>.head_slide_1 {
   color: #FF9700 !important;
   position: absolute;
   top: 15%;
   left: 29%;
-}
-.emp_slide_1{
-  position: absolute;
-  top: 75%;
-  left: 29%;
-  font-family: 'Lato';
-  font-style: normal;
+  font-family: 'Latolight';
+  font-style: italic;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 3rem;
+  /* line-height: 50px; */
 }
-.slide4 >.head_slide_2{
-  color: #FF9700 !important;
-  position: absolute;
-  top: 15%;
-  left: 58%;
-}
-.emp_slide_2{
+
+.emp_slide_1 {
   position: absolute;
   top: 75%;
-  left: 58%;
-  font-family: 'Lato';
+  left: 29%;
+  font-family: 'Latolight';
   font-style: normal;
   font-weight: 700;
   font-size: 1.5rem;
 }
 
-.slide6 > .head_slide_3{
+.slide4>.head_slide_2 {
+  color: #FF9700 !important;
+  position: absolute;
+  top: 15%;
+  left: 58%;
+  font-family: 'Latolight';
+  font-style: italic;
+  font-weight: 600;
+  font-size: 3rem;
+  /* line-height: 50px; */
+}
+
+.emp_slide_2 {
+  position: absolute;
+  top: 75%;
+  left: 58%;
+  font-family: 'Latolight';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.slide6>.head_slide_3 {
   color: #FF9700 !important;
   position: absolute;
   top: 15%;
   left: 87%;
+  font-family: 'Latolight';
+  font-style: italic;
+  font-weight: 600;
+  font-size: 3rem;
 }
-.cursor_slide3{
+
+.cursor_slide3 {
   display: inline-block;
   position: absolute;
   color: #000;
   width: 40rem;
   /* z-index: 10; */
-  top: 24% !important;
+  top: 26% !important;
   left: 87%;
+  font-family: 'Latolight';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+
   font-size: 1.8rem;
+  /* line-height: 50px; */
 }
-.emp_slide_3{
+
+.emp_slide_3 {
   position: absolute;
   top: 75%;
   left: 87%;
-  font-family: 'Lato';
+  font-family: 'Latolight';
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 1.5rem;
 }
 

@@ -97,7 +97,7 @@ function App() {
       </div>
 
       <div ref={componentRefs.Innovatiing} id="Component6">
-        < Innovatiing />
+        {/* < Innovatiing /> */}
       </div>
       <Strengthen/>
      

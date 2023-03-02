@@ -28,8 +28,7 @@ export const Second= () => {
     
         <div  className='Seond_slide'>
             <p ref={elementRef} className={`second_slide_text`} style={{}}>
-            Over the past decade, <span className="yellow-text"> 85,000+</span> passionate youth have <br />
-                        engaged with us to <span className="yellow-text">start careers they enjoy</span>
+            OVER THE PAST DECADE, <span className="yellow-text"> 85,000+</span> PASSIONATE YOUTH HAVE <br /> ENGAGED WITH US TO <span className="yellow-text">START CAREERS THEY ENJOY </span>
             </p>
         </div>
     

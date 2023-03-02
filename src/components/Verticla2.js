@@ -1,39 +1,29 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Carousel, { consts } from 'react-elastic-carousel'
-import { items } from '../Data/items'
+import { items } from '../Data/items';
+import fab_uk from '../Assets/Images/FAB_Uttarakhand.png'
+import proffesional from '../Assets/Images/prof_new_trans.png'
+import veteran from '../Assets/Images/veteran_trans_new.png'
+import Xicon from '../Assets/Images/cross_new_trans.png'
+import arrowleft from '../Assets/Images/Arrow_left_black.png'
+import arrowright from '../Assets/Images/arrow_right_black.png'
+
 // import '../app.scss'
 
 export const Verticla2 = () => {
-
-    //    function myArrow({ type, onClick, isEdge }) {
-    //         const pointer = type === consts.PREV ? '👈' : '👉'
-    //         return (
-    //           <button onClick={onClick} disabled={isEdge}>
-    //             {pointer}
-    //           </button>
-    //         )
-    // renderArrow={myArrow}
-    //     }
-    const [setclassforlist, setsetclassforlist] = useState("")
-    // const elementRef1 = useRef(null);
-    // useEffect(() => {
-    //     const observer = new IntersectionObserver((entries) => {
-    //       entries.forEach((entry) => {
-    //         if (entry.isIntersecting) {
-    //           entry.target.classList.add('list');
-    //         }
-    //       });
-    //     });
-
-    //     observer.observe(elementRef1.current);
-
-    //     return () => {
-    //       observer.unobserve(elementRef1.current);
-    //     };
-    //   }, []);
-
     const [currentPageIndex, setCurrentPageIndex] = useState(0);
+    const myArrow=({ type, onClick, isEdge })=> {
+        const pointer = type === consts.PREV ? <img className={currentPageIndex == 0 ?"d-none":"position_middle_left"} src={arrowleft}/> : <img className={"position_middle_right"} src={arrowright}/>
+        return (
+          <button onClick={onClick} disabled={isEdge}>
+            {pointer}
+          </button>
+        )
+      }
+    const [setclassforlist, setsetclassforlist] = useState("")
+    
 
+  
     const handleOnChange = (currentItem, pageIndex) => {
         setCurrentPageIndex(pageIndex);
     };
@@ -42,12 +32,7 @@ export const Verticla2 = () => {
 
 
 
-    const SomeComponent = ({ item }) => (
-        <div className="item-content">
-            <h3>{item.title}</h3>
-            <p>{item.text}</p>
-        </div>
-    );
+   
 
     const duration = 1000; // ms
     const delay = 500; // ms
@@ -58,30 +43,25 @@ export const Verticla2 = () => {
 
     return (
         <>
-
-            {/* <Carousel className='vertical2-slide-content' verticalMode itemsToShow={1}>
-
-
-            </Carousel> */}
-
-
             <div id="vert2_slide" className="styling-example">
-                <Carousel className='vertical2-slide_main' itemsToShow={1} onChange={handleOnChange}>
+                <Carousel className='vertical2-slide_main' renderArrow={myArrow} itemsToShow={1} onChange={handleOnChange}>
                     <div className='vertical2-slide d-flex justi'>
 
                         <div className='col-12'>
                             <div className='row'>
                                 <div className='col-7'>
                                     <div className='verticalslide1Head col-12'>
-                                        <p className='verticalslide1Head-text'>By driving greater adoption of ‘the Medha way’ with state governments <br />to impact more students</p>
+                                        <p className={currentPageIndex == 0 ? "verticalslide1Head-text animate__animated animate__fadeInDown " : "verticalslide1Head-text"} >
+                                            BY DRIVING GREATER ADOPTION OF ‘THE <br /> MEDHA WAY’ WITH STATE GOVERNMENTS <br /> TO IMPACT MORE STUDENTS
+                                        </p>
                                     </div>
                                     <div className='verticalslide1Head col-11'>
-                                        <p className='verticalslide1Head-text-1'>Partnering with more <span className='greentext'>like-minded</span> state education departments,<br /> industry leaders, and peers will help us elevate the learning<br /> experience <span className='greentext'>and bring career opportunities youth care about to <br /> more than 100,000 students per year.</span>  Last year, we took steps to:</p>
+                                        <p className={currentPageIndex == 0 ? "verticalslide1Head-text-1 animate__animated animate__fadeInLeft " : "verticalslide1Head-text-1"} >Partnering with more <span className='greentext'>like-minded</span> state education departments,<br /> industry leaders, and peers will help us elevate the learning<br /> experience <span className='greentext'>and bring career opportunities youth care about to <br /> more than 100,000 students per year.</span>  Last year, we took steps to:</p>
                                     </div>
                                 </div>
                                 <div className='col-5'>
                                     <div className='vertical-slide1-img'>
-                                        <img className='vert1-slide1-img animate__animated animate__zoomInDown' src='https://www.denofgeek.com/wp-content/uploads/2022/05/Leged-of-Zelda-Link.jpg?resize=768%2C432' />
+                                        <img className={currentPageIndex == 0 ? "vert1-slide1-img animate__animated animate__fadeInRight " : "vert1-slide1-img"} src={fab_uk} />
                                     </div>
                                 </div>
                             </div>
@@ -91,12 +71,12 @@ export const Verticla2 = () => {
                         <div className='col-12'>
                             <div className='row'>
                                 <div className='col-7'>
-                                    <div className='vertical-slide1-img'>
-                                        <img className='vert1-slide2-img ' src='https://www.denofgeek.com/wp-content/uploads/2022/05/Leged-of-Zelda-Link.jpg?resize=768%2C432' />
+                                    <div className='vertical-slide2-img'>
+                                        <img className='vert1-slide2-img ' src={fab_uk} />
                                     </div>
                                 </div>
                                 <div className='col-5'>
-                                    <div  className={currentPageIndex == 1 ? "verticalslide1Head animate__animated animate__fadeInDown" : ""}>
+                                    <div className={currentPageIndex == 1 ? "verticalslide1Head animate__animated animate__fadeInDown" : ""}>
                                         <p className='scaleknoledge'>Scale as a Knowledge Partner</p>
                                     </div>
                                     <div className={currentPageIndex == 1 ? "verticalslide1Head animate__animated animate__flipInX" : ""}>
@@ -105,20 +85,20 @@ export const Verticla2 = () => {
 
                                     <div className='verticalslide1Head3 col-10'>
                                         <ul className={currentPageIndex == 1 ? "list" : ""} >
-                                            <li className=' animatedlisttext mt-5 d-flex justify-content-around'>
-                                                <div className='animated-icon-text'><img className='animatedlisticon' src='https://www.denofgeek.com/wp-content/uploads/2022/05/Leged-of-Zelda-Link.jpg?resize=768%2C432' /></div>
+                                            <li className='marginstate animatedlisttext mt-5 d-flex '>
+                                                <img className='animatedlisticon mx-4' src={proffesional} />
 
-                                                <div className=''> Seasoned professionals <br />leading 6 diverse verticals,</div>
+                                                Seasoned professionals <br />leading 6 diverse verticals,
                                             </li>
-                                            <li className='marginstate animatedlisttext  mt-5  d-flex justify-content-around'>
-                                                <div className='animated-icon-text '><img className='animatedlisticon' src='https://www.denofgeek.com/wp-content/uploads/2022/05/Leged-of-Zelda-Link.jpg?resize=768%2C432' /></div>
+                                            <li className='marginstate animatedlisttext  mt-5  d-flex '>
+                                                <img className='animatedlisticon mx-4' src={Xicon} />
 
-                                                <div className='ml-5'> State heads overseeing project <br /> teams of experts and generalists,</div>
+                                                State heads overseeing project <br /> teams of experts and generalists,
                                             </li>
-                                            <li className='marginstate animatedlisttext  mt-5  d-flex justify-content-around'>
-                                                <div className='animated-icon-text '><img className='animatedlisticon' src='https://www.denofgeek.com/wp-content/uploads/2022/05/Leged-of-Zelda-Link.jpg?resize=768%2C432' /></div>
+                                            <li className='marginstate animatedlisttext  mt-5  d-flex '>
+                                                <img className='animatedlisticon mx-4 ' src={veteran} />
 
-                                                <div className='ml-2'> An industry veteran leading the team.</div>
+                                                An industry veteran <br />leading the team.
                                             </li>
 
                                         </ul>
@@ -130,25 +110,54 @@ export const Verticla2 = () => {
                     </div>
                     <div className='vertical2-slide d-flex justi'>
                         <div className='col-12 '>
-                            <div className='row upper-content-3rdslide'>
-                                <div className={currentPageIndex == 2 ? "col-5" : ""} >
+                            <div className='row d-flex upper-content-3rdslide'>
+                                <div className={currentPageIndex == 2 ? "col-5 animate__animated animate__fadeInDown" : "col-5"} >
                                     <p className='uppercontent-head'>Transform higher education in Haryana</p>
                                 </div>
-                                <div className='col-6 mx-5'>
-                                    <p className='uppercontent-text'>We completed the halfway mark in a 2-year venture with the Department of Higher Education, Haryana (DHE-Haryana) to prepare college students for meaningful work roles. In this time, we:</p>
+                                <div className={currentPageIndex == 2 ? "col-7 animate__animated animate__bounceInUp" : "col-7"} >
+                                    <p className='uppercontent-text'>We completed the halfway mark in a 2-year venture with<br /> the Department of Higher Education, Haryana (DHE- <br />Haryana) to prepare college students for meaningful work <br /> roles. In this time, we:</p>
                                 </div>
                             </div>
 
-                            <div className='row d-flex align-items-end justify-content-between '>
-                                <ul className={currentPageIndex == 2 ? "item-list item-list123" : ""}>
-                                    {items.map((item, i) => (
-
-                                        <li className={currentPageIndex == 2 ? "item-list121 col-4" : ""} key={i} style={{ animation: animStr(i) }}>
-                                            <img src='https://www.denofgeek.com/wp-content/uploads/2022/05/Leged-of-Zelda-Link.jpg?resize=768%2C432' className='small-image-vertical2' />
-                                            <SomeComponent item={item} />
-                                        </li>
-                                    ))}
-                                </ul>
+                            <div className='row'>
+                                
+                                <div className="col-12 cards_3 d-flex justify-content-center">
+                                    <div className="row   d-flex justify-content-center">
+                                        <div className="col-4">
+                                            <div className="border-0 h-100 mr-2">
+                                                <img src={fab_uk} className={currentPageIndex == 2 ? "card-img-top small-image-vertical2 animate__animated animate__backInLeft" : "card-img-top small-image-vertical2"} alt="..." />
+                                                <div className="card-body">
+                                                    {/* <h5 className="card-title fw-bold">Card title</h5> */}
+                                                    <p className={currentPageIndex == 2 ?"card-text text-center card_3vert2_text animate__animated animate__backInUp":"card-text text-center card_3vert2_text"}>
+                                                    Provided hands-on coaching<br/> to 130 teachers and skill instructors
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="col-4">
+                                            <div className=" border-0 h-100 mx-2">
+                                                <img src={fab_uk} className={currentPageIndex == 2 ?"card-img-top small-image-vertical2 animate__animated animate__backInDown":"card-img-top small-image-vertical2"} alt="..." />
+                                                <div className="card-body">
+                                                    {/* <h5 className="card-title fw-bold">Card title</h5> */}
+                                                    <p className={currentPageIndex == 2 ?"card-text text-center card_3vert2_text animate__animated animate__backInUp":"card-text text-center card_3vert2_text"}>
+                                                    Hosted career-focused webinars <br/> with employer partners
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="col-4">
+                                            <div className="border-0 h-100 ">
+                                                <img src={fab_uk} className={currentPageIndex == 2 ? "card-img-top small-image-vertical2 animate__animated animate__backInRight":"card-img-top small-image-vertical2"} alt="..." />
+                                                <div className="card-body">
+                                                    {/* <h5 className="card-title fw-bold">Card title</h5> */}
+                                                    <p className={currentPageIndex == 2 ?"card-text text-center card_3vert2_text animate__animated animate__backInUp":"card-text text-center card_3vert2_text"}>
+                                                    Improved classroom learning <br/> experience and career exposure<br/> for ~3000 students
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -202,7 +211,7 @@ export const Verticla2 = () => {
                                     <p className='uppercontent-head'>Elevate on-the-job vocational training in Haryana</p>
                                 </div>
                                 <div className='col-6 mx-5'>
-                                    <p className='uppercontent-text'>Over the next 2 years, we will help the Skill <br/> Development and Industrial Training Department,<br/> Haryana (SDIT-Haryana) scale their dual-system of <br/> training model for vocational education students by:</p>
+                                    <p className='uppercontent-text'>Over the next 2 years, we will help the Skill <br /> Development and Industrial Training Department,<br /> Haryana (SDIT-Haryana) scale their dual-system of <br /> training model for vocational education students by:</p>
                                 </div>
                             </div>
                             <div className="semi-circle1"></div>
@@ -229,11 +238,11 @@ export const Verticla2 = () => {
                                     <p className='potential-text '>of students</p>
                                 </div>
                                 <div className='row d-flex justify-content-around third-line-content'>
-                                   
+
                                     <div className='col-4'>
                                         <p className='greenbackgraound'></p>
                                     </div>
-                                   
+
                                 </div>
                             </div>
                         </div>

@@ -12,9 +12,9 @@ export const Slide3 = (props) => {
     // const intervalRef = useRef({});
     // const name = useTypeWriter(magicName, { typeSpeed: 50, delayMs: 1000, eraseOnComplete: false });
 
-    useEffect(() => {
-      console.log("subject" ,props);
-    }, [])
+    // useEffect(() => {
+    //   console.log("subject" ,props);
+    // }, [])
     
     return (
         <>

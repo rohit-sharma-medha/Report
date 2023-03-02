@@ -1,6 +1,7 @@
 import React, { useState,useEffect, useRef } from 'react'
 import useTypewriter from "react-typewriter-hook";
 import { random } from "lodash";
+// import TypeWriterEffect from 'react-typewriter-effect';
 
 export const Para = (props) => {
   const [magicName, setMagicName] = useState(props.subject);

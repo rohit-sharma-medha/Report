@@ -15,13 +15,17 @@
     "react-bootstrap": "^2.7.0",
     "react-dom": "^18.2.0",
     "react-elastic-carousel": "^0.11.5",
-    "react-scripts": "5.0.1",
     "react-slick": "^0.29.0",
     "react-transition-group": "^4.4.5",
+    "react-typewriter-effect": "^1.1.0",
     "react-typewriter-hook": "^1.0.1",
     "web-vitals": "^2.1.4"
   },
+  "devDependencies": {
+    "react-scripts": "5.0.1"
+  },
   "scripts": {
+    "predeploy": "npm run build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

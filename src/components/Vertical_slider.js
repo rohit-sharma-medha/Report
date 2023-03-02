@@ -6,6 +6,8 @@ import "../Style/slick.css"
 
 
 const Vertical_slider = () => {
+    const main_vert_slide_class=useRef(null)
+
     const settings = {
         dots: true,
         slidesToShow: 1,
@@ -32,10 +34,30 @@ const Vertical_slider = () => {
         );
 
         if (e.wheelDelta < 0) {
-            setClaaAdded("animate__animated animate__bounce animate__bounceIn")
+            setClaaAdded("animate__animated  animate__bounceIn")
         }
 
     };
+
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('Vertical_slider');
+              // entry.target.classList.add('main_3rd_slide')
+            }
+          });
+        });
+        // observer.observe(mainCardId.)
+        observer.observe(main_vert_slide_class.current);
+       
+        
+        return () => {
+          
+          observer.unobserve(main_vert_slide_class.current);
+          
+        };
+      }, []);
 
     useEffect(() => {
 
@@ -56,7 +78,7 @@ const Vertical_slider = () => {
 
     return (
         <>
-            <div id="Vert_slide_1" className='container-fluid backgournd-faded' >
+            <div ref={main_vert_slide_class}  id="Vert_slide_1" className='container-fluid backgournd-faded' >
                 <Row className='vertical-slider1'>
                     <Col>
 
@@ -67,8 +89,8 @@ const Vertical_slider = () => {
 
                                     <Card.Body className='d-flex  align-items-center justify-content-center '>
 
-                                        <Card.Text className={`col-9 text-center cards-text ${ClassAdded}`}>
-                                            In 2021, we set an audacious goal of helping 1 million youth transform their lives in the next 5 years
+                                        <Card.Text className={`col-9 text-center vert_cards_text ${ClassAdded}`}>
+                                        IN 2021, WE SET AN AUDACIOUS GOAL OF HELPING <span className='yellow-text'>1 MILLION <br/> YOUTH</span> TRANSFORM THEIR LIVES IN THE NEXT 5 YEARS
                                         </Card.Text>
                                     </Card.Body>
                                 </Card>
@@ -79,7 +101,7 @@ const Vertical_slider = () => {
 
                                     <Card.Body className='d-flex  align-items-center justify-content-center '>
 
-                                        <Card.Text className={`col-9 text-center cards-text ${ClassAdded}`} >
+                                        <Card.Text className={`col-9 text-center vert_cards_text vert_cards_text_lato ${ClassAdded}`} >
                                             1 million is not a random number                                        
                                         </Card.Text>
 
@@ -92,9 +114,9 @@ const Vertical_slider = () => {
 
                                     <Card.Body className='d-flex  align-items-center justify-content-center '>
 
-                                        <Card.Text className={`col-9 text-center cards-text ${ClassAdded}`}>
+                                        <Card.Text className={`col-9 text-center vert_cards_text vert_cards_text_lato vert_cards_text_3rd ${ClassAdded}`}>
 
-                                        It represents 10 % of the estimated 9 million college-going students in India’s Hindi-speaking belt and serves as a tipping point for driving significant social change.
+                                        It represents 10 % of the estimated 9 million college-going <br/> students in India’s Hindi-speaking belt and serves as a <br/><span className='yellow-text'> tipping point </span>  for driving significant social change.
 
                                         </Card.Text>
 
@@ -108,8 +130,8 @@ const Vertical_slider = () => {
 
                                     <Card.Body className='d-flex flex-column  align-items-center justify-content-center '>
 
-                                        <Card.Text className='col-9 text-center cards-text animate__animated animate__bounce animate__bounceIn'>
-                                            How will we 40X our impact since 2011?
+                                        <Card.Text className='col-9 text-center vert_cards_text  animate__animated animate__bounce animate__bounceIn'>
+                                            How will we <span className='yellow-text'>40X our impact</span>  since 2011?
                                         </Card.Text>
                                         <div className='d-flex justify-content-around '>
                                             <div className="circle mx-5">By driving greater adoption of ‘the Medha way’ at scale</div>

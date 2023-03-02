@@ -1,14 +1,26 @@
 #vert2_slide{
+  .iXOKgB{
+    display: none !important;
+  }
   button{
-    // display: none !important;
+    border: none;
+    background-color: transparent;
+    position: relative;
   }
+  
 }
+
 #innovate_slide{
-  .hDienL ,.gOxcWJ{
-    display: none;
-  }
+  // .hDienL ,.gOxcWJ{
+  //   display: none;
+  // }
   .iXOKgB{
     display: none;
+  }
+  button{
+    border: none;
+    background-color: transparent;
+    position: relative;
   }
 }
 #Strength{
@@ -19,10 +31,46 @@
     text-align: center;
     
   }
+  .iXOKgB{
+    display: none;
+  }
+  button{
+    border: none;
+    background-color: transparent;
+    position: relative;
+  }
 }
+
 
 .cursor_slide2{
   
+}
+
+
+
+// First Slide Animation Handling
+
+.FirstSlide_text{
+  bottom: 3rem;
+  .Audacious_text{
+    height: 9rem;
+  }
+  .animate__backInDown{
+    animation-delay: 2s;
+  }
+  .Time_text{
+
+  }
+}
+.cards3rd{
+  .Number_Text{
+    font-family: BebasNeuePro;
+  }
+}
+.pulse{
+  .animate__animated{
+    animation-delay: 3s;
+  }
 }
 
 

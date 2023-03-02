@@ -10,7 +10,7 @@ export const Stories = (props) => {
       },[magicName]);
     return (
       <div  className={`d-flex flex-column ${"slide" + props.index}`}  >
-        <h1 className={props.head_class}>{props.head}</h1>
+        <p className={props.head_class}>{props.head}</p>
         <p className={props.className}>{name}</p>
         <p className={props.empclass}>{props.emp}</p>
       </div>

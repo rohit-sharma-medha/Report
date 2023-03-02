@@ -3,21 +3,7 @@ import React from 'react'
 export const Slide1 = () => {
     return (
         <>
-            {/* <div className="d-flex flex-column align-item-start">
-            <div className="col-12">
-              <div className="row d-flex align-item-center justify-content-center">
-                <div className="col-9">
-                  <p className="INNOVATE_SLIDE1_heading_text">And innovating in our direct programs and activities with students to remain quality-driven</p>
-                </div>
-                <div className="col-10 mt-5" >
-                  <p className="INNOVATE_SLIDE1_para_text">
-                    There’s no point getting aggressive about scale if it adversely impacts the quality <br /> of your direct student engagement. That’s why we’re always keeping students <br />and their changing aspirations first.
-
-                    Last year:
-                  </p>
-                </div>
-              </div>
-            </div> */}
+            
 
 
             {/* <CarrrouselArraows className="arrowbuttons" handlenext={handleNextClick} handleprev={handlePrevClick} /> */}
