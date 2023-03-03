@@ -1,0 +1,92 @@
+.main_heading {
+    color: #282828;
+    font-size: 30px;
+
+}
+
+.headingPara {
+    color: #000000;
+    font-size: 16px;
+}
+
+.second_grayed_bubble {
+    background-color: #F2F2F2E5;
+    padding: 7rem;
+    border-radius: 50%;
+    text-align: center;
+    color: #000000;
+    font-size: 1.5rem;
+    opacity: 0;
+}
+
+.semi-circle {
+    position: absolute; 
+    top: 66%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    height: 400px; 
+    width: 800px; 
+    border-radius: 400px 400px 0 0; 
+    background-color: #31B89D;
+    opacity: 0;
+   
+   
+}
+
+.ellipse-svg {
+  
+    position: absolute;
+    top: 15rem;
+    z-index: -1;
+    height: 51vh;
+    width: 71vw;
+    opacity: 0;
+}
+
+
+
+
+  /* #firstBubble{
+    animation: fadeIn 2s forwards;
+  }
+
+  #SecondBubble{
+    animation: fadeIn 2s forwards;
+  }
+
+  #thirdBubble{
+    animation: fadeIn 2s forwards;
+  }
+
+  #fourthBubble {
+    animation: fadeIn 2s forwards;
+  }
+
+  #fifthBubble {
+    animation: fadeIn 2s forwards;
+  }
+
+  #sixthBubble {
+    animation :fadeInFromBottom 4s forwards;
+  } */
+
+
+  @keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+  }
+
+  @keyframes fadeInFromBottom{
+    0% {opacity: 0; margin-top: 10px;}
+    100%{opacity: 1; margin-top:-10px;}
+  }
+
+
+  
+
+
+

@@ -134,7 +134,7 @@ const Vertical_slider = () => {
                                             How will we <span className='yellow-text'>40X our impact</span>  since 2011?
                                         </Card.Text>
                                         <div className='d-flex justify-content-around '>
-                                            <div className="circle mx-5">By driving greater adoption of ‘the Medha way’ at scale</div>
+                                            <div className="circle mx-5">By driving greater adof ‘the Medha way’ at scale</div>
                                             <div className="circle mx-5">Remaining quality-driven in our direct student engagement</div>
                                             <div className="circle mx-5">And committing to data-driven decision-making at work</div>
                                         </div>
