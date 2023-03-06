@@ -72,8 +72,8 @@ const FirstCircleUi = function FirstCircleUi({className}) {
                 </div>
 
      
-            <div>
-                    {/* <MySVG className="img-fluid arrow-svg" id="svg"/> */}
+            <div className='row circle_container'>
+                    <MySVG className="img-fluid arrow-svg" id="svg"/>
                     <div className='row'>
                             <div className='col-12'>
                                 <div className='row justify-content-center mt-5'>
@@ -85,21 +85,25 @@ const FirstCircleUi = function FirstCircleUi({className}) {
                                     </div>
                                 </div>
 
-                                <div className='row justify-content-around mb-5'>
-                                    <div className='col-4 grayed_bubble text-center' id='SecondBubble'>
-                                        <div>
-                                        Introducing an industry-relevant curriculum,
+                                <div className='row justify-content-center mb-5'>
+                                    <div className='row justify-content-between' style={{width:"68vw"}}>
+                                        <div className='col-4 grayed_bubble text-center' id='SecondBubble'>
+                                            <div>
+                                                    Introducing an industry-relevant curriculum,
 
-                                        </div>
+                                            </div>
                                    
+                                        </div>
+                                        <div className='col-4 grayed_bubble text-center' id='fourthBubble'>
+                                        Helping industry and academia work closely
+                                        </div>
+
                                     </div>
-                                    <div className='col-4 grayed_bubble text-center' id='fourthBubble'>
-                                    Helping industry and academia work closely
-                                    </div>
+                                    
                                 </div>
 
                                 <div>
-                                    <div className='row justify-content-around'>
+                                    <div className='row justify-content-between'>
                                         <div className="col-4 grayed_bubble text-center" id="firstBubble">
                                         Building experiential facilitation skill in teachers,
 
