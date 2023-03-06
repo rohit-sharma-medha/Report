@@ -165,7 +165,7 @@ export const Verticla2 = () => {
                         </div>
                     </div>
 
-                    <FirstCircleUi/>
+                    <FirstCircleUi className="vertical2-slide d-flex "/>
                     <SecondCircleUi/>
                     {/* <div className='vertical2-slide d-flex '>
                         <div className='col-12'>
