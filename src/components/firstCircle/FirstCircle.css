@@ -1,0 +1,89 @@
+.main_heading {
+    color: #282828;
+    font-size: 30px;
+
+}
+
+.headingPara {
+    color: #000000;
+    font-size: 16px;
+}
+
+.grayed_bubble {
+    background-color: #F2F2F2;
+    padding: 2rem;
+    border-radius: 55px;
+    text-align: center;
+    width: 14vw;
+    color: #000000;
+    opacity: 0;
+}
+
+
+.orange_bubble {
+    background-color: #FF9700;
+    padding: 2rem;
+    border-radius: 55px;
+    text-align: center;
+    width: 12vw;
+    color: #FFFFFF;
+    opacity: 0;
+}
+
+.arrow-svg {
+  
+height: 266px;
+width: 742px;
+position: absolute;
+top: 158px;
+left: 607px;
+opacity: 0;
+}
+
+
+
+
+  /* #firstBubble{
+    animation: fadeIn 2s forwards;
+  }
+
+  #SecondBubble{
+    animation: fadeIn 2s forwards;
+  }
+
+  #thirdBubble{
+    animation: fadeIn 2s forwards;
+  }
+
+  #fourthBubble {
+    animation: fadeIn 2s forwards;
+  }
+
+  #fifthBubble {
+    animation: fadeIn 2s forwards;
+  }
+
+  #sixthBubble {
+    animation :fadeInFromBottom 4s forwards;
+  } */
+
+
+  @keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+  }
+
+  @keyframes fadeInFromBottom{
+    0% {opacity: 0; margin-top: 10px;}
+    100%{opacity: 1; margin-top:-10px;}
+  }
+
+
+  
+
+
+
