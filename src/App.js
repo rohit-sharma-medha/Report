@@ -12,6 +12,7 @@ import { Verticla2 } from './components/Verticla2';
 import { Innovatiing } from './components/Innovatiing';
 import "./app.scss"
 import { Strengthen } from './components/Strengthen';
+import { Innovating1 } from './components/Innovating1';
 
 function App() {
 
@@ -97,7 +98,7 @@ function App() {
       </div>
 
       <div ref={componentRefs.Innovatiing} id="Component6">
-        {/* < Innovatiing /> */}
+        < Innovatiing />
       </div>
       <Strengthen/>
      

@@ -1,3 +1,28 @@
+#FirstSlide{
+  .Audacious_text{
+    animation-duration: 1s;
+  }
+  .line{
+    animation-delay: 2.7s;
+  }
+  .Annual_text{
+    animation-delay: 2s;
+  }
+  .Time_text{
+    animation-delay: 3s;
+  }
+}
+#second_slide{
+  .second_slide_text{
+    animation-delay: 3s;
+    // font-family: 'BebasNeue';
+    // font-style: normal;
+    // font-size: 4.5rem;
+    // line-height: 5rem;
+  }
+}
+
+
 #vert2_slide{
   .iXOKgB{
     display: none !important;
@@ -63,9 +88,7 @@
   }
 }
 .cards3rd{
-  .Number_Text{
-    font-family: BebasNeuePro;
-  }
+ 
 }
 .pulse{
   .animate__animated{

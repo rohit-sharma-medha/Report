@@ -48,9 +48,9 @@ export const Verticla2 = () => {
                     <div className='vertical2-slide d-flex justi'>
 
                         <div className='col-12'>
-                            <div className='row'>
-                                <div className='col-7'>
-                                    <div className='verticalslide1Head col-12'>
+                            <div className='row d-flex flex-md-columg flex-lg-column flex-xl-column flex-column-reverse  '>
+                                <div className='col-md-7 col-lg-7 col-xl-7 col-12 '>
+                                    <div className='verticalslide1Head col-md-7 col-lg-7 col-xl-7 col-12'>
                                         <p className={currentPageIndex == 0 ? "verticalslide1Head-text animate__animated animate__fadeInDown " : "verticalslide1Head-text"} >
                                             BY DRIVING GREATER ADOPTION OF ‘THE <br /> MEDHA WAY’ WITH STATE GOVERNMENTS <br /> TO IMPACT MORE STUDENTS
                                         </p>
@@ -59,7 +59,7 @@ export const Verticla2 = () => {
                                         <p className={currentPageIndex == 0 ? "verticalslide1Head-text-1 animate__animated animate__fadeInLeft " : "verticalslide1Head-text-1"} >Partnering with more <span className='greentext'>like-minded</span> state education departments,<br /> industry leaders, and peers will help us elevate the learning<br /> experience <span className='greentext'>and bring career opportunities youth care about to <br /> more than 100,000 students per year.</span>  Last year, we took steps to:</p>
                                     </div>
                                 </div>
-                                <div className='col-5'>
+                                <div className='col-md-5 col-lg-5 col-xl-5 col-sm-12 '>
                                     <div className='vertical-slide1-img'>
                                         <img className={currentPageIndex == 0 ? "vert1-slide1-img animate__animated animate__fadeInRight " : "vert1-slide1-img"} src={fab_uk} />
                                     </div>
@@ -70,17 +70,17 @@ export const Verticla2 = () => {
                     <div className='vertical2-slide d-flex '>
                         <div className='col-12'>
                             <div className='row'>
-                                <div className='col-7'>
+                                <div className='col-md-7 col-lg-7 col-xl-7 col-12'>
                                     <div className='vertical-slide2-img'>
                                         <img className='vert1-slide2-img ' src={fab_uk} />
                                     </div>
                                 </div>
-                                <div className='col-5'>
+                                <div className='col-md-5 col-lg-5 col-xl-5 col-12'>
                                     <div className={currentPageIndex == 1 ? "verticalslide1Head animate__animated animate__fadeInDown" : ""}>
                                         <p className='scaleknoledge'>Scale as a Knowledge Partner</p>
                                     </div>
                                     <div className={currentPageIndex == 1 ? "verticalslide1Head animate__animated animate__flipInX" : ""}>
-                                        <p className='residenseoursystem col-10'>Redesigned our System Adoption team to be self-sufficient:</p>
+                                        <p className='residenseoursystem col-10'>Redesigned our System Adoption team to be <br/> self-sufficient:</p>
                                     </div>
 
                                     <div className='verticalslide1Head3 col-10'>
