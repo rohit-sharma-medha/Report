@@ -1,26 +1,36 @@
 .main_heading {
-    color: #282828;
-    font-size: 30px;
+  font-size: 50px;
+  line-height: 70px;
+  font-weight: 700;
+  color: #282828
 
 }
 
 .headingPara {
     color: #000000;
-    font-size: 16px;
+    font-size: 30px;
+    line-height: 50px;
+    font-weight: 400;
 }
 
 .grayed_bubble {
-    background-color: #F2F2F2;
-    padding: 2rem;
-    border-radius: 55px;
-    text-align: center;
-    width: 14vw;
-    color: #000000;
-    opacity: 0;
+  background-color: #F2F2F2;
+  border-radius: 112px;
+  width: 29vw;
+  height: 22vh;
+  color: 30ox;
+  color: 30px;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 50px;
+  color: #000000;
+  display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
-.orange_bubble {
+/* .orange_bubble {
     background-color: #FF9700;
     padding: 2rem;
     border-radius: 55px;
@@ -28,9 +38,9 @@
     width: 12vw;
     color: #FFFFFF;
     opacity: 0;
-}
+} */
 
-.arrow-svg {
+/* .arrow-svg {
   
 height: 266px;
 width: 742px;
@@ -38,7 +48,7 @@ position: absolute;
 top: 158px;
 left: 607px;
 opacity: 0;
-}
+} */
 
 
 

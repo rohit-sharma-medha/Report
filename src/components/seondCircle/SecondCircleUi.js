@@ -1,5 +1,6 @@
-import React,{Fragment,useEffect,useState,useRef} from 'react';
-import {ReactComponent as MySVG} from '../../assets/Ellipse.svg';
+import React,{Fragment,useEffect} from 'react';
+
+import {ReactComponent as MySVG} from '../../Assets/Images/Ellipse.svg';
 
 
 import './SecondCircle.css';
