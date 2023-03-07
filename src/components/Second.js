@@ -1,5 +1,4 @@
 import React, {useRef, useState,useEffect } from 'react';
-import { animateOnScroll } from 'react-animate-on-scroll';
 
 export const Second= () => {
 
