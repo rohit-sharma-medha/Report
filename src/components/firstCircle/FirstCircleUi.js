@@ -56,7 +56,7 @@ const FirstCircleUi = function FirstCircleUi({className}) {
   return (
     <Fragment>
 
-        <div className='row flex-column justify-content-around'>
+        <div className='container row flex-column justify-content-around'>
             <div className='row'>
                 <div className='col-12'>
                         <div className='row align-items-center'>
@@ -126,14 +126,6 @@ const FirstCircleUi = function FirstCircleUi({className}) {
 
 
         </div>
-
-        
-            
-
-          
-
-     
-        
         </Fragment>
   )
 }
