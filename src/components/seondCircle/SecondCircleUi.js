@@ -1,3 +1,4 @@
+
 import React,{Fragment,useEffect} from 'react';
 
 import {ReactComponent as MySVG} from '../../Assets/Images/Ellipse.svg';
@@ -52,10 +53,10 @@ const SecondCircleUi = function SecondCircleUi() {
                 <div className='col-12'>
                         <div className='row align-items-center'>
                             <div className='col-6 main_heading'>
-                            Make vocational education aspirational in UP
+                                Elevate on-the-job vocational training in Haryana
                             </div>
                             <div className='col-6 headingPara'>
-                            We renewed our 8-year-old partnership with the Department of Technical Education, Uttar Pradesh (DTE-UP) to strengthen polytechnic education, by:
+                            Over the next 2 years, we will help the Skill Development and Industrial Training Department, Haryana (SDIT-Haryana) scale their dual-system of training model for vocational education students by:
                             </div>
                         </div>
                 </div>
@@ -80,13 +81,13 @@ const SecondCircleUi = function SecondCircleUi() {
                                     <div className='row justify-content-between'>
                                         <div className='col-4 row justify-content-center align-items-center text-center second_grayed_bubble' id='fBubble'>
                                             <div>
-                                                    Introducing an industry-relevant curriculum,
+                                            Providing on-the-job trainings (OJT) of 6 months’ duration
 
                                             </div>
                                    
                                         </div>
                                         <div className='col-4 row justify-content-center align-items-center text-center second_grayed_bubble' id='thBubble'>
-                                        Helping industry and academia work closely
+                                            Doubling the number of OJT units in the state
                                         </div>
 
                                     </div>

@@ -8,6 +8,11 @@
   font-family: Lato-Ragular;
 }
 
+@font-face{
+  src: url("../../Assets/Medhafonts/Bebas_Neue_Pro_Fonts/BebasNeuePro-Bold.ttf");
+  font-family: Bebas-Neue;
+}
+
 
 .second_main_heading {
     color: #282828;
@@ -68,6 +73,16 @@
   bottom: 20rem;
   z-index: 0;
   opacity: 0;
+}
+
+.green_circle> :first-child>:nth-child(1),
+.green_circle> :first-child>:nth-child(3)
+{
+  font-family: Lato;
+}
+
+.green_circle> :first-child>:nth-child(2){
+  font-family: Bebas-Neue;
 }
 
   @keyframes fadeIn {
