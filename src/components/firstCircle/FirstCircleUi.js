@@ -1,17 +1,47 @@
-import React,{Fragment,useEffect} from 'react';
+import React,{Fragment,useEffect,useState,useRef} from 'react';
 import {ReactComponent as MySVG} from '../../Assets/Images/CircleGreen.svg';
 
 
 import './FirstCircle.css';
 
 
-const FirstCircleUi = function FirstCircleUi({className}) {
+const FirstCircleUi = function FirstCircleUi() {
 
+    const [isVisible, setIsVisible] = useState(false);
+    const ref = useRef(null);
+  
+    useEffect(() => {
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            setIsVisible(true);
+            observer.unobserve(entry.target);
+          }
+        },
+        {
+          root: null,
+          rootMargin: '0px',
+          threshold: 1.0,
+        }
+      );
+  
+      if (ref.current) {
+        observer.observe(ref.current);
+      }
+  
+      return () => {
+        if (ref.current) {
+        
+          observer.unobserve(ref.current);
+        }
+      };
+    }, []);
     
 
     const addAnimation = ()=>{
         const elementIdList = ['firstBubble','SecondBubble','thirdBubble','fourthBubble','fifthBubble','sixthBubble'];
-
+        if(isVisible){
+            
         setTimeout(()=>{
             document.getElementById(elementIdList[0]).style.animation = "fadeIn 2s forwards"
 
@@ -43,20 +73,22 @@ const FirstCircleUi = function FirstCircleUi({className}) {
         },13000)
 
 
+        }
+
     }
 
     useEffect(()=>{
         addAnimation()
 
-    },[])
+    },[isVisible])
 
 
 
 
   return (
-    <Fragment>
+    <div ref={ref}>
 
-        <div className='row flex-column justify-content-around'>
+        {isVisible?<div className='container row flex-column justify-content-around'>
             <div className='row'>
                 <div className='col-12'>
                         <div className='row align-items-center'>
@@ -125,16 +157,8 @@ const FirstCircleUi = function FirstCircleUi({className}) {
                 </div> 
 
 
+        </div>:<div></div>}
         </div>
-
-        
-            
-
-          
-
-     
-        
-        </Fragment>
   )
 }
 
