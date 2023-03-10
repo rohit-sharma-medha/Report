@@ -17,13 +17,14 @@ import { Innovating1 } from './components/Innovating1';
 function App() {
 
   const [activeComponent, setActiveComponent] = useState("Component1");
+  const [isScrolled, setisScrolled] = useState(false)
   const componentRefs = {
     FirstComponent: useRef(null),
     Second: useRef(null),
     Thirslide: useRef(null),
     Vertical_slider: useRef(null),
     Verticla2: useRef(null),
-    Innovatiing:useRef(null),
+    Innovatiing: useRef(null),
   };
 
 
@@ -52,9 +53,54 @@ function App() {
       });
     };
   }, []);
-  return (
-    <div className="App">
-      {/* <header className="App-header">
+
+  useEffect(() => {
+    // if(!isScrolled){
+
+    window.addEventListener("scroll", (event) => {
+      // const id = 'FirstComponent';
+      // const yOffset = -10;
+      // const element = document.getElementById(id).nextElementSibling;
+      // const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      // const element= document.getElementById("FirstComponent").nextElementSibling
+      // window.location.href = "#" + element.id
+      // window.scrollTo({ top: y, behavior: 'smooth' });
+      // const element = document.getElementById("FirstComponent").nextElementSibling
+      // element.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+      // setisScrolled(true)
+    })
+  
+
+  }, [])
+
+return (
+  <div className="App">
+    <div className='section_container'>
+    <div className="section_to_show"ref={componentRefs.FirstComponent} id="FirstComponent">
+      <FirstComponent />
+    </div>
+    <div className="section_to_show"ref={componentRefs.Second} id="Component2">
+      <Second />
+    </div>
+    <div className="section_to_show"ref={componentRefs.Thirslide} id="Component3">
+      <Thirslide />
+    </div>
+    <div className="section_to_show"ref={componentRefs.Vertical_slider} id="Component4">
+      <Vertical_slider />
+    </div>
+    {/* <div className="section_to_show"ref={componentRefs.Vertical_slider} id="Component4">
+        <Vertical_slider />
+      </div> */}
+    <div className="section_to_show"ref={componentRefs.Verticla2} id="Component5">
+      < Verticla2 />
+    </div>
+
+    <div className="section_to_show"ref={componentRefs.Innovatiing} id="Component6">
+      < Innovatiing />
+    </div>
+    <Strengthen />
+    </div>
+    {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -70,7 +116,7 @@ function App() {
       </header> */}
 
     {/* <h1 className="animate__animated animate__bounce animate__bounceIn">An animated element</h1> */}
-      {/* <FirstComponent />
+    {/* <FirstComponent />
       <Second />
       <Thirslide />
     <Vertical_slider />
@@ -78,33 +124,11 @@ function App() {
     <Slider2/> */}
     {/* <Innovatiing/> */}
 
-    <div ref={componentRefs.FirstComponent} id="FirstComponent">
-        <FirstComponent />
-      </div>
-      <div ref={componentRefs.Second} id="Component2">
-        <Second />
-      </div>
-      <div ref={componentRefs.Thirslide} id="Component3">
-        <Thirslide />
-      </div>
-      <div ref={componentRefs.Vertical_slider} id="Component4">
-        <Vertical_slider />
-      </div>
-      {/* <div ref={componentRefs.Vertical_slider} id="Component4">
-        <Vertical_slider />
-      </div> */}
-      <div ref={componentRefs.Verticla2} id="Component5">
-        < Verticla2 />
-      </div>
+    
 
-      <div ref={componentRefs.Innovatiing} id="Component6">
-        < Innovatiing />
-      </div>
-      <Strengthen/>
-     
-      
-    </div>
-  );
+
+  </div>
+);
 }
 
 export default App;

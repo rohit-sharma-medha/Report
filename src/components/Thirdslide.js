@@ -24,8 +24,8 @@ export const Thirslide = () => {
   return (
     <>
       <div className="cards3rd" ref={containerRef} >
-        <div className="row first-row-cards d-flex justify-content-around mb-5 text-center">
-          <div  className={isVisible ? "card_1 mb-sm-5  col-xl-4 col-lg-4 col-md-4 col-12 animate__animated animate__fadeInLeft time1":""}>
+        <div className="first_part row first-row-cards d-flex justify-content-around mb-5 text-center">
+          <div  className={isVisible ? "card_1 mb-sm-5  col-xl-4 col-lg-4 col-md-12 col-12 animate__animated animate__fadeInLeft time1":""}>
             <div className={isVisible ?"card border-0 ":"card "} >
               <div className="content " >
                 <p className='Number_Text yellow-text text-center '>18,000</p>
@@ -34,7 +34,7 @@ export const Thirslide = () => {
               {/* <!-- Card Content Here --> */}
             </div>
           </div>
-          <div  className={isVisible ? "card_1 mb-sm-5  col-xl-4 col-lg-4 col-md-4 col-12 animate__animated animate__fadeInLeft time2":""}>
+          <div  className={isVisible ? "card_1 mb-sm-5  col-xl-4 col-lg-4 col-md-12 col-12 animate__animated animate__fadeInLeft time2":""}>
             <div className={isVisible ?"card border-0 ":"card "} >
               <div class="content">
                 <p className='Number_Text yellow-text animated bounceInUp text-center'>300</p>
@@ -44,9 +44,9 @@ export const Thirslide = () => {
             </div>
           </div>
         </div>
-        <div className="row d-flex justify-content-between mb-5 text-center">
+        <div className="second_part row d-flex justify-content-between  mb-5 text-center">
           
-          <div className={isVisible ? "card_1 mb-sm-5  col-xl-4 col-lg-4 col-md-4 col-12 animate__animated animate__fadeInLeft time3":""}>
+          <div className={isVisible ? "card_1 mb-sm-5  col-xl-4 col-lg-4 col-md-12 col-12 animate__animated animate__fadeInLeft time3":""}>
             <div className={isVisible ?"card border-0  ":"card "} >
               <div className="content">
                 <p className='Number_Text yellow-text animated bounceInUp text-center'>27,000</p>
@@ -54,7 +54,7 @@ export const Thirslide = () => {
               </div>
             </div>
           </div>
-          <div  className={isVisible ? "card_1 mb-sm-5  col-xl-4 col-lg-4 col-md-4 col-12 animate__animated animate__fadeInLeft time4":""}>
+          <div  className={isVisible ? "card_1 mb-sm-5  col-xl-4 col-lg-4 col-md-12 col-12 animate__animated animate__fadeInLeft time4":""}>
             <div className={isVisible ? "card border-0  ":"card "} >
               <div className="content">
                 <p className='Number_Text yellow-text animated bounceInUp text-center'>3</p>
@@ -62,7 +62,7 @@ export const Thirslide = () => {
               </div>
             </div>
           </div>
-          <div  className={isVisible ? "card_1 mb-sm-5  col-xl-4 col-lg-4 col-md-4 col-12 animate__animated animate__fadeInLeft time5":""}>
+          <div  className={isVisible ? "card_1 mb-sm-5  col-xl-4 col-lg-4 col-md-12 col-12 animate__animated animate__fadeInLeft time5":""}>
             <div className={isVisible ?"card border-0 ":"card "} >
               <div className="content">
                 <p className='Number_Text yellow-text animated bounceInUp text-center'>1000</p>
