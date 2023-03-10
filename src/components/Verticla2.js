@@ -51,9 +51,9 @@ export const Verticla2 = () => {
                     <div className='vertical2-slide d-flex justi'>
 
                         <div className='col-12'>
-                            <div className='row'>
-                                <div className='col-7'>
-                                    <div className='verticalslide1Head col-12'>
+                            <div className='row d-flex first_vertical_slider_slide1 '>
+                                <div className='col-md-7 col-lg-7 col-xl-7 col-12 '>
+                                    <div className='verticalslide1Head col-md-12 col-lg-7 col-xl-7 col-12'>
                                         <p className={currentPageIndex == 0 ? "verticalslide1Head-text animate__animated animate__fadeInDown " : "verticalslide1Head-text"} >
                                             BY DRIVING GREATER ADOPTION OF ‘THE <br /> MEDHA WAY’ WITH STATE GOVERNMENTS <br /> TO IMPACT MORE STUDENTS
                                         </p>
@@ -62,7 +62,7 @@ export const Verticla2 = () => {
                                         <p className={currentPageIndex == 0 ? "verticalslide1Head-text-1 animate__animated animate__fadeInLeft " : "verticalslide1Head-text-1"} >Partnering with more <span className='greentext'>like-minded</span> state education departments,<br /> industry leaders, and peers will help us elevate the learning<br /> experience <span className='greentext'>and bring career opportunities youth care about to <br /> more than 100,000 students per year.</span>  Last year, we took steps to:</p>
                                     </div>
                                 </div>
-                                <div className='col-5'>
+                                <div className='col-md-5 col-lg-5 col-xl-5 col-sm-12 '>
                                     <div className='vertical-slide1-img'>
                                         <img className={currentPageIndex == 0 ? "vert1-slide1-img animate__animated animate__fadeInRight " : "vert1-slide1-img"} src={fab_uk} />
                                     </div>
@@ -73,17 +73,17 @@ export const Verticla2 = () => {
                     <div className='vertical2-slide d-flex '>
                         <div className='col-12'>
                             <div className='row'>
-                                <div className='col-7'>
+                                <div className='col-md-12 col-lg-7 col-xl-7 col-12'>
                                     <div className='vertical-slide2-img'>
                                         <img className='vert1-slide2-img ' src={fab_uk} />
                                     </div>
                                 </div>
-                                <div className='col-5'>
+                                <div className='col-md-12 col-lg-5 col-xl-5 col-12'>
                                     <div className={currentPageIndex == 1 ? "verticalslide1Head animate__animated animate__fadeInDown" : ""}>
                                         <p className='scaleknoledge'>Scale as a Knowledge Partner</p>
                                     </div>
                                     <div className={currentPageIndex == 1 ? "verticalslide1Head animate__animated animate__flipInX" : ""}>
-                                        <p className='residenseoursystem col-10'>Redesigned our System Adoption team to be self-sufficient:</p>
+                                        <p className='residenseoursystem col-10'>Redesigned our System Adoption team to be <br/> self-sufficient:</p>
                                     </div>
 
                                     <div className='verticalslide1Head3 col-10'>
@@ -114,10 +114,10 @@ export const Verticla2 = () => {
                     <div className='vertical2-slide d-flex justi'>
                         <div className='col-12 '>
                             <div className='row d-flex upper-content-3rdslide'>
-                                <div className={currentPageIndex == 2 ? "col-5 animate__animated animate__fadeInDown" : "col-5"} >
+                                <div className={currentPageIndex == 2 ? "col-md-12 col-xl-5 col-lg-5 col-12 animate__animated animate__fadeInDown mt-5" : "col-md-5 col-xl-5 col-lg-5 col-12"} >
                                     <p className='uppercontent-head'>Transform higher education in Haryana</p>
                                 </div>
-                                <div className={currentPageIndex == 2 ? "col-7 animate__animated animate__bounceInUp" : "col-7"} >
+                                <div className={currentPageIndex == 2 ? "col-md-12 col-xl-7 col-lg-7 col-12 animate__animated animate__bounceInUp" : "col-md-7 col-xl-7 col-lg-7 col-12"} >
                                     <p className='uppercontent-text'>We completed the halfway mark in a 2-year venture with<br /> the Department of Higher Education, Haryana (DHE- <br />Haryana) to prepare college students for meaningful work <br /> roles. In this time, we:</p>
                                 </div>
                             </div>
@@ -126,7 +126,7 @@ export const Verticla2 = () => {
                                 
                                 <div className="col-12 cards_3 d-flex justify-content-center">
                                     <div className="row   d-flex justify-content-center">
-                                        <div className="col-4">
+                                        <div className="col-xl-4 col-lg-4 col-md-12">
                                             <div className="border-0 h-100 mr-2">
                                                 <img src={fab_uk} className={currentPageIndex == 2 ? "card-img-top small-image-vertical2 animate__animated animate__backInLeft" : "card-img-top small-image-vertical2"} alt="..." />
                                                 <div className="card-body">
@@ -137,7 +137,7 @@ export const Verticla2 = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="col-4">
+                                        <div className="col-xl-4 col-lg-4 col-md-12">
                                             <div className=" border-0 h-100 mx-2">
                                                 <img src={fab_uk} className={currentPageIndex == 2 ?"card-img-top small-image-vertical2 animate__animated animate__backInDown":"card-img-top small-image-vertical2"} alt="..." />
                                                 <div className="card-body">
@@ -148,7 +148,7 @@ export const Verticla2 = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="col-4">
+                                        <div className="col-xl-4 col-lg-4 col-md-12">
                                             <div className="border-0 h-100 ">
                                                 <img src={fab_uk} className={currentPageIndex == 2 ? "card-img-top small-image-vertical2 animate__animated animate__backInRight":"card-img-top small-image-vertical2"} alt="..." />
                                                 <div className="card-body">

@@ -7,7 +7,7 @@ import "../Style/slick.css"
 
 const Vertical_slider = () => {
     const main_vert_slide_class=useRef(null)
-
+    const [pageNo, setpageNo] = useState(0)
     const settings = {
         dots: true,
         slidesToShow: 1,
@@ -16,6 +16,10 @@ const Vertical_slider = () => {
         // fade: true,
         lazyLoad: true,
         autoplay: false,
+        beforeChange: (oldIndex, newIndex) => {
+            console.log(newIndex)
+        
+        }
         
     };
 
@@ -126,16 +130,16 @@ const Vertical_slider = () => {
 
 
                             <div>
-                                <Card className="card-design-fabuk card-design ">
+                                <Card className="card-design-fabuk card-design-fabuk_1  card-design ">
 
                                     <Card.Body className='d-flex flex-column  align-items-center justify-content-center '>
 
                                         <Card.Text className='col-9 text-center vert_cards_text  animate__animated animate__bounce animate__bounceIn'>
                                             How will we <span className='yellow-text'>40X our impact</span>  since 2011?
                                         </Card.Text>
-                                        <div className='d-flex justify-content-around '>
-                                            <div className="circle mx-5">By driving greater adof ‘the Medha way’ at scale</div>
-                                            <div className="circle mx-5">Remaining quality-driven in our direct student engagement</div>
+                                        <div className='d-flex justify-content-around d-flex flex-column   flex-md-column  flex-lg-row '>
+                                            <div className="circle mx-5">By driving greater adoption of ‘the Medha way’ at scale</div>
+                                            <div className="circle mx-5 my-2">Remaining quality-driven in our direct student engagement</div>
                                             <div className="circle mx-5">And committing to data-driven decision-making at work</div>
                                         </div>
 

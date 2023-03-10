@@ -25,6 +25,7 @@ export const Para = (props) => {
     <div  className="">
    
       <p className={props.index}>{name}</p>
+      <p className='student_name'></p>
     </div>
   );
 }
