@@ -8,6 +8,9 @@ import Xicon from '../Assets/Images/cross_new_trans.png'
 import arrowleft from '../Assets/Images/Arrow_left_black.png'
 import arrowright from '../Assets/Images/arrow_right_black.png'
 
+import FirstCircleUi from '../components/firstCircle/FirstCircleUi';
+import SecondCircleUi from '../components/seondCircle/SecondCircleUi';
+
 // import '../app.scss'
 
 export const Verticla2 = () => {
@@ -161,7 +164,10 @@ export const Verticla2 = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='vertical2-slide d-flex '>
+
+                    <FirstCircleUi className="vertical2-slide d-flex "/>
+                    <SecondCircleUi/>
+                    {/* <div className='vertical2-slide d-flex '>
                         <div className='col-12'>
                             <div className='row upper-content-3rdslide'>
                                 <div className='col-5'>
@@ -248,8 +254,9 @@ export const Verticla2 = () => {
                         </div>
 
 
-                    </div>
-                    <div className='vertical2-slide d-flex justi'>6</div>
+                    </div> */}
+
+                    <div className='vertical2-slide d-flex'>6</div>
                 </Carousel>
             </div>
 
