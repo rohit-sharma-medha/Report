@@ -47,13 +47,15 @@ export const Verticla2 = () => {
     return (
         <>
             <div id="vert2_slide" className="styling-example">
-                <Carousel className='vertical2-slide_main' renderArrow={myArrow} itemsToShow={1} onChange={handleOnChange}>
+                <Carousel 
+                // enableAutoPlay autoPlaySpeed={7000} 
+                className='vertical2-slide_main' renderArrow={myArrow} itemsToShow={1} onChange={handleOnChange}>
                     <div className='vertical2-slide d-flex justi'>
 
                         <div className='col-12'>
                             <div className='row d-flex first_vertical_slider_slide1 '>
                                 <div className='col-md-7 col-lg-7 col-xl-7 col-12 '>
-                                    <div className='verticalslide1Head col-md-12 col-lg-7 col-xl-7 col-12'>
+                                    <div className='verticalslide1Head col-12'>
                                         <p className={currentPageIndex == 0 ? "verticalslide1Head-text animate__animated animate__fadeInDown " : "verticalslide1Head-text"} >
                                             BY DRIVING GREATER ADOPTION OF ‘THE <br /> MEDHA WAY’ WITH STATE GOVERNMENTS <br /> TO IMPACT MORE STUDENTS
                                         </p>
@@ -128,10 +130,10 @@ export const Verticla2 = () => {
                                     <div className="row   d-flex justify-content-center">
                                         <div className="col-xl-4 col-lg-4 col-md-12">
                                             <div className="border-0 h-100 mr-2">
-                                                <img src={fab_uk} className={currentPageIndex == 2 ? "card-img-top small-image-vertical2 animate__animated animate__backInLeft" : "card-img-top small-image-vertical2"} alt="..." />
+                                                <img src={fab_uk} className={currentPageIndex == 2 ? "card-img-top small-image-vertical2 animate__animated animate__fadeInLeft time1" : "card-img-top small-image-vertical2"} alt="..." />
                                                 <div className="card-body">
                                                     {/* <h5 className="card-title fw-bold">Card title</h5> */}
-                                                    <p className={currentPageIndex == 2 ?"card-text text-center card_3vert2_text animate__animated animate__backInUp":"card-text text-center card_3vert2_text"}>
+                                                    <p className={currentPageIndex == 2 ?"card-text text-center card_3vert2_text animate__animated animate__fadeInLeft time1":"card-text text-center card_3vert2_text"}>
                                                     Provided hands-on coaching<br/> to 130 teachers and skill instructors
                                                     </p>
                                                 </div>
@@ -139,10 +141,10 @@ export const Verticla2 = () => {
                                         </div>
                                         <div className="col-xl-4 col-lg-4 col-md-12">
                                             <div className=" border-0 h-100 mx-2">
-                                                <img src={fab_uk} className={currentPageIndex == 2 ?"card-img-top small-image-vertical2 animate__animated animate__backInDown":"card-img-top small-image-vertical2"} alt="..." />
+                                                <img src={fab_uk} className={currentPageIndex == 2 ?"card-img-top small-image-vertical2 animate__animated animate__fadeInLeft time2":"card-img-top small-image-vertical2"} alt="..." />
                                                 <div className="card-body">
                                                     {/* <h5 className="card-title fw-bold">Card title</h5> */}
-                                                    <p className={currentPageIndex == 2 ?"card-text text-center card_3vert2_text animate__animated animate__backInUp":"card-text text-center card_3vert2_text"}>
+                                                    <p className={currentPageIndex == 2 ?"card-text text-center card_3vert2_text animate__animated animate__fadeInLeft time2":"card-text text-center card_3vert2_text"}>
                                                     Hosted career-focused webinars <br/> with employer partners
                                                     </p>
                                                 </div>
@@ -150,10 +152,10 @@ export const Verticla2 = () => {
                                         </div>
                                         <div className="col-xl-4 col-lg-4 col-md-12">
                                             <div className="border-0 h-100 ">
-                                                <img src={fab_uk} className={currentPageIndex == 2 ? "card-img-top small-image-vertical2 animate__animated animate__backInRight":"card-img-top small-image-vertical2"} alt="..." />
+                                                <img src={fab_uk} className={currentPageIndex == 2 ? "card-img-top small-image-vertical2 animate__animated animate__fadeInLeft time3":"card-img-top small-image-vertical2"} alt="..." />
                                                 <div className="card-body">
                                                     {/* <h5 className="card-title fw-bold">Card title</h5> */}
-                                                    <p className={currentPageIndex == 2 ?"card-text text-center card_3vert2_text animate__animated animate__backInUp":"card-text text-center card_3vert2_text"}>
+                                                    <p className={currentPageIndex == 2 ?"card-text text-center card_3vert2_text animate__animated animate__fadeInLeft time3":"card-text text-center card_3vert2_text"}>
                                                     Improved classroom learning <br/> experience and career exposure<br/> for ~3000 students
                                                     </p>
                                                 </div>

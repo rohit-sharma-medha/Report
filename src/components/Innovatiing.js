@@ -80,7 +80,9 @@ export const Innovatiing = () => {
 
       <div className="carousel-wrapper" id="innovate_slide">
         {/* className={[2,4,6].includes(currentPageIndex) ? "carousel-wrapper_innovate_slide3":currentPageIndex ==0 ?"carousel-wrapper_innovate":"carousel-wrapper_innovate_other"} */}
-        <ElasticCarousel className={currentclass} onChange={handleOnChange} renderArrow={myArrow}>
+        <ElasticCarousel 
+        // enableAutoPlay autoPlaySpeed={8000} 
+        className={currentclass} onChange={handleOnChange} renderArrow={myArrow}>
           <div className="Inovate_slide Inovate_slide_1  d-flex flex-column align-item-start">
             <div className="col-12">
               <div className="row d-flex align-item-center justify-content-center">

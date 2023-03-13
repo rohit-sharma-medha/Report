@@ -1,134 +1,103 @@
-// import logo from './logo.svg';
+import React, { useEffect } from 'react';
+import ReactDOM from 'react-dom';
 import './App.css';
-import 'animate.css';
-import React, { useState, useRef, useEffect } from "react";
-// import './app.scss'
-import Vertical_slider from './components/Vertical_slider';
-import { Slider2 } from './components/Slider2';
+import "./app.scss"
+import ReactFullpage from '@fullpage/react-fullpage';
 import { FirstComponent } from './components/FirstComponent';
 import { Second } from './components/Second';
 import { Thirslide } from './components/Thirdslide';
+import Vertical_slider from './components/Vertical_slider';
 import { Verticla2 } from './components/Verticla2';
 import { Innovatiing } from './components/Innovatiing';
-import "./app.scss"
 import { Strengthen } from './components/Strengthen';
-import { Innovating1 } from './components/Innovating1';
+
+const fullpageOptions = {
+  anchors: ['section1', 'section2', 'section3'],
+  sectionsColor: ['#4BBFC3', '#7BAABE', '#f03c69'],
+  afterLoad: (origin, destination, direction) => {
+    // Pause the screen until user clicks a button
+    let isPaused = true;
+    const pauseScreen = () => {
+      isPaused = false;
+    };
+
+    while (isPaused) {
+      // Do nothing, wait for user to click a button
+    }
+
+    // User has clicked a button, continue to next section
+    return true;
+  },
+};
+
 
 function App() {
 
-  const [activeComponent, setActiveComponent] = useState("Component1");
-  const [isScrolled, setisScrolled] = useState(false)
-  const componentRefs = {
-    FirstComponent: useRef(null),
-    Second: useRef(null),
-    Thirslide: useRef(null),
-    Vertical_slider: useRef(null),
-    Verticla2: useRef(null),
-    Innovatiing: useRef(null),
-  };
-
+  const [activeSection, setActiveSection] = React.useState(0);
+  const sliderRef = React.useRef(null);
 
   useEffect(() => {
-    const options = {
-      root: null,
-      rootMargin: "0px",
-      threshold: 0.5,
-    };
-    const handleIntersect = (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          setActiveComponent(entry.target.id);
-        }
-      });
-    };
-
-    const observer = new IntersectionObserver(handleIntersect, options);
-
-    Object.values(componentRefs).forEach((ref) => {
-      observer.observe(ref.current);
-    });
-    return () => {
-      Object.values(componentRefs).forEach((ref) => {
-        observer.unobserve(ref.current);
-      });
-    };
-  }, []);
-
-  useEffect(() => {
-    // if(!isScrolled){
-
-    window.addEventListener("scroll", (event) => {
-      // const id = 'FirstComponent';
-      // const yOffset = -10;
-      // const element = document.getElementById(id).nextElementSibling;
-      // const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
-      // const element= document.getElementById("FirstComponent").nextElementSibling
-      // window.location.href = "#" + element.id
-      // window.scrollTo({ top: y, behavior: 'smooth' });
-      // const element = document.getElementById("FirstComponent").nextElementSibling
-      // element.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
-      // setisScrolled(true)
-    })
-  
-
+    document.body.style.overflow = "hidden";
+    return () => (document.body.style.overflow = "scroll");
   }, [])
 
-return (
-  <div className="App">
-    <div className='section_container'>
-    <div className="section_to_show"ref={componentRefs.FirstComponent} id="FirstComponent">
-      <FirstComponent />
-    </div>
-    <div className="section_to_show"ref={componentRefs.Second} id="Component2">
-      <Second />
-    </div>
-    <div className="section_to_show"ref={componentRefs.Thirslide} id="Component3">
-      <Thirslide />
-    </div>
-    <div className="section_to_show"ref={componentRefs.Vertical_slider} id="Component4">
-      <Vertical_slider />
-    </div>
-    {/* <div className="section_to_show"ref={componentRefs.Vertical_slider} id="Component4">
-        <Vertical_slider />
-      </div> */}
-    <div className="section_to_show"ref={componentRefs.Verticla2} id="Component5">
-      < Verticla2 />
-    </div>
+  // const handleProgress = (origin, destination, direction) => {
+  //   setActiveSection(destination.index);
+  //   // go to the first slide when the user enters the carousel section
+  //   if (destination.index === 2) {
+  //     sliderRef.current.slickGoTo(0);
+  //   }
+  // };
 
-    <div className="section_to_show"ref={componentRefs.Innovatiing} id="Component6">
-      < Innovatiing />
+ 
+  
+  return (
+    <div className="App">
+      <ReactFullpage
+      // {...fullpageOptions}
+        //fullpage options
+        // licenseKey={'YOUR_KEY_HERE'}
+        scrollingSpeed={1000} /* Options here */
+
+        render={({ state, fullpageApi }) => {
+          return (
+            <ReactFullpage.Wrapper>
+              <div className="section">
+                <FirstComponent />
+                {/* <button onClick={() => fullpageApi.moveSectionDown()}>
+                  Click me to move down
+                </button> */}
+              </div>
+              <div className="section">
+                <Second />
+              </div>
+              <div className="section section3">
+                <Thirslide />
+              </div>
+              <div className="section section_4 ">
+                <Vertical_slider />
+              </div>
+
+              <div className={`section ${activeSection === 2 ? "active" : ""}`}>
+                <Verticla2 /> 
+              </div>
+              <div className="section section3">
+                <Innovatiing />
+              </div>
+
+              <div className="section section3">
+                <Strengthen />
+              </div>
+              
+              
+            </ReactFullpage.Wrapper>
+          );
+        }}
+
+        // onProgress={handleProgress}
+      />
     </div>
-    <Strengthen />
-    </div>
-    {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
-
-    {/* <h1 className="animate__animated animate__bounce animate__bounceIn">An animated element</h1> */}
-    {/* <FirstComponent />
-      <Second />
-      <Thirslide />
-    <Vertical_slider />
-    <Verticla2 />
-    <Slider2/> */}
-    {/* <Innovatiing/> */}
-
-    
-
-
-  </div>
-);
+  );
 }
 
 export default App;

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card } from 'react-bootstrap'
+import 'animate.css';
 
 export const FirstComponent = () => {
     return (
