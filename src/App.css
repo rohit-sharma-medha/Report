@@ -88,6 +88,7 @@ body {
   border: 2px solid #FF9700;
   margin: 3px;
   display: inline-block;
+  background-color: #FF9700;
 }
 
 .FirstSlide_text {
@@ -1442,6 +1443,25 @@ to {
   .swati_image{
     display: none;
   }
+  .section3{
+    background: radial-gradient(circle at bottom left,
+      #82edcb,
+      #fff 45%);
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: 0;
+  }
+  .fp-overflow::-webkit-scrollbar {
+    display: none;
+  }
+  .fp-is-overflow >.fp-overflow {
+    /* overflow-y: unset; */
+  }
+  
+  .fp-is-overflow>.fp-overflow {
+    overflow-y: auto;
+    overflow-x: clip;
+    scrollbar-width: 0;
+  }
 
  
 }
@@ -1467,7 +1487,7 @@ to {
   }
   .first_part{
     justify-content: center !important;
-    margin-left:5% ;
+    /* margin-left:5% ; */
   }
   .circle {
     background: #31B89D;
@@ -1497,3 +1517,26 @@ to {
 @media only screen and (min-width: 1200px) {}
 
 /* Strength */
+
+.hQSEcj{
+  display: none !important;
+}
+
+.fp-watermark {
+  display: none;
+}
+.section_4{
+  background-image: url('./Assets/Images/Vertical_slide.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.section_4 > button{
+  border: 0;
+  background-color: transparent;
+}
+
+.mt-7{
+  margin-top: 10% !important;
+}

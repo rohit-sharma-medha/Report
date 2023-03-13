@@ -27,7 +27,9 @@ export const Strengthen = () => {
   return (
     <>
       <div id="Strength" className="Strength">
-        <Carousel className='Strength_main' renderArrow={myArrow} onChange={handleOnChange}>
+        <Carousel 
+        // enableAutoPlay autoPlaySpeed={9000} 
+        className='Strength_main' renderArrow={myArrow} onChange={handleOnChange}>
           <div className="Item Strength-item1 col-10">
             <Slide1 index={currentPageIndex}/>
           </div>
