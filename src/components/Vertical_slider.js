@@ -8,18 +8,18 @@ import arrowright from '../Assets/Images/arrow_right_black.png'
 
 
 let resetTimeout;
-let totalPages =4;
+let totalPages = 4;
 const Vertical_slider = () => {
     const [currentPageIndex, setCurrentPageIndex] = useState(0);
     const carouselRef = useRef(null);
-    const myArrow=({ type, onClick, isEdge })=> {
-        const pointer = type === consts.PREV ? <img className={currentPageIndex == 0 ?"d-none":"position_middle_left"} src={arrowleft}/> : <img className={"position_middle_right"} src={arrowright}/>
+    const myArrow = ({ type, onClick, isEdge }) => {
+        const pointer = type === consts.PREV ? <img className={currentPageIndex == 0 ? "d-none" : "position_middle_left"} src={arrowleft} /> : <img className={"position_middle_right"} src={arrowright} />
         return (
-          <button onClick={onClick} disabled={isEdge}>
-            {pointer}
-          </button>
+            <button onClick={onClick} disabled={isEdge}>
+                {pointer}
+            </button>
         )
-      }
+    }
 
     const handleOnChange = (currentItem, pageIndex) => {
         setCurrentPageIndex(pageIndex);
@@ -28,20 +28,7 @@ const Vertical_slider = () => {
 
     return (
         <>
-            <Carousel 
-            // ref={carouselRef}
-            renderArrow={myArrow}  onChange={handleOnChange}
-            // enableAutoPlay autoPlaySpeed={3000} 
-        //     onNextEnd={({ index }) => {
-        //         clearTimeout(resetTimeout)
-        //         if (index + 1 === totalPages) {
-        //            resetTimeout = setTimeout(() => {
-        //               carouselRef.current.goTo(0)
-        //           }, 5000) // same time
-        //         }
-        //    }}
-            // verticalMode
-            >
+            <Carousel renderArrow={myArrow} onChange={handleOnChange} >
                 <div className='mt-5'>
                     <p className={currentPageIndex == 0 ? "mt-5 mt-7 text-center vert_cards_text animate__animated animate__fadeInUp " : "text-center vert_cards_text"}>
                         IN 2021, WE SET AN AUDACIOUS GOAL OF HELPING <span className='yellow-text'>1 MILLION <br /> YOUTH</span> TRANSFORM THEIR LIVES IN THE NEXT 5 YEARS
@@ -54,7 +41,7 @@ const Vertical_slider = () => {
                 </div>
                 <div className=''>
 
-                    <p className={ currentPageIndex == 2 ? `mt-7 text-center vert_cards_text vert_cards_text_lato vert_cards_text_3rd mt-5 animate__animated animate__fadeInUp`:"text-center vert_cards_text vert_cards_text_lato vert_cards_text_3rd"}>
+                    <p className={currentPageIndex == 2 ? `mt-7 text-center vert_cards_text vert_cards_text_lato vert_cards_text_3rd mt-5 animate__animated animate__fadeInUp` : "text-center vert_cards_text vert_cards_text_lato vert_cards_text_3rd"}>
 
                         It represents 10 % of the estimated 9 million college-going <br /> students in India’s Hindi-speaking belt and serves as a <br /><span className='yellow-text'> tipping point </span>  for driving significant social change.
 
@@ -63,13 +50,13 @@ const Vertical_slider = () => {
 
                 <div className='my-5'>
 
-                    <p className={currentPageIndex == 3 ? `text-center vert_cards_text  animate__animated animate__bounce animate__fadeInUp`:"vert_cards_text"}>
+                    <p className={currentPageIndex == 3 ? `text-center vert_cards_text  animate__animated animate__bounce animate__fadeInUp` : "vert_cards_text"}>
                         How will we <span className='yellow-text'>40X our impact</span>  since 2011?
                     </p>
                     <div className='d-flex justify-content-around d-flex flex-column   flex-md-column  flex-lg-row '>
-                        <div className={currentPageIndex == 3 ? `circle mx-5 animate__animated  animate__fadeInLeft time1 `:"circle mx-5"}>By driving greater adoption of ‘the Medha way’ at scale</div>
-                        <div className={currentPageIndex == 3 ? `circle mx-5 my-2 animate__animated  animate__fadeInLeft time2`:"circle mx-5 my-2"}>Remaining quality-driven in our direct student engagement</div>
-                        <div className={currentPageIndex == 3 ? `circle mx-5 animate__animated  animate__fadeInLeft time3`:"circle mx-5"}>And committing to data-driven decision-making at work</div>
+                        <div className={currentPageIndex == 3 ? `circle mx-5 animate__animated  animate__fadeInLeft time1 ` : "circle mx-5"}>By driving greater adoption of ‘the Medha way’ at scale</div>
+                        <div className={currentPageIndex == 3 ? `circle mx-5 my-2 animate__animated  animate__fadeInLeft time2` : "circle mx-5 my-2"}>Remaining quality-driven in our direct student engagement</div>
+                        <div className={currentPageIndex == 3 ? `circle mx-5 animate__animated  animate__fadeInLeft time3` : "circle mx-5"}>And committing to data-driven decision-making at work</div>
                     </div>
                 </div>
             </Carousel>

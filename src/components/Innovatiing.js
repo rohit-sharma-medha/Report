@@ -106,26 +106,26 @@ export const Innovatiing = () => {
           <div className="">
             <div className='d-flex  '>
               <div className='col-12 '>
-                <div className='row mt-5  d-flex flex-start'>
+                <div className='row mt-5 our_allum  d-flex flex-start'>
                   <div className={currentPageIndex == 1 ? "col-md-5 col-lg-5 col-xl-5 col-12 " : ""} >
-                    <p className={currentPageIndex == 1 ? " uppercontent-head w3-animate-top time_0s" : ""}>Our alumni community became independent!</p>
+                    <p className={currentPageIndex == 1 ? " uppercontent-head w3-animate-top time_0s" : ""}>Our alumni community <br/> became independent!</p>
                   </div>
                   <div className='col-md-6 col-lg-6 col-xl-6 col-12  ml-0'>
-                    <p className={currentPageIndex == 1 ? "uppercontent-text w3-animate-top " : ""}>Registered as the Medhavi Association, they represent the spirit of young people pursuing varied interests and charting offbeat career paths with passion.</p>
+                    <p className={currentPageIndex == 1 ? "uppercontent-text w3-animate-top " : ""}>Registered as the Medhavi Association, they represent <br/> the spirit of young people pursuing varied interests and charting offbeat career paths with passion.</p>
                   </div>
                 </div>
 
 
-                <div className="row mt-0 mt-lg-5 mt-xl-5 mt-md-5">
-                  <div className="col-12 mt-0 mt-lg-5 mt-xl-5 mt-md-5">
-                    <div className="mt-0 mt-lg-5 mt-xl-5 mt-md-5 row d-flex justify-content-between">
-                      <div className=" col-md-6 col-lg-6 col-xl-6 col-12 mt-0 mt-lg-5 mt-xl-5 mt-md-5 ">
-                        <div className={currentPageIndex == 1 ? "w3-animate-top time_2s d-flex mt-5" : "d-flex mt-5"} >
+                <div className="row ">
+                  <div className="col-12 mt-0  mt-md-5">
+                    <div className="px-5 row d-flex justify-content-between">
+                      <div className=" col-md-12 col-lg-6 col-xl-6 col-12 mt-0 mt-lg-5 mt-xl-5 mt-md-5 ">
+                        <div className={currentPageIndex == 1 ? " d-flex mt-5" : "d-flex mt-5"} >
                           <span className="dot mx-5"></span>
-                          <p className={currentPageIndex == 1 ? "innovative_slide2_para_text time_2s col-6 " : ""}>X young community leaders <br /> came together on a changemaking <br /> journey</p>
+                          <p className={currentPageIndex == 1 ? "innovative_slide2_para_text time_2s col-6 " : ""}>28 young community leaders <br /> came together on a changemaking <br /> journey</p>
                         </div>
                       </div>
-                      <div className="col-md-6 col-lg-6 col-xl-6 col-12 mt-0 mt-lg-5 mt-xl-5 mt-md-5 ">
+                      <div className="pr-5 col-md-6 col-lg-6 col-xl-6 col-12 mt-0 mt-lg-5 mt-xl-5 mt-md-5 ">
                         <div className={currentPageIndex == 1 ? "w3-animate-top time_3s d-flex time_4s mt-5" : "d-flex mt-5"}>
                           <span className="dot mx-5"></span>
                           <p className={currentPageIndex == 1 ? "innovative_slide2_para_text time_4s col-6 w3-animate-top" : ""}>Women alumni launched Simmer,<br /> a community for all the strong<br /> women speaking their truth</p>
@@ -134,14 +134,14 @@ export const Innovatiing = () => {
                     </div>
 
 
-                    <div className="mt-0 mt-lg-5 mt-xl-5 mt-md-5 row d-flex justify-content-between">
-                      <div className="col-md-6 col-lg-6 col-xl-6 col-12 mt-0 mt-lg-5 mt-xl-5 mt-md-5 ">
+                    <div className="px-5 row d-flex justify-content-between">
+                      <div className=" col-md-6 col-lg-6 col-xl-6 col-12  ">
                         <div className={currentPageIndex == 1 ? "w3-animate-top time_3s d-flex time_6s mt-5" : "d-flex mt-5"}>
                           <span className="dot mx-5"></span>
                           <p className={currentPageIndex == 1 ? "innovative_slide2_para_text  col-6   w3-animate-top" : ""}>5 alumni in UP got elected as <br /> Alumni Chapter Heads to lead <br />volunteerism efforts in their cities</p>
                         </div>
                       </div>
-                      <div className="col-md-6 col-lg-6 col-xl-6 col-12 mt-0 mt-lg-5 mt-xl-5 mt-md-5 ">
+                      <div className="col-md-6 col-lg-6 col-xl-6 col-12  ">
                         <div className={currentPageIndex == 1 ? "w3-animate-top time_3s d-flex time_6s mt-5" : "d-flex mt-5"}>
                           <span className="dot mx-5"></span>
                           <p className={currentPageIndex == 1 ? "innovative_slide2_para_text  col-6 w3-animate-top" : ""}>6000 alumni shared the<br /> pandemic’s effect on their career<br /> and life</p>
