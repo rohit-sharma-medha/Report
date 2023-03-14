@@ -190,9 +190,7 @@ to {
     opacity: 1
 }
 }
-.Seond_slide > .second_slide_text{
 
-}
 
 
 
@@ -219,6 +217,7 @@ to {
   width: 25rem;
   height: 20rem;
   background-color: #FFF;
+  opacity: 0;
   /* background: linear-gradient(to top right, #3BE8B0, transparent);
   border-radius: 0 0 50% 0; */
 }
