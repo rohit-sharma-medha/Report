@@ -115,8 +115,8 @@ body {
   /* background: url('./Assets/Images/FIrstSlide/FirstSlide_image.png'); */
   text-align: center;
   background-position: center;
-  background-position-x: 100% ;
-  background-size: 100%;
+  /* background-position-x: 100% ; */
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-image:linear-gradient(to bottom, transparent, rgba(41, 38, 38, 0.73)),url('./Assets/Images/FIrstSlide/FirstSlide_image.png');
 }
@@ -944,6 +944,7 @@ to {
   background: url("./Assets/Images/HallBol_girl.png");
   object-fit: cover;
   background-repeat: no-repeat;
+  background-position:center ;
   background-size: 100% 100%;
   position: relative;
   width: 100%;
@@ -1004,11 +1005,11 @@ to {
   display: inline-block;
   position: absolute;
   color: rgb(29, 28, 28);
-  width: 25rem;
+  width: 23rem;
   z-index: 1;
   top: 15% !important;
-  left: 30%;
-  font-size: 1.5rem;
+  left: 42%;
+  font-size: 1.3rem;
   font-family: 'Latolight';
   font-style: normal;
   font-weight: 600 !important;
@@ -1033,11 +1034,11 @@ to {
   display: inline-block;
   position: absolute;
   color: #000;
-  width: 25rem;
+  width: 23rem;
   z-index: 10;
-  top: 15% !important;
-  right: 37.5%;
-  font-size: 1.5rem;
+  top: 20% !important;
+  right: 12.5%;
+  font-size: 1.2rem;
   /* letter-spacing: 0.02in; */
 }
 
@@ -1563,4 +1564,19 @@ to {
 }
 .eYcaH{
   display: none !important;
+}
+
+
+.width_assign{
+  color: #000;
+  width: 25rem;
+  position: absolute;
+  top: 10rem !important;
+  left: 10%;
+  /* z-index: 10; */
+  /* background-image: url("./Assets/Images/Innvate_slide_hallabol_girl/Chat\ Bubble.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% ; */
 }
