@@ -208,12 +208,12 @@ const Vertical_slider = () => {
 
            {isVisible? 
                         <>
-                        <div className="text-center vert_cards_text animate__animated" id="first_card_first_text">
+                        <div className="text-center vert_cards_text animate__animated mt-5" id="first_card_first_text">
                             IN 2021, WE SET AN AUDACIOUS GOAL OF HELPING <span className='yellow-text'>1 MILLION <br /> YOUTH</span> TRANSFORM THEIR LIVES IN THE NEXT 5 YEARS
                             </div>
 
                         
-                          <div className='d-flex align-item-center justify-content-center' id="second_card_parent">
+                          <div className='d-flex align-item-center justify-content-center mt-5' id="second_card_parent">
                             <p className={"text-center vert_cards_text vert_cards_text_lato animate__animated"} id="second_card_first_text">
                               
                             </p>
@@ -227,13 +227,11 @@ const Vertical_slider = () => {
                         
                            <div className='my-5' id="fourth_card_first_text">
                             <div id="fourth_card_head">
-                            {/* <p className="vert_cards_text text-center">How will we <span class='yellow-text'>40X our impact</span>  since 2011?</p> */}
+        
                             </div>
                              
                             <div className='d-flex justify-content-around d-flex flex-column flex-md-column  flex-lg-row ' id="vertical_slider_circle_container">
-                            {/* <div className="circle mx-5" id="fourth_card_first_circle" style={{opacity:0}}>By driving greater adoption of ‘the Medha way’ at scale</div>
-                                <div className={"circle mx-5 my-2"} id="fourth_card_second_circle" style={{opacity:0}}>Remaining quality-driven in our direct student engagement</div>
-                                <div className={"circle mx-5"} id="fourth_card_third_circle" style={{opacity:0}}>And committing to data-driven decision-making at work</div> */}
+                         
                             </div>
                         </div>
                         
