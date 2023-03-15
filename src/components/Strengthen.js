@@ -38,7 +38,7 @@ export const Strengthen = () => {
           </div>
           <div className="item">
             <Slide3 empclass="emp_slide_1" headClass="head_slide_1" index={currentPageIndex} className="cursor_slide" subject = "In the development sector, your wins often feel far and few compared to failures. And this may compel you to remember only the good things to survive. However, good perceptions based on small samples do not represent everyone you work with. So while you remember the good, it’s worthwhile to be conscious and curious about what data says. Data shows you the cracks, but it also tells you what is working – and how you can replicate the best practices.”" head="“Read the stories that data tells." emp="-  Swati, Medha employee" />
-          </div>
+          </div> 
           <div className="item" >
             <Slide4 index={currentPageIndex}/>
           </div>

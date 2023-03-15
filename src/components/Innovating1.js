@@ -33,26 +33,30 @@ export const Innovating1 = () => {
     setCurrentPageIndex(pageIndex);
   };
   useEffect(() => {
-    console.log("classAdd",classAdd);
+    console.log("classAdd", classAdd);
   }, [currentPageIndex])
-  
+
 
   return (
     <>
       <div id="innovate_1" className="innavate_1">
         <Carousel className={classAdd} divsToShow={1} onChange={handleOnChange} >
-        <div className="Inovate_slide Inovate_slide_1  d-flex flex-column align-item-start">
+          <div className="Inovate_slide Inovate_slide_1  d-flex flex-column align-item-start">
             <div className="col-12">
               <div className="row d-flex align-item-center justify-content-center">
                 <div className="col-9">
-                  <p className="INNOVATE_SLIDE1_heading_text" style={{color:"#000"}}>
+                  <p className="INNOVATE_SLIDE1_heading_text" style={{ color: "#000" }}>
                     AND INNOVATING IN OUR DIRECT PROGRAMS AND <br /> ACTIVITIES WITH STUDENTS TO REMAIN QUALITY-DRIVEN
                   </p>
                 </div>
-                <div className="col-10 mt-5" >
+                <div className="col-10 mt-5 d-flex flex-column" >
                   <p className="INNOVATE_SLIDE1_para_text">
                     There’s no point getting aggressive about scale if it adversely impacts the quality <br /> of your direct student engagement. That’s why we’re always keeping students <br />and their changing aspirations first.
 
+
+
+                  </p>
+                  <p className='mt-5'>
                     Last year:
                   </p>
                 </div>

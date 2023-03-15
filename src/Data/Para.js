@@ -1,11 +1,12 @@
-import React, { useState,useEffect, useRef } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import useTypewriter from "react-typewriter-hook";
-import { random } from "lodash";
+// import { random } from "lodash";
+import Typewriter from "typewriter-effect";
 // import TypeWriterEffect from 'react-typewriter-effect';
 
 export const Para = (props) => {
   const [magicName, setMagicName] = useState(props.subject);
-  const intervalRef = useRef({});
+  // const intervalRef = useRef({});
   const name = useTypewriter(magicName, { typeSpeed: 50, delayMs: 1000, eraseOnComplete: false });
   useEffect(
     () => {
@@ -17,15 +18,23 @@ export const Para = (props) => {
       // return function clear() {
       //   clearInterval(intervalRef.current);
       // };
-      console.log(props.index);
+      console.log("para props",props);
     },
     [magicName]
   );
   return (
-    <div  className="">
-   
-      <p className={props.index}>{name}</p>
-      <p className='student_name'></p>
+    <div className={props.index}>
+
+
+
+      <Typewriter
+
+        onInit={(typewriter) => {
+          typewriter.typeString(magicName)
+            .start();
+        }}
+      />
+      
     </div>
   );
 }
