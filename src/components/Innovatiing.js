@@ -158,8 +158,9 @@ export const Innovatiing = () => {
 
           <div className={currentPageIndex == 2 ? "innovative_slide3 " : ""}>
             <div className={currentPageIndex === 2 ? "typed-out" : ""}>
-              <Para index={currentPageIndex == 2 ? "cursor" : ""} subject="The Chapter Head election was a great learning space where I experimented with all my skills — communicating to get votes, using my problem-solving and critical thinking abilities to make a phenomenal campaign, and leading a successful chapter in Gorakhpur after winning the election.I have a keen interest in community mobilization. I want to focus on my Chapter head position, do well for my community, and finish my graduation well.”" />
-            </div>
+             {currentPageIndex ==2 ?
+             <Para index={currentPageIndex == 2 ? "cursor" : "d-none"} subject="The Chapter Head election was a great learning space where I experimented with all my skills — communicating to get votes, using my problem-solving and critical thinking abilities to make a phenomenal campaign, and leading a successful chapter in Gorakhpur after winning the election.<br/> <br/>  <br/>I have a keen interest in community mobilization. I want to focus on my Chapter head position, do well for my community, and finish my graduation well.” <br/>  &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp; &nbsp;  &nbsp; <span style=color:#282828;>-  Manish, student and Medhavi</span>" />
+             :""} </div>
           </div>
           <div>
             <div className='d-flex  '>
@@ -186,7 +187,7 @@ export const Innovatiing = () => {
                       <div className="col-md-12 col-lg-6 col-xl-6 col-12 mt-0 mt-lg-5 mt-xl-5 mt-md-5">
                         <div className={currentPageIndex == 3 ? "animate__animated animate__fadeInUp time4 d-flex  " : "d-none mt-5"}>
                           <span className="dot mx-5"></span>
-                          <p className={currentPageIndex == 3 ? "innovative_slide2_para_text  col-6 w3-animate-top " : ""}>Swarambh, which helps young people start freelancing careers, moved from communities to </p>
+                          <p className={currentPageIndex == 3 ? "innovative_slide2_para_text  col-6  " : ""}>Swarambh, which helps young people start freelancing careers, moved from communities to </p>
                         </div>
                       </div>
                     </div>
@@ -212,30 +213,32 @@ export const Innovatiing = () => {
             </div>
           </div>
           <div className={currentPageIndex == 4 ? "innovative_slide3 " : ""}>
-            <div className={currentPageIndex === 4 ? "typed-out" : ""}>
-              <Para className="cursor1" index={currentPageIndex === 4 ? "cursor1" : ""} subject="I am a first-year MA Home Science student. Since I was 16, I knew my calling was photography. My father is a wedding photographer, and I always saw him lugging the camera around daily for work. He sometimes clicked our photos, too: precious moments captured as memories for a lifetime. I wanted to do something as remarkable as him.
- His questions were genuine when I told him I was passionate about photography as a career. They arose from his struggles, society's point of view, my safety, and the reality of my ambition." />
-            </div>
+            <div className={currentPageIndex === 4 ? "type" : ""}>
+              {
+                currentPageIndex == 4?
+                <Para className="cursor1" index={currentPageIndex === 4 ? "cursor1" : "d-none"} subject={"When I got introduced to freelancing, I was thrilled to know I could continue following my passion on the side. I built my technical and marketing skills, and got a clearer sense of my future.<br/> <br/><br/> Today, I often assist my father (a wedding photographer) at wedding shoots. When people question my choice, he shows confidence in my skills and does not let it discourage us.” <br/> <br/> <br/> <br/>  &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp; &nbsp;  &nbsp; <span style=color:#282828;>-  Kajal, student and Swarambh alumnus</span>" } />
+            :""
+              }
+              </div>
           </div>
-          <div>
+          {/* <div>
             <div className='d-flex  justify-content-center align-item-center '>
               <p className="h1">Waiting for the content </p>
             </div>
-          </div>
+          </div> */}
 
 
 
 
-          <div className={currentPageIndex == 6 ? "innovative_slide3 " : ""}>
+          {/* <div className={currentPageIndex == 6 ? "innovative_slide3 " : ""}>
             <div className={currentPageIndex === 6 ? "typed-out" : ""}>
 
               <Para className="cursor2" index={currentPageIndex === 6 ? "cursor2" : ""} subject="Having spent just 6 months at Medha, the conclave was a learning experience for me. I met several people from different positions, understood our vision to scale with quality, and felt a wave of new energy and thinking. Sessions on habit-building and mindfulness also helped me pause and improve my sense of well-being. 
 
 On top of all that, getting the 'Students' Choice' award was a memorable moment. It shot up my enthusiasm and dedication to work!”" />
             </div>
-            {/* <CarrrouselArraows className="arrowbuttons" handlenext={handleNextClick} handleprev={handlePrevClick} /> */}
-
-          </div>
+           
+          </div> */}
 
 
 
