@@ -6,7 +6,7 @@ import ReactFullpage from '@fullpage/react-fullpage';
 import { FirstComponent } from './components/FirstComponent';
 import { Second } from './components/Second';
 import { Thirslide } from './components/thirdSlide/Thirdslide';
-import Vertical_slider from './components/Vertical_slider';
+import Vertical_slider from './components/vertical_slider/Vertical_slider';
 import { Verticla2 } from './components/Verticla2';
 import { Innovatiing } from './components/Innovatiing';
 import { Strengthen } from './components/Strengthen';
