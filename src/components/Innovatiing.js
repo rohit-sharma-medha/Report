@@ -107,11 +107,11 @@ export const Innovatiing = () => {
             <div className='d-flex  '>
               <div className='col-12 '>
                 <div className='row mt-5 our_allum  d-flex flex-start'>
-                  <div className={currentPageIndex == 1 ? "col-md-5 col-lg-5 col-xl-5 col-12 " : ""} >
-                    <p className={currentPageIndex == 1 ? " uppercontent-head w3-animate-top time_0s" : ""}>Our alumni community <br/> became independent!</p>
+                  <div className={currentPageIndex == 1 ? "col-md-5 col-lg-5 col-xl-5 col-12 " : "d-none"} >
+                    <p className={currentPageIndex == 1 ? " uppercontent-head  animate__animated animate__fadeInUp time1" : "d-none"}>Our alumni community <br/> became independent!</p>
                   </div>
                   <div className='col-md-6 col-lg-6 col-xl-6 col-12  ml-0'>
-                    <p className={currentPageIndex == 1 ? "uppercontent-text w3-animate-top " : ""}>Registered as the Medhavi Association, they represent <br/> the spirit of young people pursuing varied interests and charting offbeat career paths with passion.</p>
+                    <p className={currentPageIndex == 1 ? "uppercontent-text animate__animated animate__fadeInUp time2" : "d-none"}>Registered as the Medhavi Association, they represent <br/> the spirit of young people pursuing varied interests and charting offbeat career paths with passion.</p>
                   </div>
                 </div>
 
@@ -120,15 +120,15 @@ export const Innovatiing = () => {
                   <div className="col-12 mt-0  mt-md-5">
                     <div className="px-5 row d-flex justify-content-between">
                       <div className=" col-md-12 col-lg-6 col-xl-6 col-12 mt-0 mt-lg-5 mt-xl-5 mt-md-5 ">
-                        <div className={currentPageIndex == 1 ? " d-flex mt-5" : "d-flex mt-5"} >
+                        <div className={currentPageIndex == 1 ? " d-flex mt-5 animate__animated animate__fadeInUp time3" : "d-flex mt-5 d-none"} >
                           <span className="dot mx-5"></span>
-                          <p className={currentPageIndex == 1 ? "innovative_slide2_para_text time_2s col-6 " : ""}>28 young community leaders <br /> came together on a changemaking <br /> journey</p>
+                          <p className={currentPageIndex == 1 ? "innovative_slide2_para_text  col-6 " : "d-none"}>28 young community leaders <br /> came together on a changemaking <br /> journey</p>
                         </div>
                       </div>
                       <div className="pr-5 col-md-6 col-lg-6 col-xl-6 col-12 mt-0 mt-lg-5 mt-xl-5 mt-md-5 ">
-                        <div className={currentPageIndex == 1 ? "w3-animate-top time_3s d-flex time_4s mt-5" : "d-flex mt-5"}>
+                        <div className={currentPageIndex == 1 ? "animate__animated animate__fadeInUp time4 d-flex  mt-5" : "d-flex mt-5 d-none"}>
                           <span className="dot mx-5"></span>
-                          <p className={currentPageIndex == 1 ? "innovative_slide2_para_text time_4s col-6 w3-animate-top" : ""}>Women alumni launched Simmer,<br /> a community for all the strong<br /> women speaking their truth</p>
+                          <p className={currentPageIndex == 1 ? "innovative_slide2_para_text time_4s col-6 w3-animate-top" : "d-none"}>Women alumni launched Simmer,<br /> a community for all the strong<br /> women speaking their truth</p>
                         </div>
                       </div>
                     </div>
@@ -136,15 +136,15 @@ export const Innovatiing = () => {
 
                     <div className="px-5 row d-flex justify-content-between">
                       <div className=" col-md-6 col-lg-6 col-xl-6 col-12  ">
-                        <div className={currentPageIndex == 1 ? "w3-animate-top time_3s d-flex time_6s mt-5" : "d-flex mt-5"}>
+                        <div className={currentPageIndex == 1 ? "animate__animated animate__fadeInUp  time5 d-flex  mt-5  " : "d-flex mt-5 d-none"}>
                           <span className="dot mx-5"></span>
-                          <p className={currentPageIndex == 1 ? "innovative_slide2_para_text  col-6   w3-animate-top" : ""}>5 alumni in UP got elected as <br /> Alumni Chapter Heads to lead <br />volunteerism efforts in their cities</p>
+                          <p className={currentPageIndex == 1 ? "innovative_slide2_para_text  col-6  " : "d-none"}>5 alumni in UP got elected as <br /> Alumni Chapter Heads to lead <br />volunteerism efforts in their cities</p>
                         </div>
                       </div>
                       <div className="col-md-6 col-lg-6 col-xl-6 col-12  ">
-                        <div className={currentPageIndex == 1 ? "w3-animate-top time_3s d-flex time_6s mt-5" : "d-flex mt-5"}>
+                        <div className={currentPageIndex == 1 ? "animate__animated animate__fadeInUp time6 d-flex  mt-5" : "d-flex mt-5 d-none"}>
                           <span className="dot mx-5"></span>
-                          <p className={currentPageIndex == 1 ? "innovative_slide2_para_text  col-6 w3-animate-top" : ""}>6000 alumni shared the<br /> pandemic’s effect on their career<br /> and life</p>
+                          <p className={currentPageIndex == 1 ? "innovative_slide2_para_text  col-6 w3-animate-top" : "d-none"}>6000 alumni shared the<br /> pandemic’s effect on their career<br /> and life</p>
                         </div>
                       </div>
                     </div>
@@ -164,29 +164,29 @@ export const Innovatiing = () => {
           <div>
             <div className='d-flex  '>
               <div className='col-12 '>
-                <div className='row mt-5  d-flex flex-start'>
+                <div className='row mt-5 ml-5  d-flex flex-start'>
                   <div className={currentPageIndex == 3 ? "col-md-12 col-lg-5 col-xl-5 col-12" : ""} >
-                    <p className={currentPageIndex == 3 ? " uppercontent-head animate__animated animate__fadeInLeft time_0s" : ""}>Our programs answered students’ changing needs</p>
+                    <p className={currentPageIndex == 3 ? " uppercontent-head animate__animated animate__fadeInUp time_0s" : "d-none"}>Our programs answered students’ changing needs</p>
                   </div>
                   <div className='col-md-12 col-lg-6 col-xl-6 col-12 '>
-                    <p className={currentPageIndex == 3 ? "uppercontent-text animate__animated animate__fadeInLeft time_1s" : ""}>Young people are looking for the flexibility to improve their skills from where they are, while experimenting with freelancing and entrepreneurship as supporting or alternate career routes. Our programs followed suit, as:</p>
+                    <p className={currentPageIndex == 3 ? "uppercontent-text animate__animated animate__fadeInUp time_1s" : "d-none"}>Young people are looking for the flexibility to improve their skills from where they are, while experimenting with freelancing and entrepreneurship as supporting or alternate career routes. Our programs followed suit, as:</p>
                   </div>
                 </div>
 
 
-                <div className="row mt-0 mt-lg-5 mt-xl-5 mt-md-5">
-                  <div className="col-12 mt-0 mt-lg-5 mt-xl-5 mt-md-5">
+                <div className="row ">
+                  <div className="col-12 ">
                     <div className="mt-5 row d-flex justify-content-between">
                       <div className="col-md-12 col-lg-6 col-xl-6 col-12 mt-0 mt-lg-5 mt-xl-5 mt-md-5 ">
-                        <div className={currentPageIndex == 3 ? "w3-animate-top time_2s d-flex " : "d-flex mt-5"} >
+                        <div className={currentPageIndex == 3 ? "animate__animated animate__fadeInUp time3 d-flex time3" : "d-none mt-5"} >
                           <span className="dot mx-5"></span>
-                          <p className={currentPageIndex == 3 ? "innovative_slide2_para_text time_2s col-6 " : ""}>CAB, the career advancement bootcamp, adapted to blended delivery</p>
+                          <p className={currentPageIndex == 3 ? "innovative_slide2_para_text time_2s col-6 " : "d-none"}>CAB, the career advancement bootcamp, adapted to blended delivery</p>
                         </div>
                       </div>
-                      <div className="col-md-12 col-lg-6 col-xl-6 col-12 ">
-                        <div className={currentPageIndex == 3 ? "w3-animate-top time_3s d-flex time_4s " : "d-flex mt-5"}>
+                      <div className="col-md-12 col-lg-6 col-xl-6 col-12 mt-0 mt-lg-5 mt-xl-5 mt-md-5">
+                        <div className={currentPageIndex == 3 ? "animate__animated animate__fadeInUp time4 d-flex  " : "d-none mt-5"}>
                           <span className="dot mx-5"></span>
-                          <p className={currentPageIndex == 3 ? "innovative_slide2_para_text time_4s col-6 w3-animate-top " : ""}>Swarambh, which helps young people start freelancing careers, moved from communities to </p>
+                          <p className={currentPageIndex == 3 ? "innovative_slide2_para_text  col-6 w3-animate-top " : ""}>Swarambh, which helps young people start freelancing careers, moved from communities to </p>
                         </div>
                       </div>
                     </div>
@@ -194,13 +194,13 @@ export const Innovatiing = () => {
 
                     <div className="mt-5 row d-flex justify-content-between">
                       <div className="col-md-12 col-lg-6 col-xl-6 col-12 ">
-                        <div className={currentPageIndex == 3 ? "w3-animate-top time_3s d-flex time_6s " : "d-flex mt-5"}>
+                        <div className={currentPageIndex == 3 ? "animate__animated animate__fadeInUp time5 d-flex  " : "d-none mt-5"}>
                           <span className="dot mx-5"></span>
-                          <p className={currentPageIndex == 3 ? "innovative_slide2_para_text  col-6   w3-animate-top" : ""}>o Svapoorna, a life skills-building program for adolescents, scaled to new schools</p>
+                          <p className={currentPageIndex == 3 ? "innovative_slide2_para_text  col-6  " : ""}>o Svapoorna, a life skills-building program for adolescents, scaled to new schools</p>
                         </div>
                       </div>
                       <div className="col-md-12 col-lg-6 col-xl-6 col-12  ">
-                        <div className={currentPageIndex == 3 ? "w3-animate-top time_3s d-flex time_6s mt-5" : "d-flex mt-5"}>
+                        <div className={currentPageIndex == 3 ? "animate__animated animate__fadeInUp time6 d-flex  " : "d-none mt-5"}>
                           <span className="dot mx-5"></span>
                           <p className={currentPageIndex == 3 ? "innovative_slide2_para_text  col-6 w3-animate-top" : ""}>Youthscape, an entrepreneurial competition, led to a program on designing business model</p>
                         </div>
