@@ -69,7 +69,7 @@ const FirstCircleUi = function FirstCircleUi() {
         },11000)
 
         setTimeout(()=>{
-            document.getElementById('svg').style.animation = "fadeInFromBottom 2s forwards"
+            document.getElementById('svg').style.animation = "fadeInFromBottom 5s forwards"
         },13000)
 
 
