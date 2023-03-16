@@ -1,12 +1,16 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react';
+import './Animations.css'
 
 
 
 const Vertical_slider = () => {
   
     const [isVisible, setIsVisible] = useState(false);
+   
     
     const ref = useRef(null);
+  
+
   
     useEffect(() => {
         const observer = new IntersectionObserver(
@@ -44,25 +48,26 @@ const Vertical_slider = () => {
 
 
     const firstScreen = () =>{
+
       
       document.getElementById("first_card_first_text").classList.add("animate__fadeInUp");
 
+
       setTimeout(async()=>{
           try {
-             await document.getElementById("first_card_first_text").classList.remove("animate__fadeInUp");
+             await document.getElementById("first_card_first_text ").classList.add("mtpercent").remove("animate__fadeInUp");
 
               await document.getElementById("first_card_first_text").classList.add("animate__fadeOutUp");
-
-              
-              
           } catch (error) {
               console.log("error",error);
           }
-      },4000)
+      },2000)
     }
 
 
     const secondScreen = () =>{
+     
+
       setTimeout(async()=>{
         try {
        
@@ -70,12 +75,13 @@ const Vertical_slider = () => {
 
             document.getElementById("second_card_first_text").textContent = "1 million is not a random number";
 
-            document.getElementById("second_card_first_text").classList.add("animate__fadeInUp");        
+            document.getElementById("second_card_first_text").classList.add("animate__fadeInUp");   
+            
             
         } catch (error) {
-            console.log("error",error);
+            
         }
-    },5000)
+    },3000)
 
     
     setTimeout(async()=>{
@@ -89,7 +95,7 @@ const Vertical_slider = () => {
         console.log("error",error);
       }
 
-  },9000)
+  },5000)
 
     }
 
@@ -108,12 +114,14 @@ const Vertical_slider = () => {
 
           document.getElementById("third_card_first_text").classList.add("animate__fadeInUp");
 
+       
+
         } catch (error) {
 
           console.log("error",error);
           
         }
-      },11000)
+      },6000)
 
       setTimeout(async()=>{
 
@@ -121,69 +129,74 @@ const Vertical_slider = () => {
 
         await document.getElementById("third_card_first_text").classList.add("animate__fadeOutUp");
 
-    },14000)
+        
+
+    },8000)
     }
 
 
     const FourthScreen = () =>{
 
       // fadeInFromBottom
-      
+
       setTimeout(async()=>{      
-      document.getElementById("third_card_first_text").style.display = "none";
-      document.getElementById("fourth_card_head").innerHTML = `<p class="vert_cards_text text-center animate__animated animate__fadeInUp">How will we <span class='yellow-text'>40X our impact</span>  since 2011?</p>`
-
-            },16000)
-
-            const firstCircle = document.createElement("div");
-            firstCircle.classList.add('circle');
-            firstCircle.classList.add('mx-5')
-            firstCircle.classList.add('animate__animated')
-            firstCircle.id = "fourth_card_first_circle"
-            firstCircle.innerHTML="By driving greater adoption of ‘the Medha way’ at scale";
-            firstCircle.style.opacity = 0
-            document.getElementById("vertical_slider_circle_container").appendChild(firstCircle)
-
-
-            const secondCircle = document.createElement("div");
-            secondCircle.classList.add('circle');
-            secondCircle.classList.add('mx-5')
-            secondCircle.classList.add('animate__animated')
-            secondCircle.id = "fourth_card_second_circle"
-            secondCircle.innerHTML="Remaining quality-driven in our direct student engagement";
-            secondCircle.style.opacity = 0
-            document.getElementById("vertical_slider_circle_container").appendChild(secondCircle)
-
-
-            const thirdCircle = document.createElement("div");
-        thirdCircle.classList.add('circle');
-        thirdCircle.classList.add('mx-5')
-        thirdCircle.classList.add('animate__animated')
-        thirdCircle.id = "fourth_card_third_circle"
-        thirdCircle.style.opacity = 0
-        thirdCircle.innerHTML="And committing to data-driven decision-making at work";
-        document.getElementById("vertical_slider_circle_container").appendChild(thirdCircle)
-
-
-      setTimeout(()=>{
-
-        document.getElementById("fourth_card_first_circle").classList.add('animate__fadeInUp')
-        
-
-        
-      },17000)
-
-      setTimeout(()=>{
-        document.getElementById("fourth_card_second_circle").classList.add('animate__fadeInUp')
-
-        
-      },19000)
-      setTimeout(()=>{
-
-        document.getElementById("fourth_card_third_circle").classList.add('animate__fadeInUp')
-
-        
-      },21000)
+        document.getElementById("third_card_first_text").style.display = "none";
+       
+        document.getElementById("fourth_card_head").innerHTML = `<p class="vert_cards_text text-center animate__animated animate__fadeInUp ">How will we <span class='yellow-text'>40X our impact</span>  since 2011?</p>`
+  
+              },9000)
+  
+              const firstCircle = document.createElement("div");
+              firstCircle.classList.add('circle');
+              firstCircle.classList.add('mx-5')
+              firstCircle.classList.add('animate__animated')
+              firstCircle.id = "fourth_card_first_circle"
+              firstCircle.innerHTML="By driving greater adoption of ‘the Medha way’ at scale";
+              firstCircle.style.opacity = 0
+              document.getElementById("vertical_slider_circle_container").appendChild(firstCircle)
+  
+  
+              const secondCircle = document.createElement("div");
+              secondCircle.classList.add('circle');
+              secondCircle.classList.add('mx-5')
+              secondCircle.classList.add('animate__animated')
+              secondCircle.id = "fourth_card_second_circle"
+              secondCircle.innerHTML="Remaining quality-driven in our direct student engagement";
+              secondCircle.style.opacity = 0
+              document.getElementById("vertical_slider_circle_container").appendChild(secondCircle)
+  
+  
+              const thirdCircle = document.createElement("div");
+              thirdCircle.classList.add('circle');
+              thirdCircle.classList.add('mx-5')
+              thirdCircle.classList.add('animate__animated')
+              thirdCircle.id = "fourth_card_third_circle"
+              thirdCircle.style.opacity = 0
+              thirdCircle.innerHTML="And committing to data-driven decision-making at work";
+              document.getElementById("vertical_slider_circle_container").appendChild(thirdCircle)
+  
+  
+        setTimeout(()=>{
+  
+          document.getElementById("fourth_card_first_circle").classList.add('animate__fadeInUp')
+          
+  
+          
+        },10000)
+  
+        setTimeout(()=>{
+          document.getElementById("fourth_card_second_circle").classList.add('animate__fadeInUp')
+  
+          
+        },11000)
+        setTimeout(()=>{
+  
+          document.getElementById("fourth_card_third_circle").classList.add('animate__fadeInUp')
+  
+          
+        },12000)
+      
+     
     }
 
     const showAnimation = ()=>{
@@ -200,7 +213,11 @@ const Vertical_slider = () => {
     }
 
 
-  
+    useEffect(()=>{
+
+    },[])
+
+
     return (
         <div ref={ref}>
 
@@ -208,32 +225,32 @@ const Vertical_slider = () => {
 
            {isVisible? 
                         <>
-                        <div className="text-center vert_cards_text animate__animated mt-5" id="first_card_first_text">
+                        <div className="text-center vert_cards_text animate__animated mtpercent" id="first_card_first_text">
                             IN 2021, WE SET AN AUDACIOUS GOAL OF HELPING <span className='yellow-text'>1 MILLION <br /> YOUTH</span> TRANSFORM THEIR LIVES IN THE NEXT 5 YEARS
                             </div>
 
                         
-                          <div className='d-flex align-item-center justify-content-center mt-5' id="second_card_parent">
+                          <div className='d-flex align-item-center justify-content-center' id="second_card_parent">
                             <p className={"text-center vert_cards_text vert_cards_text_lato animate__animated"} id="second_card_first_text">
-                              
+                            
                             </p>
                         </div>
                         
                         
-                          <div className={ "mt-5 text-center vert_cards_text vert_cards_text_lato vert_cards_text_3rd animate__animated"} id="third_card_first_text">
+                          <div className={ "text-center vert_cards_text vert_cards_text_lato vert_cards_text_3rd animate__animated"} id="third_card_first_text">
                         </div>
                         
 
                         
-                           <div className='my-5' id="fourth_card_first_text">
-                            <div id="fourth_card_head">
-        
-                            </div>
-                             
-                            <div className='d-flex justify-content-around d-flex flex-column flex-md-column  flex-lg-row ' id="vertical_slider_circle_container">
-                         
-                            </div>
-                        </div>
+                           <div className="last_slide_sec row justify-content-center">
+                              <div id="fourth_card_head" className="text-center">
+            
+                                </div>
+                                
+                                <div className='d-flex justify-content-around d-flex flex-column flex-md-column  flex-lg-row' id="vertical_slider_circle_container">
+                            
+                                </div>
+                              </div>
                         
                         
                         </>
