@@ -32,17 +32,17 @@
 }
 
 .second_grayed_bubble {
-    width: 360px;
-    background-color: #F2F2F2E5;
-    height: 360px;
-    border-radius: 50%;
-    font-size: 1.875rem;
-    line-height: 3.125rem;
-    font-weight:400;
-    font-family: Lato-Ragular;
-    padding-left: 2%;
-    padding-right: 2%;
-    opacity: 0;
+  width: 15rem;
+  background-color: #F2F2F2E5;
+  height: 15rem;
+  border-radius: 50%;
+  font-size: 1rem;
+  line-height: 2rem;
+  font-weight: 400;
+  font-family: Lato-Ragular;
+  padding-left: 2%;
+  padding-right: 2%;
+  opacity: 0;
     
 }
 
@@ -52,14 +52,14 @@
   height: 25rem;
   border-radius: 25rem 25rem 0 0;
   position: relative;
-  bottom: 19rem;
+  bottom: 14rem;
   opacity: 0;
 }
 
 
 .second_row{
   position: relative;
-  bottom: 8rem;
+  /* bottom: 2rem; */
 }
 
 .circle_container{
@@ -68,9 +68,9 @@
 
 .semi-circle-svg-img{
   position:absolute;
-  width: 1000rem;
+  width: 700rem;
   height: 50rem;
-  bottom: 20rem;
+  bottom: 10rem;
   z-index: 0;
   opacity: 0;
 }
