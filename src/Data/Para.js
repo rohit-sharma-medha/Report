@@ -4,6 +4,7 @@ import useTypewriter from "react-typewriter-hook";
 import Typewriter from "typewriter-effect";
 // import TypeWriterEffect from 'react-typewriter-effect';
 
+
 export const Para = (props) => {
   const [magicName, setMagicName] = useState(props.subject);
   // const intervalRef = useRef({});
@@ -31,7 +32,11 @@ export const Para = (props) => {
 
         onInit={(typewriter) => {
           typewriter.typeString(magicName)
-            .start();
+            .start()
+            ;
+        }}
+        options={{
+          delay: 15,
         }}
       />
       

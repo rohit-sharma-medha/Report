@@ -215,9 +215,9 @@ export const Innovatiing = () => {
           <div className={currentPageIndex == 4 ? "innovative_slide3 " : ""}>
             <div className={currentPageIndex === 4 ? "type" : ""}>
               {
-                currentPageIndex == 4?
-                <Para className="cursor1" index={currentPageIndex === 4 ? "cursor1" : "d-none"} subject={"When I got introduced to freelancing, I was thrilled to know I could continue following my passion on the side. I built my technical and marketing skills, and got a clearer sense of my future.<br/> <br/><br/> Today, I often assist my father (a wedding photographer) at wedding shoots. When people question my choice, he shows confidence in my skills and does not let it discourage us.” <br/> <br/> <br/> <br/>  &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp; &nbsp;  &nbsp; <span style=color:#282828;>-  Kajal, student and Swarambh alumnus</span>" } />
-            :""
+                currentPageIndex == 4 ?
+                <Para className="cursor1" index={currentPageIndex === 4 ? "cursor1" : "d-none"} subject={"When I got introduced to freelancing, I was thrilled to know I could continue following my passion on the side. I built my technical and marketing skills, and got a clearer sense of my future.<br/> <br/><br/> Today, I often assist my father (a wedding photographer) at wedding shoots. When people question my choice, he shows confidence in my skills and does not let it discourage us.” <br/> <br/>   &nbsp; &nbsp;&nbsp; <span style=color:#282828; font-size:1rem;>-  Kajal, student and Swarambh alumnus</span>" } />
+            : ""
               }
               </div>
           </div>
