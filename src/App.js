@@ -81,11 +81,11 @@ function App() {
               <div className={`section ${activeSection === 2 ? "active" : ""}`}>
                 <Verticla2 /> 
               </div>
-              <div className="section section3">
+              <div className="section ">
                 <Innovatiing />
               </div>
 
-              <div className="section section3">
+              <div className="section ">
                 <Strengthen />
               </div>
               

@@ -258,7 +258,7 @@ export const Verticla2 = () => {
 
                     </div> */}
 
-                    <div className='vertical2-slide d-flex'>6</div>
+                    {/* <div className='vertical2-slide d-flex'>6</div> */}
                 </Carousel>
             </div>
 
