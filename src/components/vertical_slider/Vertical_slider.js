@@ -41,10 +41,10 @@ const Vertical_slider = () => {
 
 
 
-    useEffect(()=>{
-        showAnimation()
+    // useEffect(()=>{
+    //     showAnimation()
 
-    },[isVisible])
+    // },[isVisible])
 
 
     const firstScreen = () =>{
@@ -213,47 +213,46 @@ const Vertical_slider = () => {
     }
 
 
-    useEffect(()=>{
-
-    },[])
-
-
     return (
         <div ref={ref}>
 
     
 
            {isVisible? 
-                        <>
-                        <div className="text-center vert_cards_text animate__animated mtpercent" id="first_card_first_text">
-                            IN 2021, WE SET AN AUDACIOUS GOAL OF HELPING <span className='yellow-text'>1 MILLION <br /> YOUTH</span> TRANSFORM THEIR LIVES IN THE NEXT 5 YEARS
-                            </div>
+                      <>
+                      
+                      
+                      </>
+                        // <>
+                        // <div className="text-center vert_cards_text animate__animated mtpercent" id="first_card_first_text">
+                        //     IN 2021, WE SET AN AUDACIOUS GOAL OF HELPING <span className='yellow-text'>1 MILLION <br /> YOUTH</span> TRANSFORM THEIR LIVES IN THE NEXT 5 YEARS
+                        //     </div>
 
                         
-                          <div className='d-flex align-item-center justify-content-center' id="second_card_parent">
-                            <p className={"text-center vert_cards_text vert_cards_text_lato animate__animated"} id="second_card_first_text">
+                        //   <div className='d-flex align-item-center justify-content-center' id="second_card_parent">
+                        //     <p className={"text-center vert_cards_text vert_cards_text_lato animate__animated"} id="second_card_first_text">
                             
-                            </p>
-                        </div>
+                        //     </p>
+                        // </div>
                         
                         
-                          <div className={ "text-center vert_cards_text vert_cards_text_lato vert_cards_text_3rd animate__animated"} id="third_card_first_text">
-                        </div>
+                        //   <div className={ "text-center vert_cards_text vert_cards_text_lato vert_cards_text_3rd animate__animated"} id="third_card_first_text">
+                        // </div>
                         
 
                         
-                           <div className="last_slide_sec row justify-content-center">
-                              <div id="fourth_card_head" className="text-center">
+                        //    <div className="last_slide_sec row justify-content-center">
+                        //       <div id="fourth_card_head" className="text-center">
             
-                                </div>
+                        //         </div>
                                 
-                                <div className='d-flex justify-content-around d-flex flex-column flex-md-column  flex-lg-row' id="vertical_slider_circle_container">
+                        //         <div className='d-flex justify-content-around d-flex flex-column flex-md-column  flex-lg-row' id="vertical_slider_circle_container">
                             
-                                </div>
-                              </div>
+                        //         </div>
+                        //       </div>
                         
                         
-                        </>
+                        // </>
                 :
                 <div>
                 </div>}
