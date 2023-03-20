@@ -96,9 +96,14 @@ const SecondCircleUi = function SecondCircleUi() {
 
      
             <div className='row circle_container'>
-                    <MySVG className="img-fluid semi-circle-svg-img" id="ellip_svg"/>
+                    
                     <div className='row'>
                             <div className='col-12' style={{zIndex:1, positon:'relative', top:'16%'}}>
+
+                                <div className="row justify-content-center">
+                                    <MySVG className="img-fluid semi-circle-svg-img" id="ellip_svg"/>
+
+                                </div>
                                 <div className='row justify-content-center mt-5'>
                                     <div className='col-6 row justify-content-center align-items-center text-center second_grayed_bubble' id='sBubble'>
                                         <div>
