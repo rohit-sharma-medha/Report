@@ -1,0 +1,24 @@
+.vertical_slider_card{
+
+    width: 80rem;
+    height: 40rem;
+    overflow-y: scroll;
+}
+
+
+.first_card_sec{
+    height: 40rem;
+
+}
+
+.second_card_sec{
+
+    height: 40rem;
+}
+
+/* .vertical_slider_card_body_sec{
+    overflow-y: scroll;
+    /* margin-right: -50px; Maximum width of scrollbar */
+  /* padding-right: 50px; Maximum width of scrollbar */
+
+

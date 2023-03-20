@@ -1,5 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
+import FirstCard from './FirstCard';
+import SecondCard from './SecondCard';
 import './Animations.css'
+import './verticalSlider.css'
 
 
 
@@ -214,18 +217,19 @@ const Vertical_slider = () => {
 
 
     return (
-        <div ref={ref}>
-
-    
-
+        <div ref={ref} className="card vertical_slider_card">
            {isVisible? 
-                      <>
-                      
-                      
-                      </>
+           <div className="card-body vertical_slider_card"> 
+               <FirstCard/>
+
+               <SecondCard/>
+
+
+           </div>
+                   
                         // <>
-                        // <div className="text-center vert_cards_text animate__animated mtpercent" id="first_card_first_text">
-                        //     IN 2021, WE SET AN AUDACIOUS GOAL OF HELPING <span className='yellow-text'>1 MILLION <br /> YOUTH</span> TRANSFORM THEIR LIVES IN THE NEXT 5 YEARS
+                        // <div className="text-center vert_cards_text animate__animated mtpercent" id="first_card_first_text">IN 2021, WE SET AN AUDACIOUS GOAL OF HELPING <span className='yellow-text'>1 MILLION <
+                        //     br /> YOUTH</span> TRANSFORM THEIR LIVES IN THE NEXT 5 YEARS
                         //     </div>
 
                         
