@@ -105,10 +105,13 @@ const FirstCircleUi = function FirstCircleUi() {
 
      
             <div className='row circle_container'>
-                    <MySVG className="img-fluid arrow-svg" id="svg"/>
                     <div className='row'>
                             <div className='col-12'>
-                                <div className='row justify-content-center mt-5'>
+
+                                <div className="row justify-content-center">
+                                    <MySVG className="img-fluid arrow-svg" id="svg"/>
+                                </div>
+                                <div className='row justify-content-center'>
                                     <div className='col-4 grayed_bubble text-center grayed_bubble' id='thirdBubble'>
                                         <div>
                                         Improving the physical learning facilities,
@@ -117,38 +120,45 @@ const FirstCircleUi = function FirstCircleUi() {
                                     </div>
                                 </div>
 
-                                <div className='row justify-content-center mb-5'>
-                                    <div className='row justify-content-between' style={{width:"68vw"}}>
-                                        <div className='col-4 grayed_bubble text-center' id='SecondBubble'>
+                                {/* <div className='row justify-content-center mb-5'>
+                                    
+                                    
+                                </div> */}
+
+                                <div className='row justify-content-around mb-4'>
+                                        <div className='col-auto grayed_bubble text-center' id='SecondBubble'>
                                             <div>
                                                     Introducing an industry-relevant curriculum,
 
                                             </div>
                                    
                                         </div>
-                                        <div className='col-4 grayed_bubble text-center' id='fourthBubble'>
+                                        <div className='col-auto grayed_bubble text-center' id='fourthBubble'>
                                         Helping industry and academia work closely
                                         </div>
 
                                     </div>
-                                    
-                                </div>
 
-                                <div>
-                                    <div className='row justify-content-between'>
-                                        <div className="col-4 grayed_bubble text-center" id="firstBubble">
+                                <div className='row justify-content-between'>
+                                        <div className="col-auto grayed_bubble text-center" id="firstBubble">
                                         Building experiential facilitation skill in teachers,
 
                                         </div>
                                         
-                                        <div className='col-4 orange_bubble text-center' id='sixthBubble'>
-                                        Potentially impact 70,000+ young people
-                                        </div>
-                                        <div className='col-4 grayed_bubble text-center' id='fifthBubble'>
+                                       
+                                        <div className='col-auto grayed_bubble text-center' id='fifthBubble'>
                                         Driving data-backed governance in the system
                                         </div>
                                     </div>
+
+                                <div className="row justify-content-center">
+                                <div className='col-4 orange_bubble text-center' id='sixthBubble'>
+                                        Potentially impact 70,000+ young people
+                                        </div>
+
+                                    
                                 </div>
+                                
                             
 
                             </div>
