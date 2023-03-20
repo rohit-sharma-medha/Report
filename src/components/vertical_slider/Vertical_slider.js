@@ -217,15 +217,23 @@ const Vertical_slider = () => {
 
 
     return (
+      <div className="d-flex justify-content-center">
         <div ref={ref} className="card vertical_slider_card">
            {isVisible? 
-           <div className="card-body vertical_slider_card"> 
-               <FirstCard/>
+                      <div className="card-body"> 
+                          <FirstCard/>
 
-               <SecondCard/>
+                          <SecondCard/>
 
 
-           </div>
+                      </div>
+                      :
+                      <div>
+                      </div>}
+          </div>
+
+      </div>
+        
                    
                         // <>
                         // <div className="text-center vert_cards_text animate__animated mtpercent" id="first_card_first_text">IN 2021, WE SET AN AUDACIOUS GOAL OF HELPING <span className='yellow-text'>1 MILLION <
@@ -257,11 +265,9 @@ const Vertical_slider = () => {
                         
                         
                         // </>
-                :
-                <div>
-                </div>}
+                
 
-        </div>
+       
     )
 }
 
