@@ -52,13 +52,13 @@
   height: 25rem;
   border-radius: 25rem 25rem 0 0;
   position: relative;
-  bottom: 14rem;
   opacity: 0;
 }
 
 
 .second_row{
   position: relative;
+  top: 15%;
   /* bottom: 2rem; */
 }
 
@@ -68,11 +68,11 @@
 
 .semi-circle-svg-img{
   position:absolute;
-  width: 700rem;
-  height: 50rem;
-  bottom: 10rem;
+  width: 70rem;
+  height: 70rem;
   z-index: 0;
   opacity: 0;
+  bottom: 0%;
 }
 
 .green_circle> :first-child>:nth-child(1),
