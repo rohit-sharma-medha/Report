@@ -55,7 +55,7 @@ export const Thirslide = () => {
 
 
     useEffect(()=>{
-        addAnimation()
+        // addAnimation()
 
     },[isVisible])
 
