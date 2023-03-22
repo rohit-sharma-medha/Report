@@ -23,9 +23,12 @@ export const Para = (props) => {
   return (
     <div className={props.index}>
 
+    {/* <p>
+      {magicName}
+    </p> */}
+    <div className='animate__animated animate__fadeIn time1' dangerouslySetInnerHTML={ { __html: magicName}} />
 
-
-      <Typewriter
+      {/* <Typewriter
 
         onInit={(typewriter) => {
           typewriter.typeString(magicName)
@@ -35,7 +38,7 @@ export const Para = (props) => {
         options={{
           delay: 15,
         }}
-      />
+      /> */}
       
     </div>
   );
