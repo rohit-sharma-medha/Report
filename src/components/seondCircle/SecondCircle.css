@@ -16,8 +16,8 @@
 
 .second_main_heading {
     color: #282828;
-    font-size: 3.125rem;
-    line-height: 4.375rem;
+    font-size: 2rem;
+    line-height: 2rem;
     font-weight: 700;
     font-family: Lato-Ragular;
 
@@ -25,19 +25,19 @@
 
 .second_headingPara {
     color: #000000;
-    font-size: 1.875rem;
-    line-height: 3.125rem;
+    font-size: 1.5rem; 
+    line-height: 1.8rem;
     font-weight: 400;
     font-family: Lato-Ragular;
 }
 
 .second_grayed_bubble {
-  width: 15rem;
+  width: 13rem;
   background-color: #F2F2F2E5;
-  height: 15rem;
+  height: 13rem;
   border-radius: 50%;
   font-size: 1rem;
-  line-height: 2rem;
+  line-height: 1.4rem;
   font-weight: 400;
   font-family: Lato-Ragular;
   padding-left: 2%;
@@ -48,19 +48,14 @@
 
 .green_circle{
   background-color: #31B89D;
-  width: 50rem;
-  height: 25rem;
+  width: 40rem;
+  height: 19rem;
   border-radius: 25rem 25rem 0 0;
   position: relative;
   opacity: 0;
 }
 
 
-.second_row{
-  position: relative;
-  top: 15%;
-  /* bottom: 2rem; */
-}
 
 .circle_container{
   position: relative;
@@ -68,11 +63,12 @@
 
 .semi-circle-svg-img{
   position:absolute;
-  width: 70rem;
-  height: 70rem;
+  /* width: 70rem;*/
+  height: 28rem; 
   z-index: 0;
   opacity: 0;
   bottom: 0%;
+  /* top: 10%; */
 }
 
 .green_circle> :first-child>:nth-child(1),
@@ -85,7 +81,7 @@
   font-family: Bebas-Neue;
 }
 
-  @keyframes fadeIn {
+  /* @keyframes fadeIn {
     from{
         opacity: 0;
     }
@@ -97,7 +93,7 @@
   @keyframes fadeInFromBottom{
     0% {opacity: 0; margin-top: 10px;}
     100%{opacity: 1; margin-top:-10px;}
-  }
+  } */
 
 
   

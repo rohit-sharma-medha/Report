@@ -1,4 +1,4 @@
-import React,{Fragment,useEffect,useState,useRef} from 'react';
+import React from 'react';
 import {ReactComponent as MySVG} from '../../Assets/Images/CircleGreen.svg';
 
 
@@ -7,95 +7,15 @@ import './FirstCircle.css';
 
 const FirstCircleUi = function FirstCircleUi() {
 
-    const [isVisible, setIsVisible] = useState(false);
-    const ref = useRef(null);
-  
-    useEffect(() => {
-      const observer = new IntersectionObserver(
-        ([entry]) => {
-          if (entry.isIntersecting) {
-            setIsVisible(true);
-            observer.unobserve(entry.target);
-          }
-        },
-        {
-          root: null,
-          rootMargin: '0px',
-          threshold: 1.0,
-        }
-      );
-  
-      if (ref.current) {
-        observer.observe(ref.current);
-      }
-  
-      return () => {
-        if (ref.current) {
-        
-          observer.unobserve(ref.current);
-        }
-      };
-    }, []);
-    
-
-    const addAnimation = ()=>{
-        const elementIdList = ['firstBubble','SecondBubble','thirdBubble','fourthBubble','fifthBubble','sixthBubble'];
-        if(isVisible){
-            
-        setTimeout(()=>{
-            document.getElementById(elementIdList[0]).style.animation = "fadeIn 2s forwards"
-
-        },1000)
-
-        setTimeout(()=>{
-            document.getElementById(elementIdList[1]).style.animation = "fadeIn 2s forwards"
-
-        },3000)
-        setTimeout(()=>{
-            document.getElementById(elementIdList[2]).style.animation = "fadeIn 2s forwards"
-
-        },5000)
-        setTimeout(()=>{
-            document.getElementById(elementIdList[3]).style.animation = "fadeIn 2s forwards"
-
-        },7000)
-        setTimeout(()=>{
-            document.getElementById(elementIdList[4]).style.animation = "fadeIn 2s forwards"
-
-        },9000)
-        setTimeout(()=>{
-            document.getElementById(elementIdList[5]).style.animation = "fadeInFromBottom 2s forwards"
-
-        },11000)
-
-        setTimeout(()=>{
-            document.getElementById('svg').style.animation = "fadeInFromBottom 5s forwards"
-        },13000)
-
-
-        }
-
-    }
-
-    useEffect(()=>{
-        addAnimation()
-
-    },[isVisible])
-
-
-
-
   return (
-    <div ref={ref}>
-
-        {isVisible?<div className='container row flex-column justify-content-around'>
+    <div className='container row flex-column justify-content-around'>
             <div className='row'>
                 <div className='col-12'>
                         <div className='row align-items-center'>
-                            <div className='col-6 main_heading animate__animated animate__fadeInUp'>
+                            <div className='col-6 main_heading animate__animated animate__fadeInUp time1'>
                             Make vocational education aspirational in UP
                             </div>
-                            <div className='col-6 headingPara animate__animated animate__fadeInUp'>
+                            <div className='col-6 headingPara animate__animated animate__fadeInUp time2'>
                             We renewed our 8-year-old partnership with the Department of Technical Education, Uttar Pradesh (DTE-UP) to strengthen polytechnic education, by:
                             </div>
                         </div>
@@ -109,10 +29,10 @@ const FirstCircleUi = function FirstCircleUi() {
                             <div className='col-12'>
 
                                 <div className="row justify-content-center">
-                                    <MySVG className="img-fluid arrow-svg" id="svg"/>
+                                    <MySVG className="img-fluid arrow-svg animate__animated animate__fadeInUp time9" id="svg"/>
                                 </div>
                                 <div className='row justify-content-center'>
-                                    <div className='col-4 grayed_bubble text-center grayed_bubble' id='thirdBubble'>
+                                    <div className='col-4 grayed_bubble text-center grayed_bubble animate__animated animate__fadeInUp time5' id='thirdBubble'>
                                         <div>
                                         Improving the physical learning facilities,
                                         </div>
@@ -120,39 +40,34 @@ const FirstCircleUi = function FirstCircleUi() {
                                     </div>
                                 </div>
 
-                                {/* <div className='row justify-content-center mb-5'>
-                                    
-                                    
-                                </div> */}
-
                                 <div className='row justify-content-around mb-4'>
-                                        <div className='col-auto grayed_bubble text-center' id='SecondBubble'>
+                                        <div className='col-auto grayed_bubble text-center animate__animated animate__fadeInUp time4' id='SecondBubble'>
                                             <div>
                                                     Introducing an industry-relevant curriculum,
 
                                             </div>
                                    
                                         </div>
-                                        <div className='col-auto grayed_bubble text-center' id='fourthBubble'>
+                                        <div className='col-auto grayed_bubble text-center animate__animated animate__fadeInUp time6' id='fourthBubble'>
                                         Helping industry and academia work closely
                                         </div>
 
                                     </div>
 
                                 <div className='row justify-content-between'>
-                                        <div className="col-auto grayed_bubble text-center" id="firstBubble">
+                                        <div className="col-auto grayed_bubble text-center animate__animated animate__fadeInUp time3" id="firstBubble">
                                         Building experiential facilitation skill in teachers,
 
                                         </div>
                                         
                                        
-                                        <div className='col-auto grayed_bubble text-center' id='fifthBubble'>
+                                        <div className='col-auto grayed_bubble text-center animate__animated animate__fadeInUp time7' id='fifthBubble'>
                                         Driving data-backed governance in the system
                                         </div>
                                     </div>
 
                                 <div className="row justify-content-center">
-                                <div className='col-4 orange_bubble text-center' id='sixthBubble'>
+                                <div className='col-4 orange_bubble text-center animate__animated animate__fadeInUp time8' id='sixthBubble'>
                                         Potentially impact 70,000+ young people
                                         </div>
 
@@ -167,7 +82,6 @@ const FirstCircleUi = function FirstCircleUi() {
                 </div> 
 
 
-        </div>:<div></div>}
         </div>
   )
 }

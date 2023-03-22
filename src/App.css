@@ -44,6 +44,10 @@ body {
 .time8 {
   animation-delay: 4s;
 }
+
+.time9 {
+  animation-delay: 4.5s;
+}
 .time_0s {
   animation-delay: 0.2s;
 }
