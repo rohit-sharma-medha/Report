@@ -20,7 +20,7 @@ export const Slide3 = (props) => {
 
             <div className='col-12'>
                 <div className='row'>
-                    <div className='col-6'>
+                    <div className='col-6 Lato'>
                         
                         <Stories head_class={props.headClass} empclass={props.empclass} headclass={props.headClass} index={props.index} className={props.className} sub={subject} head={heading} emp={employee}  />
                         

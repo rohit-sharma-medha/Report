@@ -26,7 +26,7 @@ export const Para = (props) => {
     {/* <p>
       {magicName}
     </p> */}
-    <div className='animate__animated animate__fadeIn time1' dangerouslySetInnerHTML={ { __html: magicName}} />
+    <div className='animate__animated animate__fadeIn time1 Lato' dangerouslySetInnerHTML={ { __html: magicName}} />
 
       {/* <Typewriter
 
