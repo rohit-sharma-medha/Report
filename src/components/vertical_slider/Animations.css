@@ -1,3 +1,32 @@
 #vertical_slider_circle_container{
     overflow-y: unset;
+    width: 70rem;
+}
+
+
+#first_card_first_text{
+    position: absolute;
+    left: 3rem;
+    right: 1rem;
+    bottom: 20rem;
+}
+
+#second_card_parent{
+    position:absolute;
+    left: 3rem;
+    right: 1rem;
+    bottom: 20rem;
+}
+
+#third_card_first_text{
+    position:absolute;
+    left: 3rem;
+    right: 1rem;
+    bottom: 15rem;
+
+}
+
+.last_slide_sec{
+    position:absolute;
+    bottom: 10rem;
 }

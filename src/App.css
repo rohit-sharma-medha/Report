@@ -463,6 +463,7 @@ to {
   font-style: normal;
   font-weight: 400;
   font-size: 3rem;
+  line-height: 5rem;
   /* line-height: 80px */
 }
 
@@ -1546,7 +1547,7 @@ to {
   display: none;
 }
 .section_4{
-  background-image: url('./Assets/Images/Vertical_slide.png');
+  background-image: url('./Assets/Images/verticalSlider-Group.png');
   background-repeat: no-repeat;
   background-position: center;
   background-repeat: no-repeat;
@@ -1600,4 +1601,8 @@ to {
     /* #FFF0DB  */
     35%);
     /* height: auto; */
+}
+
+.button.rec-dot{
+  display: none;
 }

@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react'
-
 import Typewriter from "typewriter-effect";
 // import TypeWriterEffect from 'react-typewriter-effect';
 

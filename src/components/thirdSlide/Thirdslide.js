@@ -22,42 +22,6 @@ export const Thirslide = () => {
   }, [containerRef])
 
 
-   const addAnimation = ()=>{
-
-    console.log("thiss");
-        const elementIdList = ['third_slide_first_box','third_slide_two_box','third_slide_three_box','third_slide_four_box','third_slide_fifth_box'];
-        if(isVisible){
-           
-        setTimeout(()=>{
-            document.getElementById(elementIdList[0]).style.animation = "fadeInFromBottom 2s forwards"
-
-        },1000)
-
-        setTimeout(()=>{
-            document.getElementById(elementIdList[1]).style.animation = "fadeInFromBottom 2s forwards"
-
-        },3000)
-        setTimeout(()=>{
-            document.getElementById(elementIdList[2]).style.animation = "fadeInFromBottom 2s forwards"
-
-        },5000)
-        setTimeout(()=>{
-            document.getElementById(elementIdList[3]).style.animation = "fadeInFromBottom 2s forwards"
-
-        },7000)
-        setTimeout(()=>{
-            document.getElementById(elementIdList[4]).style.animation = "fadeInFromBottom 2s forwards"
-
-        },9000)
-        }
-
-    }
-
-
-    useEffect(()=>{
-        // addAnimation()
-
-    },[isVisible])
 
   return (
     <>
