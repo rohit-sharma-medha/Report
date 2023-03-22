@@ -1235,15 +1235,17 @@ to {
 
 }
 
-.slide2>.head_slide_1 {
+.head_slide_1 {
   color: #FF9700 !important;
-  position: absolute;
-  top: 15%;
-  left: 29%;
+  /* position: ; */
+  /* top: 15%; */
+  /* left: 29%; */
   font-family: 'Latolight';
   font-style: italic;
-  font-weight: 700;
-  font-size: 2.5rem;
+  font-weight: 900;
+  font-size: 2rem;
+  margin-bottom: 5rem;
+  /* width: 35rem !important; */
   /* line-height: 50px; */
 }
 
@@ -1583,4 +1585,24 @@ to {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% ; */
+}
+.stories{
+  position: relative;
+  top: 20% !important ;
+  left: 10%;
+  width: 28rem;
+}
+
+
+.careerPrep{
+  background: radial-gradient(circle at bottom right,
+    #FF9700,
+    #FFB900
+    /* #FFF0DB  */
+    35%);
+    /* height: auto; */
+}
+
+.button.rec-dot{
+  display: none;
 }

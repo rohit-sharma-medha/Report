@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react'
-// import { random } from "lodash";
 import Typewriter from "typewriter-effect";
 // import TypeWriterEffect from 'react-typewriter-effect';
 
@@ -7,7 +6,6 @@ import Typewriter from "typewriter-effect";
 export const Para = (props) => {
   const [magicName, setMagicName] = useState(props.subject);
   // const intervalRef = useRef({});
- 
   useEffect(
     () => {
       // intervalRef.current = setInterval(() => {

@@ -48,7 +48,7 @@
       position: relative;
     }
   }
-  #Strength{
+  #Strength ,#TeamCapabilities{
     .rec-carousel-item-0{
       display: flex;
       justify-content: center !important;
@@ -110,5 +110,25 @@
     
   }
   
+  // #TeamCapabilities{
+  //   .arrow_right{
+  //     position: relative;
+  //     right: 2500%;
+  //     top: 35%;
+  //     width: 1.8rem;
+  //   }
+  //   .arrow_right_1{
+  //     position: relative;
+  //     right: 2500%;
+  //     top: 45%;
+  //     width: 1.8rem;
+  //   }
+  //   .arrow_left_1{
+  //     position: relative;
+  //     left: 42rem;
+  //     top: 45%;
+  //     width: 1.8rem;
+  //   }
+  // }
   
   // {/* innovate_slide hDienL */}

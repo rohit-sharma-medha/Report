@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from 'react'
-// import useTypeWriter from 'react-typewriter-hook';
 import { Para } from '../../Data/Para'
 import { Stories } from '../../Data/Stories';
 import swati_image from "../../Assets/Images/swati_medha_employee.png"

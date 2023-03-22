@@ -10,6 +10,8 @@ import Vertical_slider from './components/vertical_slider/Vertical_slider';
 import { Verticla2 } from './components/Verticla2';
 import { Innovatiing } from './components/Innovatiing';
 import { Strengthen } from './components/Strengthen';
+import { TeamCapability } from './components/TeamCapability';
+import { CareerPrep } from './components/CareerPrep';
 
 const fullpageOptions = {
   anchors: ['section1', 'section2', 'section3'],
@@ -88,6 +90,14 @@ function App() {
               <div className="section ">
                 <Strengthen />
               </div>
+
+
+              <div className="section teamCabability">
+                <TeamCapability />
+              </div>
+              {/* <div className='section careerPrep'>
+                <CareerPrep />
+              </div> */}
               
               
             </ReactFullpage.Wrapper>
