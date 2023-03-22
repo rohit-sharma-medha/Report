@@ -5,7 +5,7 @@
 */
 
 /*!
-      * fullPage 4.0.18
+      * fullPage 4.0.19
       * https://github.com/alvarotrigo/fullPage.js
       *
       * @license GPLv3 for open source use only
@@ -16,7 +16,7 @@
       */
 
 /*!
- * @fullpage/react-fullpage 0.1.35
+ * @fullpage/react-fullpage 0.1.36
  * https://github.com/alvarotrigo/react-fullpage
  * @license https://github.com/alvarotrigo/react-fullpage#license
  *
@@ -37,6 +37,8 @@ MERCHANTABLITY OR NON-INFRINGEMENT.
 See the Apache Version 2.0 License for specific language governing permissions
 and limitations under the License.
 ***************************************************************************** */
+
+/*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */
 
 /**
  * @license React

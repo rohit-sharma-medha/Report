@@ -44,6 +44,10 @@ body {
 .time8 {
   animation-delay: 4s;
 }
+
+.time9 {
+  animation-delay: 4.5s;
+}
 .time_0s {
   animation-delay: 0.2s;
 }
@@ -1561,7 +1565,7 @@ to {
   display: none;
 }
 .section_4{
-  background-image: url('./Assets/Images/verticalSlider-Group.png');
+  background-image: url('./Assets/Images/Vertical_slide.png');
   background-repeat: no-repeat;
   background-position: center;
   background-repeat: no-repeat;
