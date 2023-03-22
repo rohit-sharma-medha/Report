@@ -56,12 +56,12 @@ export const Verticla2 = () => {
                             <div className='row d-flex first_vertical_slider_slide1 '>
                                 <div className='col-md-7 col-lg-7 col-xl-7 col-12 '>
                                     <div className='verticalslide1Head col-12'>
-                                        <p className={currentPageIndex == 0 ? "verticalslide1Head-text animate__animated animate__fadeInUp time1 " : "verticalslide1Head-text d-none"} >
+                                        <p className={currentPageIndex == 0 ? "verticalslide1Head-text animate__animated animate__fadeInUp time1 BebasNeue" : "verticalslide1Head-text d-none"} >
                                             BY DRIVING GREATER ADOPTION OF ‘THE <br /> MEDHA WAY’ WITH STATE GOVERNMENTS <br /> TO IMPACT MORE STUDENTS
                                         </p>
                                     </div>
                                     <div className='verticalslide1Head col-11'>
-                                        <p className={currentPageIndex == 0 ? "verticalslide1Head-text-1 animate__animated animate__fadeInUp time2" : "verticalslide1Head-text-1 d-none"} >Partnering with more <span className='greentext'>like-minded</span> state education departments,<br /> industry leaders, and peers will help us elevate the learning<br /> experience <span className='greentext'>and bring career opportunities youth care about to <br /> more than 100,000 students per year.</span>  Last year, we took steps to:</p>
+                                        <p className={currentPageIndex == 0 ? "verticalslide1Head-text-1 animate__animated animate__fadeInUp time2 Lato" : "verticalslide1Head-text-1 d-none"} >Partnering with more <span className='greentext'>like-minded</span> state education departments,<br /> industry leaders, and peers will help us elevate the learning<br /> experience <span className='greentext'>and bring career opportunities youth care about to <br /> more than 100,000 students per year.</span>  Last year, we took steps to:</p>
                                     </div>
                                 </div>
                                 <div className='col-md-5 col-lg-5 col-xl-5 col-sm-12 '>
@@ -81,26 +81,26 @@ export const Verticla2 = () => {
                                     </div>
                                 </div>
                                 <div className='col-md-12 col-lg-5 col-xl-5 col-12'>
-                                    <div className={currentPageIndex == 1 ? "verticalslide1Head_1 animate__animated animate__fadeInUp time1" : "d-none"}>
+                                    <div className={currentPageIndex == 1 ? "verticalslide1Head_1 animate__animated animate__fadeInUp time1 BebasNeue" : "d-none"}>
                                         <p className='scaleknoledge'>Scale as a Knowledge Partner</p>
                                     </div>
-                                    <div className={currentPageIndex == 1 ? "verticalslide1Head_1 animate__animated animate__fadeInUp time2" : "d-none"}>
+                                    <div className={currentPageIndex == 1 ? "verticalslide1Head_1 animate__animated animate__fadeInUp time2 Lato        " : "d-none"}>
                                         <p className='residenseoursystem col-10'>Redesigned our System Adoption team to be <br/> self-sufficient:</p>
                                     </div>
 
                                     <div className='verticalslide1Head3 col-10'>
                                         <ul className={currentPageIndex == 1 ? "list" : "d-none"} >
-                                            <li className='marginstate animatedlisttext mt-5 d-flex '>
+                                            <li className='marginstate animatedlisttext mt-5 d-flex Lato'>
                                                 <img className='animatedlisticon mx-4' src={proffesional} />
 
                                                 Seasoned professionals <br />leading 6 diverse verticals,
                                             </li>
-                                            <li className='marginstate animatedlisttext  mt-5  d-flex '>
+                                            <li className='marginstate animatedlisttext  mt-5  d-flex  Lato '>
                                                 <img className='animatedlisticon mx-4' src={Xicon} />
 
                                                 State heads overseeing project <br /> teams of experts and generalists,
                                             </li>
-                                            <li className='marginstate animatedlisttext  mt-5  d-flex '>
+                                            <li className='marginstate animatedlisttext  mt-5  d-flex Lato'>
                                                 <img className='animatedlisticon mx-4 ' src={veteran} />
 
                                                 An industry veteran <br />leading the team.
@@ -117,10 +117,10 @@ export const Verticla2 = () => {
                         <div className='col-12 '>
                             <div className='row d-flex upper-content-3rdslide'>
                                 <div className={currentPageIndex == 2 ? "col-md-12 col-xl-5 col-lg-5 col-12 animate__animated animate__fadeInUp time1 " : "col-md-5 col-xl-5 col-lg-5 col-12 d-none"} >
-                                    <p className='uppercontent-head'>Transform higher education in Haryana</p>
+                                    <p className='uppercontent-head Lato-700'>Transform higher education in Haryana</p>
                                 </div>
                                 <div className={currentPageIndex == 2 ? "col-md-12 col-xl-7 col-lg-7 col-12 animate__animated animate__fadeInUp time2" : "col-md-7 col-xl-7 col-lg-7 col-12 d-none"} >
-                                    <p className='uppercontent-text'>We completed the halfway mark in a 2-year venture with<br /> the Department of Higher Education, Haryana (DHE- <br />Haryana) to prepare college students for meaningful work <br /> roles. In this time, we:</p>
+                                    <p className='uppercontent-text Lato'>We completed the halfway mark in a 2-year venture with<br /> the Department of Higher Education, Haryana (DHE- <br />Haryana) to prepare college students for meaningful work <br /> roles. In this time, we:</p>
                                 </div>
                             </div>
 
@@ -133,7 +133,7 @@ export const Verticla2 = () => {
                                                 <img src={fab_uk} className={currentPageIndex == 2 ? "card-img-top small-image-vertical2 animate__animated animate__fadeInUp time3" : "card-img-top small-image-vertical2 d-none"} alt="..." />
                                                 <div className="card-body">
                                                     {/* <h5 className="card-title fw-bold">Card title</h5> */}
-                                                    <p className={currentPageIndex == 2 ?"card-text text-center card_3vert2_text animate__animated animate__fadeInUp time4":"card-text text-center card_3vert2_text d-none"}>
+                                                    <p className={currentPageIndex == 2 ?"card-text text-center card_3vert2_text animate__animated animate__fadeInUp time4 Lato":"card-text text-center card_3vert2_text d-none"}>
                                                     Provided hands-on coaching<br/> to 130 teachers and skill instructors
                                                     </p>
                                                 </div>
@@ -144,7 +144,7 @@ export const Verticla2 = () => {
                                                 <img src={fab_uk} className={currentPageIndex == 2 ?"card-img-top small-image-vertical2 animate__animated animate__fadeInUp time5":"card-img-top small-image-vertical2 d-none"} alt="..." />
                                                 <div className="card-body">
                                                     {/* <h5 className="card-title fw-bold">Card title</h5> */}
-                                                    <p className={currentPageIndex == 2 ?"card-text text-center card_3vert2_text animate__animated animate__fadeInUp time6":"card-text text-center card_3vert2_text d-none"}>
+                                                    <p className={currentPageIndex == 2 ?"card-text text-center card_3vert2_text animate__animated animate__fadeInUp time6 Lato":"card-text text-center card_3vert2_text d-none"}>
                                                     Hosted career-focused webinars <br/> with employer partners
                                                     </p>
                                                 </div>
@@ -155,7 +155,7 @@ export const Verticla2 = () => {
                                                 <img src={fab_uk} className={currentPageIndex == 2 ? "card-img-top small-image-vertical2 animate__animated animate__fadeInUp time7":"card-img-top small-image-vertical2 d-none"} alt="..." />
                                                 <div className="card-body">
                                                     {/* <h5 className="card-title fw-bold">Card title</h5> */}
-                                                    <p className={currentPageIndex == 2 ?"card-text text-center card_3vert2_text animate__animated animate__fadeInUp time8":"card-text text-center card_3vert2_text d-none"}>
+                                                    <p className={currentPageIndex == 2 ?"card-text text-center card_3vert2_text animate__animated animate__fadeInUp time8 Lato":"card-text text-center card_3vert2_text d-none"}>
                                                     Improved classroom learning <br/> experience and career exposure<br/> for ~3000 students
                                                     </p>
                                                 </div>

@@ -30,8 +30,8 @@ export const Thirslide = () => {
           <div  className={isVisible ? "card_1   col-xl-4 col-lg-4 col-md-12 col-12 animate__animated animate__fadeInUp time1":""}>
             <div className={isVisible ?"card border-0 ":"card "} >
               <div className="content " >
-                <p className='Number_Text yellow-text text-center '>18,000</p>
-                <p className='text-center info_text '>youth to build 21st-<br />century skills</p>
+                <p className='Number_Text yellow-text text-center BebasNeue'>18,000</p>
+                <p className='text-center info_text Lato '>youth to build 21st-<br />century skills</p>
               </div>
               {/* <!-- Card Content Here --> */}
             </div>
@@ -39,8 +39,8 @@ export const Thirslide = () => {
           <div  className={isVisible ? "card_1   col-xl-4 col-lg-4 col-md-12 col-12 animate__animated animate__fadeInUp time2":""}>
             <div className={isVisible ?"card border-0 ":"card "} >
               <div class="content">
-                <p className='Number_Text yellow-text text-center'>300</p>
-                <p className='text-center info_text'>teachers have created an <br /> engaging teaching <br /> experience</p>
+                <p className='Number_Text yellow-text text-center BebasNeue'>300</p>
+                <p className='text-center info_text Lato'>teachers have created an <br /> engaging teaching <br /> experience</p>
               </div>
               {/* <!-- Card Content Here --> */}
             </div>
@@ -51,24 +51,24 @@ export const Thirslide = () => {
           <div className={isVisible ? "card_1   col-xl-4 col-lg-4 col-md-12 col-12 animate__animated animate__fadeInUp time3":""}>
             <div className={isVisible ?"card border-0  ":"card "} >
               <div className="content">
-                <p className='Number_Text yellow-text animated  text-center'>27,000</p>
-                <p className='text-center info_text'>youth have experienced <br /> student-centric classrooms</p>
+                <p className='Number_Text yellow-text animated  text-center BebasNeue'>27,000</p>
+                <p className='text-center info_text Lato'>youth have experienced <br /> student-centric classrooms</p>
               </div>
             </div>
           </div>
           <div  className={isVisible ? "card_1  col-xl-4 col-lg-4 col-md-12 col-12 animate__animated animate__fadeInUp time4":""}>
             <div className={isVisible ? "card border-0  ":"card "} >
               <div className="content">
-                <p className='Number_Text yellow-text text-center'>3</p>
-                <p className='text-center info_text'>government departments <br /> have built career readiness <br /> systems</p>
+                <p className='Number_Text yellow-text text-center BebasNeue'>3</p>
+                <p className='text-center info_text Lato'>government departments <br /> have built career readiness <br /> systems</p>
               </div>
             </div>
           </div>
           <div  className={isVisible ? "card_1 mb-sm-5  col-xl-4 col-lg-4 col-md-12 col-12 animate__animated animate__fadeInUp time5":""}>
             <div className={isVisible ?"card border-0 ":"card "} >
               <div className="content">
-                <p className='Number_Text yellow-text text-center'>1000</p>
-                <p className='text-center info_text'>employers have improved <br /> workplace exposure</p>
+                <p className='Number_Text yellow-text text-center BebasNeue'>1000</p>
+                <p className='text-center info_text Lato'>employers have improved <br /> workplace exposure</p>
               </div>
             </div>
           </div>

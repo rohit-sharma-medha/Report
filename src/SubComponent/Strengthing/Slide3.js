@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from 'react'
-// import useTypeWriter from 'react-typewriter-hook';
 import { Para } from '../../Data/Para'
 import { Stories } from '../../Data/Stories';
 import swati_image from "../../Assets/Images/swati_medha_employee.png"
@@ -21,7 +20,7 @@ export const Slide3 = (props) => {
 
             <div className='col-12'>
                 <div className='row'>
-                    <div className='col-6'>
+                    <div className='col-6 Lato'>
                         
                         <Stories head_class={props.headClass} empclass={props.empclass} headclass={props.headClass} index={props.index} className={props.className} sub={subject} head={heading} emp={employee}  />
                         
