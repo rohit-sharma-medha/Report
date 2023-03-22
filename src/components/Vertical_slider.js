@@ -30,7 +30,7 @@ const Vertical_slider = () => {
         <>
             <Carousel renderArrow={myArrow} onChange={handleOnChange} >
                 <div className='mt-5'>
-                    <p className={currentPageIndex == 0 ? "mt-5 mt-7 text-center vert_cards_text animate__animated animate__fadeInUp " : "text-center vert_cards_text"}>
+                    <p className={currentPageIndex == 0 ? "mt-5 mt-7 text-center vert_cards_text animate__animated animate__fadeInUp    " : "text-center vert_cards_text"}>
                         IN 2021, WE SET AN AUDACIOUS GOAL OF HELPING <span className='yellow-text'>1 MILLION <br /> YOUTH</span> TRANSFORM THEIR LIVES IN THE NEXT 5 YEARS
                     </p>
                 </div>

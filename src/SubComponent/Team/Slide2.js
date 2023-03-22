@@ -44,7 +44,7 @@ const turnToPage = (newPageIndex) => {
 
                 <div className='row d-flex flex-cloumn '>
                     <div className='col-12 '>
-                        <p className='team_slide2_heading_text text-center '>Welcomed a brilliant <br />line of leadership</p>
+                        <p className='team_slide2_heading_text text-center Lato-700'>Welcomed a brilliant <br />line of leadership</p>
                     </div>
 
 

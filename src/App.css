@@ -103,6 +103,20 @@ body {
 
 
 
+.BebasNeue{
+  font-family: BebasNeue !important;
+  font-weight: 700 !important;
+}
+.Lato{
+  font-family: Latoregular !important;
+  font-weight: 500 !important;
+}
+.Lato-700{
+  font-family: Lato  !important;
+  font-weight: 700 !important;
+}
+
+
 
 /* FIrstslide */
 
