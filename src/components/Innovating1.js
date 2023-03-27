@@ -11,7 +11,7 @@ import arrowright from '../Assets/Images/arrow_right_black.png';
 export const Innovating1 = () => {
   const [classAdd, setclassAdd] = useState("")
   const myArrow = ({ type, onClick, isEdge }) => {
-    const pointer = type === consts.PREV ? <img src={arrowleft} /> : <img src={arrowright} />
+    const pointer = type === consts.PREV ? <img src={arrowleft} /> : <img className={currentPageIndex ==6 ? "d-none" : " " } src={arrowright} />
     return (
       <button onClick={onClick} disabled={isEdge}>
         {pointer}

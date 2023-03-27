@@ -5,6 +5,7 @@ import Typewriter from "typewriter-effect";
 
 export const Para = (props) => {
   const [magicName, setMagicName] = useState(props.subject);
+  // const [pageNo,setPageno]=useState(props.currentPageNumber)
   // const intervalRef = useRef({});
   useEffect(
     () => {
@@ -16,7 +17,7 @@ export const Para = (props) => {
       // return function clear() {
       //   clearInterval(intervalRef.current);
       // };
-      console.log("para props",props);
+      // console.log("para props",typeof props.currentPageNumber);
     },
     [magicName]
   );

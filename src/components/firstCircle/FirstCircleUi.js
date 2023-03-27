@@ -13,10 +13,10 @@ const FirstCircleUi = function FirstCircleUi() {
                 <div className='col-12'>
                         <div className='row align-items-center'>
                             <div className='col-6 main_heading animate__animated animate__fadeInUp time1'>
-                            Make vocational education aspirational in UP
+                            Make vocational education <br/> aspirational in UP
                             </div>
                             <div className='col-6 headingPara animate__animated animate__fadeInUp time2'>
-                            We renewed our 8-year-old partnership with the Department of Technical Education, Uttar Pradesh (DTE-UP) to strengthen polytechnic education, by:
+                            We renewed our 8-year-old partnership with the<br/> Department of Technical Education, Uttar Pradesh (DTE-UP) to strengthen polytechnic education, by:
                             </div>
                         </div>
                 </div>
