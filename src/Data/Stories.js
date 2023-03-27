@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import Typewriter from "typewriter-effect";
+import "../Style/sttrength.css"
 
 export const Stories = (props) => {
   const [magicName, setMagicName] = useState(props.sub);
@@ -13,7 +14,7 @@ export const Stories = (props) => {
     <>
       <div className='stories'>
         
-        <div className='animate__animated animate__fadeIn time1 Lato' dangerouslySetInnerHTML={ { __html: magicName}} />
+        <div className='animate__animated animate__fadeIn Swati_words time1 Lato' dangerouslySetInnerHTML={ { __html: magicName}} />
 
         
       </div>

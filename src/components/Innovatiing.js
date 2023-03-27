@@ -38,7 +38,7 @@ export const Innovatiing = () => {
   };
 
   const myArrow = ({ type, onClick, isEdge }) => {
-    const pointer = type === consts.PREV ? <img src={arrowleft} /> : <img src={arrowright} />
+    const pointer = type === consts.PREV ? <img className={currentPageIndex ==0 ? "d-none" : " " } src={arrowleft} /> : <img className={currentPageIndex ==4 ? "d-none" : " " } src={arrowright} />
     return (
       <button onClick={onClick} disabled={isEdge}>
         {pointer}
@@ -82,7 +82,7 @@ export const Innovatiing = () => {
         {/* className={[2,4,6].includes(currentPageIndex) ? "carousel-wrapper_innovate_slide3":currentPageIndex ==0 ?"carousel-wrapper_innovate":"carousel-wrapper_innovate_other"} */}
         <ElasticCarousel 
         // enableAutoPlay autoPlaySpeed={8000} 
-        className={currentclass} onChange={handleOnChange} renderArrow={myArrow}>
+        className={[2,4].includes(currentPageIndex) ? currentclass:''} onChange={handleOnChange} renderArrow={myArrow}>
           <div className="Inovate_slide Inovate_slide_1  d-flex flex-column align-item-start">
             <div className="col-12">
               <div className="row d-flex align-item-center justify-content-center">
@@ -159,15 +159,15 @@ export const Innovatiing = () => {
           <div className={currentPageIndex == 2 ? "innovative_slide3 " : ""}>
             <div className={currentPageIndex === 2 ? "typed-out" : ""}>
              {currentPageIndex ==2 ?
-             <Para index={currentPageIndex == 2 ? "cursor" : "d-none"} subject="The Chapter Head election was a great learning space where I experimented with all my skills — communicating to get votes, using my problem-solving and critical thinking abilities to make a phenomenal campaign, and leading a successful chapter in Gorakhpur after winning the election.<br/> <br/>  <br/>I have a keen interest in community mobilization. I want to focus on my Chapter head position, do well for my community, and finish my graduation well.” <br/>  &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp; &nbsp;  &nbsp; <span style=color:#282828;>-  Manish, student and Medhavi</span>" />
-             :""} </div>
+             <Para index={currentPageIndex === 2 ? "cursor" : ""}  subject="The Chapter Head election was a great learning space where I experimented with all my skills — communicating to get votes, using my problem-solving and critical thinking abilities to make a phenomenal campaign, and leading a successful chapter in Gorakhpur after winning the election.<br/> <br/>  <br/>I have a keen interest in community mobilization. I want to focus on my Chapter head position, do well for my community, and finish my graduation well.” <br/>  &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp; &nbsp;  &nbsp; <span style=color:#282828;>-  Manish, student and Medhavi</span>" />
+             :"d-none"} </div>
           </div>
           <div>
             <div className='d-flex  '>
               <div className='col-12 '>
                 <div className='row mt-5 ml-5  d-flex flex-start'>
                   <div className={currentPageIndex == 3 ? "col-md-12 col-lg-5 col-xl-5 col-12" : ""} >
-                    <p className={currentPageIndex == 3 ? " uppercontent-head animate__animated animate__fadeInUp time_0s Lato-700" : "d-none"}>Our programs answered students’ changing needs</p>
+                    <p className={currentPageIndex == 3 ? " uppercontent-head animate__animated animate__fadeInUp time_0s Lato-700" : "d-none"}>Our programs answered <br/> students’ changing needs</p>
                   </div>
                   <div className='col-md-12 col-lg-6 col-xl-6 col-12 '>
                     <p className={currentPageIndex == 3 ? "uppercontent-text animate__animated animate__fadeInUp time_1s Lato" : "d-none"}>Young people are looking for the flexibility to improve their skills from where they are, while experimenting with freelancing and entrepreneurship as supporting or alternate career routes. Our programs followed suit, as:</p>

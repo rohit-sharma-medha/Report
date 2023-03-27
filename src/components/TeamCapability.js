@@ -18,7 +18,7 @@ export const TeamCapability = () => {
 
       const myArrow=({ type, onClick, isEdge })=> {
         // console.log("currentPageIndex-------------------",currentPageIndex)
-        const pointer = type === consts.PREV ? currentPageIndex ==0 ? "":<img className={currentPageIndex == 0 ?'arrow_left':"arrow_left_1"} src={arrowleft}/> : <img className={currentPageIndex == 0 ?'arrow_right':"arrow_right_1"} src={arrowright}/>
+        const pointer = type === consts.PREV ? currentPageIndex ==0 ? "":<img className={currentPageIndex == 0 ?'arrow_left d-none':"arrow_left_1"} src={arrowleft}/> : <img className={currentPageIndex == 0 ?'arrow_right':"arrow_right_1"} src={arrowright}/>
         return (
           <button className={currentPageIndex != 0?"":""} onClick={onClick} disabled={isEdge}>
             {pointer}

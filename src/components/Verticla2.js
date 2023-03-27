@@ -16,7 +16,7 @@ import SecondCircleUi from '../components/seondCircle/SecondCircleUi';
 export const Verticla2 = () => {
     const [currentPageIndex, setCurrentPageIndex] = useState(0);
     const myArrow=({ type, onClick, isEdge })=> {
-        const pointer = type === consts.PREV ? <img className={currentPageIndex == 0 ?"d-none":"position_middle_left"} src={arrowleft}/> : <img className={"position_middle_right"} src={arrowright}/>
+        const pointer = type === consts.PREV ? <img className={currentPageIndex == 0 ?"d-none":"position_middle_left"} src={arrowleft}/> : <img className={ currentPageIndex !==4 ? "position_middle_right":"d-none"} src={arrowright}/>
         return (
           <button onClick={onClick} disabled={isEdge}>
             {pointer}
@@ -117,7 +117,7 @@ export const Verticla2 = () => {
                         <div className='col-12 '>
                             <div className='row d-flex upper-content-3rdslide'>
                                 <div className={currentPageIndex == 2 ? "col-md-12 col-xl-5 col-lg-5 col-12 animate__animated animate__fadeInUp time1 " : "col-md-5 col-xl-5 col-lg-5 col-12 d-none"} >
-                                    <p className='uppercontent-head Lato-700'>Transform higher education in Haryana</p>
+                                    <p className='uppercontent-head Lato-700'>Transform higher education <br/> in Haryana</p>
                                 </div>
                                 <div className={currentPageIndex == 2 ? "col-md-12 col-xl-7 col-lg-7 col-12 animate__animated animate__fadeInUp time2" : "col-md-7 col-xl-7 col-lg-7 col-12 d-none"} >
                                     <p className='uppercontent-text Lato'>We completed the halfway mark in a 2-year venture with<br /> the Department of Higher Education, Haryana (DHE- <br />Haryana) to prepare college students for meaningful work <br /> roles. In this time, we:</p>
