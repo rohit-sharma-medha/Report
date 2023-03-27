@@ -207,8 +207,10 @@ body {
   border: 1px solid #D9D9D9;
   text-align: center;
 }
-
-.example-element-visible {
+.font-0{
+  font-size: 0 !important;
+}
+.second_slide_text {
   font-family: 'BebasNeue';
   font-style: normal;
   /* font-weight: 400; */
@@ -564,13 +566,13 @@ to {
 .list li {
   list-style: none;
   opacity: 0;
-  transform: translateY(-10px);
+  transform: translateX(-10px);
   position: relative;
   right: 20%;
 }
 
 .list li {
-  animation: show 1s ease-out forwards;
+  animation: show 1s ease forwards;
 }
 
 .list li:nth-child(1) {
@@ -599,12 +601,12 @@ to {
 @keyframes show {
   0% {
     opacity: 0;
-    transform: translateY(-10px);
+    transform: translateY(3rem);
   }
 
   100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
   }
 }
 
@@ -1347,13 +1349,14 @@ to {
 
   .fistslide{
     width: 100%;
+    background-size: auto;
   }
   .Audacious_text{
-    font-size: 3rem;
+    font-size: 2rem;
     
   }
   .FirstSlide_text .Audacious_text{
-    height: 4.5rem !important; 
+    height: 2.5rem !important; 
   }
   .Annual_text{
     font-size: 1.5rem;
@@ -1364,7 +1367,7 @@ to {
   }
 
   .example-element-visible  {
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 3rem;
   }
   .example-element-visible >br{
@@ -1377,11 +1380,18 @@ to {
     margin: 0 !important;
   }
   .card_1{
-    width: 25rem !important;
-    height: 20rem !important;
+    width: 20rem !important;
+    height: 15rem !important;
     display: block;
     margin: 0 auto;
     background-color: #FFF;
+  }
+  .card_1{
+    margin-top: 1rem;
+    margin-bottom: 1rem !important;
+  }
+  .second_part{
+    margin-top: 0 !important;
   }
   .cards3rd{
     height: auto;
@@ -1445,10 +1455,7 @@ to {
   .first-row-cards {
     right: 0 !important;
   }
-  .card_1{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
+ 
   .cursor{
     font-size: 1rem;
     left: 29%;
