@@ -61,7 +61,7 @@ const Vertical_slider = () => {
           } catch (error) {
               console.log("error",error);
           }
-      },2500)
+      },2750)
     }
 
 
@@ -131,7 +131,7 @@ const Vertical_slider = () => {
 
         
 
-    },8500)
+    },9500)
     }
 
 

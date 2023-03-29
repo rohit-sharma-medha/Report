@@ -113,13 +113,18 @@ export const Verticla2 = () => {
                             </div>
                         </div>
                     </div>
+                   
+                    <div>
+                        {currentPageIndex ==2 ?  <FirstCircleUi className="vertical2-slide d-flex "/>:""}
+                    </div>
+
                     <div className='vertical2-slide d-flex justi'>
                         <div className='col-12 '>
                             <div className='row d-flex upper-content-3rdslide'>
-                                <div className={currentPageIndex == 2 ? "col-md-12 col-xl-5 col-lg-5 col-12 animate__animated animate__fadeInUp time1 " : "col-md-5 col-xl-5 col-lg-5 col-12 d-none"} >
+                                <div className={currentPageIndex == 3 ? "col-md-12 col-xl-5 col-lg-5 col-12 animate__animated animate__fadeInUp time1 " : "col-md-5 col-xl-5 col-lg-5 col-12 d-none"} >
                                     <p className='uppercontent-head Lato-700'>Transform higher education <br/> in Haryana</p>
                                 </div>
-                                <div className={currentPageIndex == 2 ? "col-md-12 col-xl-7 col-lg-7 col-12 animate__animated animate__fadeInUp time2" : "col-md-7 col-xl-7 col-lg-7 col-12 d-none"} >
+                                <div className={currentPageIndex == 3 ? "col-md-12 col-xl-7 col-lg-7 col-12 animate__animated animate__fadeInUp time2" : "col-md-7 col-xl-7 col-lg-7 col-12 d-none"} >
                                     <p className='uppercontent-text Lato'>We completed the halfway mark in a 2-year venture with<br /> the Department of Higher Education, Haryana (DHE- <br />Haryana) to prepare college students for meaningful work <br /> roles. In this time, we:</p>
                                 </div>
                             </div>
@@ -130,10 +135,10 @@ export const Verticla2 = () => {
                                     <div className="row   d-flex justify-content-center">
                                         <div className="col-xl-4 col-lg-4 col-md-12">
                                             <div className="border-0 h-100 mr-2">
-                                                <img src={fab_uk} className={currentPageIndex == 2 ? "card-img-top small-image-vertical2 animate__animated animate__fadeInUp time3" : "card-img-top small-image-vertical2 d-none"} alt="..." />
+                                                <img src={fab_uk} className={currentPageIndex == 3 ? "card-img-top small-image-vertical2 animate__animated animate__fadeInUp time3" : "card-img-top small-image-vertical2 d-none"} alt="..." />
                                                 <div className="card-body">
                                                     {/* <h5 className="card-title fw-bold">Card title</h5> */}
-                                                    <p className={currentPageIndex == 2 ?"card-text text-center card_3vert2_text animate__animated animate__fadeInUp time4 Lato":"card-text text-center card_3vert2_text d-none"}>
+                                                    <p className={currentPageIndex == 3 ?"card-text text-center card_3vert2_text animate__animated animate__fadeInUp time4 Lato":"card-text text-center card_3vert2_text d-none"}>
                                                     Provided hands-on coaching<br/> to 130 teachers and skill instructors
                                                     </p>
                                                 </div>
@@ -141,10 +146,10 @@ export const Verticla2 = () => {
                                         </div>
                                         <div className="col-xl-4 col-lg-4 col-md-12">
                                             <div className=" border-0 h-100 mx-2">
-                                                <img src={fab_uk} className={currentPageIndex == 2 ?"card-img-top small-image-vertical2 animate__animated animate__fadeInUp time5":"card-img-top small-image-vertical2 d-none"} alt="..." />
+                                                <img src={fab_uk} className={currentPageIndex == 3 ?"card-img-top small-image-vertical2 animate__animated animate__fadeInUp time5":"card-img-top small-image-vertical2 d-none"} alt="..." />
                                                 <div className="card-body">
                                                     {/* <h5 className="card-title fw-bold">Card title</h5> */}
-                                                    <p className={currentPageIndex == 2 ?"card-text text-center card_3vert2_text animate__animated animate__fadeInUp time6 Lato":"card-text text-center card_3vert2_text d-none"}>
+                                                    <p className={currentPageIndex == 3 ?"card-text text-center card_3vert2_text animate__animated animate__fadeInUp time6 Lato":"card-text text-center card_3vert2_text d-none"}>
                                                     Hosted career-focused webinars <br/> with employer partners
                                                     </p>
                                                 </div>
@@ -152,10 +157,10 @@ export const Verticla2 = () => {
                                         </div>
                                         <div className="col-xl-4 col-lg-4 col-md-12">
                                             <div className="border-0 h-100 ">
-                                                <img src={fab_uk} className={currentPageIndex == 2 ? "card-img-top small-image-vertical2 animate__animated animate__fadeInUp time7":"card-img-top small-image-vertical2 d-none"} alt="..." />
+                                                <img src={fab_uk} className={currentPageIndex == 3 ? "card-img-top small-image-vertical2 animate__animated animate__fadeInUp time7":"card-img-top small-image-vertical2 d-none"} alt="..." />
                                                 <div className="card-body">
                                                     {/* <h5 className="card-title fw-bold">Card title</h5> */}
-                                                    <p className={currentPageIndex == 2 ?"card-text text-center card_3vert2_text animate__animated animate__fadeInUp time8 Lato":"card-text text-center card_3vert2_text d-none"}>
+                                                    <p className={currentPageIndex == 3 ?"card-text text-center card_3vert2_text animate__animated animate__fadeInUp time8 Lato":"card-text text-center card_3vert2_text d-none"}>
                                                     Improved classroom learning <br/> experience and career exposure<br/> for ~3000 students
                                                     </p>
                                                 </div>
@@ -165,9 +170,6 @@ export const Verticla2 = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div>
-                        {currentPageIndex ==3 ?  <FirstCircleUi className="vertical2-slide d-flex "/>:""}
                     </div>
 
                     <div>{currentPageIndex ==4 ? <SecondCircleUi/>: ""}</div>
