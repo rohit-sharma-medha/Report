@@ -41,22 +41,23 @@ export const Supporters = () => {
         <Carousel className={currentPageIndex ==0 ?"support_slide1":""} renderArrow={myArrow} onChange={handleOnChange} >
           <div className=" ">
 
-
            <Slide1 />
 
 
           </div>
           <div>
-            <Slide2 />
+            {currentPageIndex == 1 ? <Slide2 /> :""}
+            
           </div>
           <div>
-            <Slide3 />
+            {currentPageIndex ==2 ?<Slide3/> :""}
+            {/* <Slide3 /> */}
           </div>
           <div>
-            <Slide4 />
+            {currentPageIndex == 3 ? <Slide4/> :""}
+            {/* <Slide4 /> */}
           </div>
-          <div>5</div>
-          <div>6</div>
+          
         </Carousel>
       </div>
     </>

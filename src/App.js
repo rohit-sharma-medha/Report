@@ -72,7 +72,7 @@ function App() {
                   Click me to move down
                 </button> */}
               </div>
-               <div className="section">
+               {/* <div className="section">
                 <Second />
               </div>
               <div className="section section3">
@@ -84,24 +84,24 @@ function App() {
 
               <div className={`section ${activeSection === 2 ? "active" : ""}`}>
                 <Verticla2 />
-              </div>
+              </div> */}
               
-              
+{/*               
               <div className="section ">
                 <Innovatiing />
               </div> 
 
               <div className="section ">
                 <Strengthen />
-              </div>
+              </div> */}
 
 
-              <div className="section teamCabability">
+              {/* <div className="section teamCabability">
                 <TeamCapability />
               </div>
               <div className='section careerPrep'>
                 <CareerPrep />
-              </div>
+              </div> */}
               <div className='section support'>
                 <Supporters />
               </div>
