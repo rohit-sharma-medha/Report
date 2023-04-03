@@ -4,10 +4,16 @@ import ElasticCarousel, { consts } from "react-elastic-carousel";
 import { Para } from "../Data/Para";
 import arrowleft from '../Assets/Images/Arrow_left_black.png'
 import arrowright from '../Assets/Images/arrow_right_black.png'
-
-
-// import Item from "./Item";
-// import "./styles.css";
+import allum_shared from '../Assets/Images/Icons/Alumni-shared.svg'
+import simmer from '../Assets/Images/Icons/Simmer.svg';
+import changemaker from '../Assets/Images/Icons/Changemakersjourney.svg'
+import chapterelection from '../Assets/Images/Icons/Chapterelection.svg'
+import BlendedCAB from '../Assets/Images/Icons/BlendedCAB.svg';
+import Freelance from '../Assets/Images/Icons/Freelance.svg'
+import Skills from '../Assets/Images/Icons/Skills.svg'
+import Entrepreneur from '../Assets/Images/Icons/Entrepreneur.svg'
+// import Item from "./Item"; BlendedCAB.svg Freelance.svg Skills.svg 
+// import "./styles.css"; Entrepreneur.svg 
 
 
 
@@ -82,7 +88,7 @@ export const Innovatiing = () => {
         {/* className={[2,4,6].includes(currentPageIndex) ? "carousel-wrapper_innovate_slide3":currentPageIndex ==0 ?"carousel-wrapper_innovate":"carousel-wrapper_innovate_other"} */}
         <ElasticCarousel 
         // enableAutoPlay autoPlaySpeed={8000} 
-        className={[2,4].includes(currentPageIndex) ? currentclass:''} onChange={handleOnChange} renderArrow={myArrow}>
+        className={currentclass} onChange={handleOnChange} renderArrow={myArrow}>
           <div className="Inovate_slide Inovate_slide_1  d-flex flex-column align-item-start">
             <div className="col-12">
               <div className="row d-flex align-item-center justify-content-center">
@@ -121,13 +127,19 @@ export const Innovatiing = () => {
                     <div className="px-5 row d-flex justify-content-between">
                       <div className=" col-md-12 col-lg-6 col-xl-6 col-12 mt-0 mt-lg-5 mt-xl-5 mt-md-5 ">
                         <div className={currentPageIndex == 1 ? " d-flex mt-5 animate__animated animate__fadeInUp time3" : "d-flex mt-5 d-none"} >
-                          <span className="dot mx-5"></span>
+                          <span className="dot mx-5 changemaker">
+                          <img className="alumuni_shared" src={changemaker}/>
+
+                          </span>
                           <p className={currentPageIndex == 1 ? "innovative_slide2_para_text  col-6 Lato" : "d-none"}>28 young community leaders <br /> came together on a changemaking <br /> journey</p>
                         </div>
                       </div>
                       <div className="pr-5 col-md-6 col-lg-6 col-xl-6 col-12 mt-0 mt-lg-5 mt-xl-5 mt-md-5 ">
                         <div className={currentPageIndex == 1 ? "animate__animated animate__fadeInUp time4 d-flex  mt-5" : "d-flex mt-5 d-none"}>
-                          <span className="dot mx-5"></span>
+                          <span className="dot mx-5 simmer">
+                          <img className="alumuni_shared" src={chapterelection}/>
+
+                          </span>
                           <p className={currentPageIndex == 1 ? "innovative_slide2_para_text time_4s col-6 w3-animate-top Lato" : "d-none"}>Women alumni launched Simmer,<br /> a community for all the strong<br /> women speaking their truth</p>
                         </div>
                       </div>
@@ -137,13 +149,18 @@ export const Innovatiing = () => {
                     <div className="px-5 row d-flex justify-content-between">
                       <div className=" col-md-6 col-lg-6 col-xl-6 col-12  ">
                         <div className={currentPageIndex == 1 ? "animate__animated animate__fadeInUp  time5 d-flex  mt-5  " : "d-flex mt-5 d-none"}>
-                          <span className="dot mx-5"></span>
+                          <span className="dot mx-5 chapter_election">
+                          <img className="alumuni_shared" src={simmer}/>
+                          </span>
                           <p className={currentPageIndex == 1 ? "innovative_slide2_para_text  col-6  Lato" : "d-none"}>5 alumni in UP got elected as <br /> Alumni Chapter Heads to lead <br />volunteerism efforts in their cities</p>
                         </div>
                       </div>
                       <div className="col-md-6 col-lg-6 col-xl-6 col-12  ">
                         <div className={currentPageIndex == 1 ? "animate__animated animate__fadeInUp time6 d-flex  mt-5" : "d-flex mt-5 d-none"}>
-                          <span className="dot mx-5"></span>
+                          <span className="dot mx-5 text-center">
+                          
+                            <img className="alumuni_shared" src={allum_shared}/>
+                          </span>
                           <p className={currentPageIndex == 1 ? "innovative_slide2_para_text  col-6 w3-animate-top Lato" : "d-none"}>6000 alumni shared the<br /> pandemic’s effect on their career<br /> and life</p>
                         </div>
                       </div>
@@ -160,7 +177,7 @@ export const Innovatiing = () => {
             <div className={currentPageIndex === 2 ? "typed-out" : ""}>
              {currentPageIndex ==2 ?
              <Para index={currentPageIndex === 2 ? "cursor" : ""}  subject="The Chapter Head election was a great learning space where I experimented with all my skills — communicating to get votes, using my problem-solving and critical thinking abilities to make a phenomenal campaign, and leading a successful chapter in Gorakhpur after winning the election.<br/> <br/>  <br/>I have a keen interest in community mobilization. I want to focus on my Chapter head position, do well for my community, and finish my graduation well.” <br/>  &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp; &nbsp;  &nbsp; <span style=color:#282828;>-  Manish, student and Medhavi</span>" />
-             :"d-none"} </div>
+             :""} </div>
           </div>
           <div>
             <div className='d-flex  '>
@@ -180,13 +197,19 @@ export const Innovatiing = () => {
                     <div className="mt-5 row d-flex justify-content-between">
                       <div className="col-md-12 col-lg-6 col-xl-6 col-12 mt-0 mt-lg-5 mt-xl-5 mt-md-5 ">
                         <div className={currentPageIndex == 3 ? "animate__animated animate__fadeInUp time3 d-flex time3" : "d-none mt-5"} >
-                          <span className="dot mx-5"></span>
+                          <span className="dot mx-5">
+                          <img className="alumuni_shared" src={BlendedCAB}/>
+
+                          </span>
                           <p className={currentPageIndex == 3 ? "innovative_slide2_para_text time_2s col-6 Lato" : "d-none"}>CAB, the career advancement bootcamp, adapted to blended delivery</p>
                         </div>
                       </div>
                       <div className="col-md-12 col-lg-6 col-xl-6 col-12 mt-0 mt-lg-5 mt-xl-5 mt-md-5">
                         <div className={currentPageIndex == 3 ? "animate__animated animate__fadeInUp time4 d-flex  " : "d-none mt-5"}>
-                          <span className="dot mx-5"></span>
+                          <span className="dot mx-5">
+                          <img className="alumuni_shared" src={ Freelance }/>
+
+                          </span>
                           <p className={currentPageIndex == 3 ? "innovative_slide2_para_text  col-6  Lato" : ""}>Swarambh, which helps young people start freelancing careers, moved from communities to </p>
                         </div>
                       </div>
@@ -196,13 +219,19 @@ export const Innovatiing = () => {
                     <div className="mt-5 row d-flex justify-content-between">
                       <div className="col-md-12 col-lg-6 col-xl-6 col-12 ">
                         <div className={currentPageIndex == 3 ? "animate__animated animate__fadeInUp time5 d-flex  " : "d-none mt-5"}>
-                          <span className="dot mx-5"></span>
+                          <span className="dot mx-5  ">
+                          <img className="alumuni_shared" src={  Skills }/>
+
+                          </span>
                           <p className={currentPageIndex == 3 ? "innovative_slide2_para_text  col-6  Lato" : ""}>o Svapoorna, a life skills-building program for adolescents, scaled to new schools</p>
                         </div>
                       </div>
                       <div className="col-md-12 col-lg-6 col-xl-6 col-12  ">
                         <div className={currentPageIndex == 3 ? "animate__animated animate__fadeInUp time6 d-flex  " : "d-none mt-5"}>
-                          <span className="dot mx-5"></span>
+                          <span className="dot mx-5">
+                          <img className="alumuni_shared" src={Entrepreneur}/>
+
+                          </span>
                           <p className={currentPageIndex == 3 ? "innovative_slide2_para_text  col-6  Lato" : ""}>Youthscape, an entrepreneurial competition, led to a program on designing business model</p>
                         </div>
                       </div>

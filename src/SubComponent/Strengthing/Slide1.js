@@ -9,8 +9,8 @@ export const Slide1 = () => {
             {/* <CarrrouselArraows className="arrowbuttons" handlenext={handleNextClick} handleprev={handlePrevClick} /> */}
             <div className=''>
                 <div className='col-12'>
-                    <div className='slide_1_strength row d-flex flex-column justify-content-center '>
-                        <p className='col-md-12 slide_1_strength_heading animate__animated animate__fadeInUp time1 BebasNeue'>
+                    <div className='row slide_1_strength row d-flex flex-column justify-content-center '>
+                        <p className='col-12 slide_1_strength_heading animate__animated animate__fadeInUp time1 BebasNeue'>
                             While strengthening our data and impact<br/> systems to better understand, communicate<br/> and drive change on the ground
                         </p>
                         <p className='col-md-12 slide_1_strength_text animate__animated animate__fadeInUp time2 Lato'>

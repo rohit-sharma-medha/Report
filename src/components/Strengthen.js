@@ -6,7 +6,10 @@ import { Slide3 } from '../SubComponent/Strengthing/Slide3';
 import { Slide4 } from '../SubComponent/Strengthing/Slide4';
 import { Slide6 } from '../SubComponent/Strengthing/Slide6';
 import arrowleft from '../Assets/Images/Arrow_left_black.png'
-import arrowright from '../Assets/Images/arrow_right_black.png'
+import arrowright from '../Assets/Images/arrow_right_black.png';
+import swati_img from '../Assets/Images/strength/Swati.png'
+import sonali_img from '../Assets/Images/strength/Sonali.png'
+import shivnagi from "../Assets/Images/strength/Shivangi.png"
 
 export const Strengthen = () => {
 
@@ -44,7 +47,7 @@ export const Strengthen = () => {
             {
               currentPageIndex ==2 ?<Slide3 empclass="emp_slide_1" headClass="head_slide_1" index={currentPageIndex} className="cursor_slide" 
               subject = "<span class='head_slide_1 Lato' >“Read the stories that data tells.</span> <br/> <br/>In the development sector, your wins often feel far and few compared to failures. However, it’s worthwhile to be curious about what the data says. Data shows you the cracks, but it also tells you what is working – and how you can replicate the best practices. <br/> <br/> <br/>  To be data-driven means to read the stories that data tells. By engaging goalkeep to strengthen our data culture, investing in technology ahead of time, and having D&I as a standalone department, we’ve showcased our commitment to being data-driven.” <br/> <br/> <span class=Lato-700 style=color:#282828;>-  Swati, Medha employee</span>" head="“Read the stories that data tells." 
-              emp="-  Swati, Medha employee" />
+              emp="-  Swati, Medha employee"  img={swati_img}/>
           :""
             }
             </div> 
@@ -60,7 +63,7 @@ export const Strengthen = () => {
               currentPageIndex ==4 ?<Slide3 empclass="emp_slide_2" headClass="head_slide_2" index={currentPageIndex} className="cursor_slide2" head="“I make my arguments with confidence." 
               subject = "<span class='head_slide_1 Lato' >“I make my arguments with confidence.</span> <br/> <br/>To build a better relationship with colleges, I must delve deeper into our previous work on campus. Data gives me insights, such as the streams our programs are more effective in, which help me form better strategies for my area's performance. <br/> <br/>I can also make my arguments more fearlessly and honestly before colleges during strategic pitches, which undoubtedly improves my relationships. <br/> <br/> <span class=Lato-700 style=color:#282828;>-  Swati, Medha employee</span>" 
               
-              emp="-  Swati, Medha employee" />
+              emp="-  Swati, Medha employee" img={sonali_img} />
           :""              
             }
             </div>
@@ -76,7 +79,7 @@ export const Strengthen = () => {
               <Slide3 empclass="emp_slide_3" headClass="head_slide_3" index={currentPageIndex} className="cursor_slide3" head="I can better showcase my area." 
               subject = "<span class='head_slide_1 Lato' >I can better showcase my area.</span> <<br/> SIS's third version has made our work incredibly convenient on the ground. We can update all details in a single place and in real time while registration and certification details are updated automatically. <br/> <br/> For facilitators, with many details to track, SIS eases their admin work and leaves more time to focus on students. It also helps me see my area's growth and showcase its story using registration or internship numbers. <br/> <br/> <span class=Lato-700 style=color:#282828;>-  Swati, Medha employee</span>" 
               
-              emp="-  Swati, Medha employee" />
+              emp="-  Swati, Medha employee"  img={shivnagi} />
           :""              
             }
             </div>
