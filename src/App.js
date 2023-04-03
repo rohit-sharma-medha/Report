@@ -12,6 +12,8 @@ import { Innovatiing } from './components/Innovatiing';
 import { Strengthen } from './components/Strengthen';
 import { TeamCapability } from './components/TeamCapability';
 import { CareerPrep } from './components/CareerPrep';
+import { Supporters } from './components/Supporters';
+// import { Innovating1 } from './components/Innovating1';
 
 const fullpageOptions = {
   anchors: ['section1', 'section2', 'section3'],
@@ -51,12 +53,12 @@ function App() {
   //   }
   // };
 
- 
-  
+
+
   return (
     <div className="App">
       <ReactFullpage
-      // {...fullpageOptions}
+        // {...fullpageOptions}
         //fullpage options
         // licenseKey={'YOUR_KEY_HERE'}
         scrollingSpeed={1000} /* Options here */
@@ -70,7 +72,7 @@ function App() {
                   Click me to move down
                 </button> */}
               </div>
-              <div className="section">
+               <div className="section">
                 <Second />
               </div>
               <div className="section section3">
@@ -81,11 +83,13 @@ function App() {
               </div>
 
               <div className={`section ${activeSection === 2 ? "active" : ""}`}>
-                <Verticla2 /> 
+                <Verticla2 />
               </div>
+              
+              
               <div className="section ">
                 <Innovatiing />
-              </div>
+              </div> 
 
               <div className="section ">
                 <Strengthen />
@@ -95,16 +99,22 @@ function App() {
               <div className="section teamCabability">
                 <TeamCapability />
               </div>
-              {/* <div className='section careerPrep'>
+              <div className='section careerPrep'>
                 <CareerPrep />
-              </div> */}
-              
-              
+              </div>
+              <div className='section support'>
+                <Supporters />
+              </div>
+
+
+
             </ReactFullpage.Wrapper>
+
+
           );
         }}
 
-        // onProgress={handleProgress}
+      // onProgress={handleProgress}
       />
     </div>
   );

@@ -5,49 +5,61 @@ import { Slide1 } from '../SubComponent/Team/Slide1';
 import { Slide2 } from '../SubComponent/Team/Slide2';
 import arrowleft from '../Assets/Images/Arrow_left_black.png'
 import arrowright from '../Assets/Images/arrow_right_black.png'
+import { Slide4 } from '../SubComponent/Team/Slide4';
+import { Slide5 } from '../SubComponent/Team/Slide5';
 
 export const TeamCapability = () => {
 
 
-    
-      const [currentPageIndex, setCurrentPageIndex] = useState(0);
-    
-      const handleOnChange = (currentItem, pageIndex) => {
-          setCurrentPageIndex(pageIndex);
-      };
 
-      const myArrow=({ type, onClick, isEdge })=> {
-        // console.log("currentPageIndex-------------------",currentPageIndex)
-        const pointer = type === consts.PREV ? currentPageIndex ==0 ? "":<img className={currentPageIndex == 0 ?'arrow_left d-none':"arrow_left_1"} src={arrowleft}/> : <img className={currentPageIndex == 0 ?'arrow_right':"arrow_right_1"} src={arrowright}/>
-        return (
-          <button className={currentPageIndex != 0?"":""} onClick={onClick} disabled={isEdge}>
-            {pointer}
-          </button>
-        )
-      }
+  const [currentPageIndex, setCurrentPageIndex] = useState(0);
+
+  const handleOnChange = (currentItem, pageIndex) => {
+    setCurrentPageIndex(pageIndex);
+  };
+
+  const myArrow = ({ type, onClick, isEdge }) => {
+    // console.log("currentPageIndex-------------------",currentPageIndex)
+    const pointer = type === consts.PREV ? currentPageIndex == 0 ? "" : <img className={currentPageIndex == 0 ? 'arrow_left d-none' : "arrow_left_1"} src={arrowleft} /> : <img className={currentPageIndex == 0 ? 'arrow_right' : "arrow_right_1"} src={arrowright} />
+    return (
+      <button className={currentPageIndex != 0 ? "" : ""} onClick={onClick} disabled={isEdge}>
+        {pointer}
+      </button>
+    )
+  }
 
 
-  
+
   return (
     <>
-    
-    <div id="TeamCapabilities" className="TeamCapability">
-        <Carousel 
-        // enableAutoPlay autoPlaySpeed={9000} 
-        className='Team_main'  renderArrow={myArrow} onChange={handleOnChange}>
+
+      <div id="TeamCapabilities" className="TeamCapability">
+        <Carousel
+          // enableAutoPlay autoPlaySpeed={9000} 
+          className='Team_main' renderArrow={myArrow} onChange={handleOnChange}>
           <div className=" col-10 TeamCapability_Slide1 d-flex justify-content-center align-items-center ">
-           {currentPageIndex == 0 ? <Slide1 index={currentPageIndex}/> :""}
-            
+            {currentPageIndex == 0 ? <Slide1 index={currentPageIndex} /> : ""}
+
           </div>
-           <div className="item">
-            {currentPageIndex ==1 ? <Slide2  />:""}
-            
+          <div className="item">
+            {currentPageIndex == 1 ? <Slide2 /> : ""}
+
           </div>
-          
+
+          <div className=" ">
+            {currentPageIndex == 2 ? <Slide4 index={currentPageIndex} /> : ""}
+
+          </div>
+          <div className=" ">
+            {currentPageIndex == 3 ? <Slide5 index={currentPageIndex} /> : ""}
+
+          </div>
+
+
         </Carousel>
       </div>
-    
-    
+
+
     </>
   )
 }

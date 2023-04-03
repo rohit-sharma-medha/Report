@@ -1,134 +1,199 @@
-#FirstSlide{
-    .Audacious_text{
-      animation-duration: 1s;
-    }
-    .line{
-      animation-delay: 2.7s;
-    }
-    .Annual_text{
-      animation-delay: 2s;
-    }
-    .Time_text{
-      animation-delay: 3s;
-    }
+#FirstSlide {
+  .Audacious_text {
+    animation-duration: 1s;
   }
-  #second_slide{
-    .second_slide_text{
-      animation-delay: 3s;
-      // font-family: 'BebasNeue';
-      // font-style: normal;
-      // font-size: 4.5rem;
-      // line-height: 5rem;
-    }
+
+  .line {
+    animation-delay: 2.7s;
   }
-  
-  
-  #vert2_slide{
-    .iXOKgB{
-      display: none !important;
-    }
-    button{
-      border: none;
-      background-color: transparent;
-      position: relative;
-    }
-    
+
+  .Annual_text {
+    animation-delay: 2s;
   }
-  
-  #innovate_slide{
-    // .hDienL ,.gOxcWJ{
-    //   display: none;
-    // }
-    .iXOKgB{
-      display: none;
-    }
-    button{
-      border: none;
-      background-color: transparent;
-      position: relative;
-    }
+
+  .Time_text {
+    animation-delay: 3s;
   }
-  #Strength ,#TeamCapabilities{
-    .rec-carousel-item-0{
-      display: flex;
-      justify-content: center !important;
-      align-items: center;
-      text-align: center;
-      
-    }
-    .iXOKgB{
-      display: none;
-    }
-    button{
-      border: none;
-      background-color: transparent;
-      position: relative;
-    }
+}
+
+#second_slide {
+  .second_slide_text {
+    animation-delay: 3s;
+    // font-family: 'BebasNeue';
+    // font-style: normal;
+    // font-size: 4.5rem;
+    // line-height: 5rem;
   }
-  
-  
-  .cursor_slide2{
-    
+}
+
+
+#vert2_slide {
+  .iXOKgB {
+    display: none !important;
   }
-  
-  
-  
-  // First Slide Animation Handling
-  
-  .FirstSlide_text{
-    bottom: 3rem;
-    .Audacious_text{
-      height: 5rem;
-    }
-    .animate__backInDown{
-      animation-delay: 2s;
-    }
-    .Time_text{
-  
-    }
+
+  button {
+    border: none;
+    background-color: transparent;
+    position: relative;
   }
-  .cards3rd{
-   
-  }
-  .pulse{
-    .animate__animated{
-      animation-delay: 3s;
-    }
-  }
-  .section_4 {
-    button{
-      border: 0;
-      background-color: transparent;
-    }
-    .hdvBkW{
-      // height: 55rem;
-    }
-     
-      // overflow-y:auto ;
-      // overflow-x: clip;
-      // height: 15rem;
-    
-  }
-  
-  // #TeamCapabilities{
-  //   .arrow_right{
-  //     position: relative;
-  //     right: 2500%;
-  //     top: 35%;
-  //     width: 1.8rem;
-  //   }
-  //   .arrow_right_1{
-  //     position: relative;
-  //     right: 2500%;
-  //     top: 45%;
-  //     width: 1.8rem;
-  //   }
-  //   .arrow_left_1{
-  //     position: relative;
-  //     left: 42rem;
-  //     top: 45%;
-  //     width: 1.8rem;
-  //   }
+
+}
+
+#innovate_slide {
+
+  // .hDienL ,.gOxcWJ{
+  //   display: none;
   // }
+  .iXOKgB {
+    display: none;
+  }
+
+  button {
+    border: none;
+    background-color: transparent;
+    position: relative;
+  }
+}
+
+#Strength,
+#TeamCapabilities,
+#support {
+  .rec-carousel-item-0 {
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+    text-align: center;
+
+  }
+
+  .iXOKgB {
+    display: none;
+  }
+
+  button {
+    border: none;
+    background-color: transparent;
+    position: relative;
+  }
+}
+
+#Strength {
+  @media  (max-width: 600px){
+    .swati_image {
+      height: 55vh;
+      top: 3%;
+      margin-top: 15%;
+    }
+  }
   
-  // {/* innovate_slide hDienL */}
+  
+}
+#carrerprep{
+  @media  (max-width: 600px){
+    br{
+      display: none;
+    }
+  }
+    
+}
+#TeamCapabilities{
+  @media  (max-width: 600px){
+    br{
+      display: none;
+    }
+  }
+}
+
+
+.cursor_slide2 {}
+
+
+
+// First Slide Animation Handling
+
+.FirstSlide_text {
+  bottom: 3rem;
+
+  .Audacious_text {
+    height: 5rem;
+  }
+
+  .animate__backInDown {
+    animation-delay: 2s;
+  }
+
+  .Time_text {}
+}
+
+.cards3rd {}
+
+.pulse {
+  .animate__animated {
+    animation-delay: 3s;
+  }
+}
+
+.section_4 {
+  button {
+    border: 0;
+    background-color: transparent;
+  }
+
+  .hdvBkW {
+    // height: 55rem;
+  }
+
+  // overflow-y:auto ;
+  // overflow-x: clip;
+  // height: 15rem;
+
+}
+
+// #TeamCapabilities{
+//   .arrow_right{
+//     position: relative;
+//     right: 2500%;
+//     top: 35%;
+//     width: 1.8rem;
+//   }
+//   .arrow_right_1{
+//     position: relative;
+//     right: 2500%;
+//     top: 45%;
+//     width: 1.8rem;
+//   }
+//   .arrow_left_1{
+//     position: relative;
+//     left: 42rem;
+//     top: 45%;
+//     width: 1.8rem;
+//   }
+// }
+
+#vert2_slide {
+  .elastic-carousel__arrow--left {
+    position: relative;
+    left: 91%;
+    height: 2rem;
+    top: 92%;
+  }
+
+  .elastic-carousel__arrow--right {
+    position: relative;
+    height: 2rem;
+    top: 92%;
+    right: 1%;
+  }
+
+
+
+}
+
+#support {
+  height: 100vh !important;
+}
+
+
+
+// {/* innovate_slide hDienL */}

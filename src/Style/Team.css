@@ -5,16 +5,18 @@
 
 
 }
-.Team_slide1{
+
+.Team_slide1 {
     position: relative;
     /* top: 12rem; */
 }
-.team_slide1_main{
+
+.team_slide1_main {
     position: relative;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 .team_slide1_heading_text {
@@ -24,91 +26,158 @@
     text-align: center;
     font-family: "BebasNeue";
 }
-.team_slide1_para_text{
+
+.team_slide1_para_text {
     font-size: 1.8rem;
     font-family: 'latolight';
     font-weight: 600;
 }
-.team_slide2_heading_text{
+
+.team_slide2_heading_text {
     font-family: "lato";
     font-size: 2rem;
 }
-.UpperImage_team{
+
+.UpperImage_team {
     width: 10rem;
     height: 10rem;
     border-radius: 50%;
     border: 1px solid #82edcb;
 }
-.Team_capability_slider{
 
+.Team_capability_slider {}
 
-
-}
-.border-50{
+.border-50 {
     width: 12rem;
-    height:12rem;
-    border-radius: 50%  !important;
+    height: 12rem;
+    border-radius: 50% !important;
     border: 2px solid #82edcb;
     display: block;
     margin: 0 auto;
 }
-.position_relate{
+
+.position_relate {
     position: relative !important;
     left: 10% !important;
     display: flex;
     justify-content: space-between;
 }
 
-.team_slider2_paratext{
+.team_slider2_paratext {
     font-size: 1rem;
     font-family: 'latolight';
     font-weight: 600;
     /* padding: 5rem; */
 }
-.child{
+
+.child {
     width: 15rem;
-    margin-top:15% ;
+    margin-top: 15%;
     position: relative;
     left: 25%;
 }
-.child2{
+
+.child2 {
     margin-top: 15%;
     width: 15rem;
     margin-left: 15%;
 }
-.child3{
+
+.child3 {
     margin-top: 15%;
     position: relative;
     width: 15rem;
     margin-left: 5%;
 }
-.child4{
+
+.child4 {
     margin-top: 15%;
     position: relative;
     width: 15rem;
     margin-left: 15%;
 }
-.child5{
+
+.child5 {
     margin-top: 15%;
     position: relative;
     width: 15rem;
     margin-left: 15%;
 }
-.eXIdQs{
+
+.eXIdQs {
     background: #31B89D !important;
 }
-.sc-bdVaJa{
+
+.sc-bdVaJa {
     display: none !important;
 }
+
 .vl {
     border-left: 3px solid #31B89D;
     height: 11rem;
     position: absolute;
     margin-left: -5%;
-  }
-  .vl1{
+}
+
+.vl1 {
     border-left: 3px solid #31B89D;
     height: 11rem;
     position: absolute;
     margin-left: -1%;
-  }
+}
+
+.Team_Slide4_head {
+    font-size: 3rem;
+}
+
+.Icon_slide4 {
+    background-color: #F3F3F3;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.team_slide4_icons{
+    width: 4rem;
+}
+.team_slide_content_text{
+    font-size: 1.2rem;
+}
+.team_slide5_text{font-family: 'Latolight';
+    font-style: italic;
+    color: #FF9700 !important;
+    font-weight: 900;
+    font-size: 2rem;
+    margin-bottom: 5rem;}
+.Subhra_image{
+    width: 100%;
+  height: 100vh;
+}
+
+@media  (max-width: 600px){
+    .Swati_words{
+        font-size: 1rem;
+    }
+    .Subhra_image{
+        
+      height: 50vh;
+      margin-top: 10%;
+    }
+    .stories{
+    top: 0;
+    right: 0;
+    left: 0;
+    }
+    .team_slide1_heading_text{
+        font-size: 2.5rem;
+    }
+   
+    .team_slide1_para_text{
+        font-size:1.2rem ;
+    }
+    .Team_Slide4_head{
+        font-size: 2rem;
+    }
+}
