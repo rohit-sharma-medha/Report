@@ -4,7 +4,7 @@ export const Slide1 = () => {
     return (
         <>
 
-            <div className='row '>
+            <div className='row slide1_support'>
                 <div className='col-12 d-flex flex-column align-items-center'>
 
                     <p className='Support_slide1_heading_text text-center animate__animated animate__fadeInUp time1 BebasNeue '>

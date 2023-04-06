@@ -1394,11 +1394,17 @@ to {
     margin: 0 !important;
   }
   .card_1{
-    width: 20rem !important;
-    height: 15rem !important;
+    width: 15rem !important;
+    height: 10rem !important;
     display: block;
     margin: 0 auto;
     background-color: #FFF;
+  }
+  .info_text{
+    font-size: 1rem;
+  }
+  .Number_Text{
+    font-size: 2rem;
   }
   .card_1{
     margin-top: 1rem;
@@ -1407,10 +1413,14 @@ to {
   .second_part{
     margin-top: 0 !important;
   }
-  .cards3rd{
-    height: auto;
-    margin-top: 5rem;
+  .first-row-cards , .second_part{
+   
+    display: flex;
+    flex-direction:row !important;
+    justify-content: space-around !important;
+    /* left: 15%; */
   }
+
   .vert_cards_text{
     font-size: 2rem;
   }

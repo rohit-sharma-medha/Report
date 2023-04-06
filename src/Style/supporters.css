@@ -49,6 +49,10 @@
     position: relative;
     top: 55%;
   }
+  .slide1_support{
+    position: relative;
+    /* top: 50%; */
+  }
 
   @media  (max-width: 600px){
    

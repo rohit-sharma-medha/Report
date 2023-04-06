@@ -41,8 +41,8 @@ export const Supporters = () => {
         <Carousel className={currentPageIndex ==0 ?"support_slide1":""} renderArrow={myArrow} onChange={handleOnChange} >
           <div className=" ">
 
-           <Slide1 />
-
+           
+          {currentPageIndex ==0 ? <Slide1 /> :""}
 
           </div>
           <div>
