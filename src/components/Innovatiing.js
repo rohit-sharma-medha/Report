@@ -69,8 +69,14 @@ export const Innovatiing = () => {
     if (currentPageIndex == 0) {
       setcurrentclass("carousel-wrapper_innovate")
     }
-    else if (currentPageIndex % 2 === 0 && currentPageIndex !== 0) {
-      setcurrentclass("carousel-wrapper_innovate_slide3")
+    // else if (currentPageIndex % 2 === 0 && currentPageIndex !== 0) {
+    //   setcurrentclass("carousel-wrapper_innovate_slide3")
+    // }
+    else if (currentPageIndex  === 2 ) {
+      setcurrentclass(currentclass + " Manish_back")
+    }
+    else if (currentPageIndex  === 4 ) {
+      setcurrentclass(" Kajal_back")
     }
     else {
       setcurrentclass("carousel-wrapper_innovate_other")

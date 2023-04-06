@@ -970,7 +970,7 @@ to {
 }
 
 .carousel-wrapper_innovate_slide3 {
-  background: url("./Assets/Images/HallBol_girl.png");
+  /* background: url("./Assets/Images/HallBol_girl.png"); */
   object-fit: cover;
   background-repeat: no-repeat;
   background-position:center ;
@@ -980,7 +980,41 @@ to {
   /* z-index: -10; */
   /* width: 12rem; */
 }
-
+.Manish_back{
+  background:url('./Assets/Images/Innvate_slide_hallabol_girl/Manish.jpg');
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position:center ;
+  background-size: 100% 100%;
+}
+.Kajal_back{
+  background: url('./Assets/Images/Innvate_slide_hallabol_girl/Kajal.jpg');
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position:center ;
+  background-size: 100% 100%;
+  
+}
+.chatback{
+  background: url('./Assets/Images/Innvate_slide_hallabol_girl/Chat\ Bubble.png');
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position:center ;
+  background-size: 100% 100%;
+  width: 160%;
+  height: 35rem;
+}
+.chat_text{
+  width: 20rem;
+  position: relative;
+  left: 15%;
+  top: 10%;
+  font-size: 1.1rem;
+  /* bottom: 25%; */
+}
 .typewriter p {
   /* color: #fff; */
   font-family: monospace;
