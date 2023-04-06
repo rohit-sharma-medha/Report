@@ -105,6 +105,18 @@
   }
 }
 
+#support{
+  .rec-carousel{
+    height: 100vh !important;
+    // top: 25%;
+  }
+  .rec-carousel-item-0 {
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+    text-align: center;
+}
+}
 
 .cursor_slide2 {}
 
@@ -126,7 +138,9 @@
   .Time_text {}
 }
 
-.cards3rd {}
+.card{
+  background-color:transparent;
+}
 
 .pulse {
   .animate__animated {
