@@ -547,7 +547,7 @@ to {
 } */
 
 .vert1-slide1-img {
-  width: 35rem;
+  width: 100%;
   height: 35rem;
   border-radius: 50%;
   transform: scale(1.2);
@@ -683,7 +683,7 @@ to {
 }
 
 .vert1-slide2-img {
-  width: 35rem;
+  width: 70%;
   height: 35rem;
   border-radius: 50%;
 }
@@ -1637,7 +1637,8 @@ to {
   background-repeat: no-repeat;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
+
 }
 .section_4 > button{
   border: 0;

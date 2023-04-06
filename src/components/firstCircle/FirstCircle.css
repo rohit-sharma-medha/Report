@@ -31,17 +31,19 @@
   border-radius: 112px;
   width: 18rem;
   height: 8rem;
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: 400;
   line-height: 30px;
   color: #000000;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 2%;
-  padding-right: 2%;
+  /* padding-left: 2%;
+  padding-right: 2%; */
   font-family: Lato-Ragular;
   opacity: 0;
+  position: relative;
+  top: 15%;
 }
 
 
@@ -61,6 +63,8 @@
   padding-right: 2%;
   font-family: Lato-Ragular;
   opacity: 0;
+  position: relative;
+  bottom: 5rem;
 }
 .circle_container{
   position: relative;
