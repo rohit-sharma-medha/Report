@@ -119,6 +119,10 @@ body {
   font-family: Lato  !important;
   font-weight: 700 !important;
 }
+.Lato-300{
+  font-family: Latothin  !important;
+  font-weight: 500 !important;
+}
 
 
 
@@ -957,11 +961,11 @@ to {
   font-size: 1.2rem;
   /* line-height: 50px; */
 }
-.our_allum{
+/* .our_allum{
   position: relative;
   top: 7%;
   left: 5%;
-}
+} */
 
 .carousel-wrapper_innovate_other {
   background: radial-gradient(circle at bottom left,
@@ -1071,7 +1075,7 @@ to {
   width: 23rem;
   z-index: 1;
   top: 15% !important;
-  left: 42%;
+  left: 12%;
   font-size: 1.3rem;
   font-family: 'Latolight';
   font-style: normal;
@@ -1097,10 +1101,10 @@ to {
   display: inline-block;
   position: absolute;
   color: #000;
-  width: 23rem;
+  width: 25rem;
   z-index: 10;
-  top: 20% !important;
-  right: 12.5%;
+  top: 10% !important;
+  left: 10%;
   font-size: 1.2rem;
   /* letter-spacing: 0.02in; */
 }
@@ -1456,8 +1460,13 @@ to {
   }
 
   .vert_cards_text{
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
+  #vertical_slider_circle_container {
+    overflow-y: unset;
+    width: 0 !important;
+    margin-right: 85%;
+}
   /* .card-design-fabuk_1{
     height: auto !important;
   } */
@@ -1482,9 +1491,15 @@ to {
     border-radius: 0;
     height: 25rem;
   }
+  .verticalslide1Head-text{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+  }
   .INNOVATE_SLIDE1_heading_text {
-    font-size: 3rem;
-    line-height: 3.5rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
   }
   .INNOVATE_SLIDE1_heading_text > br{
     display: none !important;
@@ -1500,6 +1515,10 @@ to {
   .dot{
     width: 4rem;
     height: 4rem;
+  }
+  .alumuni_shared{
+    width: 2rem;
+    height: 2rem;
   }
   .first_vertical_slider_slide1{
     flex-direction: column-reverse !important;
@@ -1527,8 +1546,8 @@ to {
     width: 10rem;
   }
   .slide_1_strength_heading{
-    font-size: 2.5rem;
-    line-height: 3rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
   .cursor_slide , .cursor_slide2,.cursor_slide3{
     width: 25rem;
@@ -1712,4 +1731,7 @@ to {
 /* Move the arrows to the right of the carousel */
 .react-elastic-carousel .rec-arrow-right {
   right: 0;
+}
+.bhawna_image{
+  align-self: center;
 }

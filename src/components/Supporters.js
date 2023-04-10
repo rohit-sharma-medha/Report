@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Carousel, { consts } from "react-elastic-carousel";
 import arrowleft from '../Assets/Images/Arrow_left_black.png'
 import arrowright from '../Assets/Images/arrow_right_black.png'
@@ -13,15 +13,7 @@ export const Supporters = () => {
   const [currentPageIndex, setCurrentPageIndex] = useState(0);
   const [Class, setClass] = useState("")
 
-  const myArrow = ({ type, onClick, isEdge }) => {
-    // console.log("currentPageIndex-------------------",currentPageIndex)
-    const pointer = type === consts.PREV ? currentPageIndex == 0 ? "" : <img className={currentPageIndex == 0 ? 'arrow_left d-none' : "arrow_left_1"} src={arrowleft} /> : <img className={currentPageIndex == 0 ? 'arrow_right' : "arrow_right_1"} src={arrowright} />
-    return (
-      <button className={currentPageIndex != 0 ? "" : ""} onClick={onClick} disabled={isEdge}>
-        {pointer}
-      </button>
-    )
-  }
+  
 
   const handleOnChange = (currentItem, pageIndex) => {
     setCurrentPageIndex(pageIndex);
@@ -32,17 +24,55 @@ export const Supporters = () => {
     }
   }, [])
   
+  const myArrow = ({ type, onClick, isEdge }) => {
+    const pointer =
+      type === consts.PREV ? (
+        <img
+          className={currentPageIndex == 0 ? "d-none left_arrow_image" : "left_arrow_image"}
+          src={arrowleft}
+        />
+      ) : (
+        <img
+          className={currentPageIndex !== 3 ? "rigth_arrow_image" : "d-none rigth_arrow_image"}
+          src={arrowright}
+        />
+      );
 
+
+
+
+    return (
+      <>
+        <button
+          onClick={onClick}
+          disabled={isEdge}
+          className={
+            type != "NEXT"
+              ? " elastic-carousel__arrow rec-left "
+              : currentPageIndex == 0 ? "elastic-carousel__1stslidearrow rec-right " : "elastic-carousel__arrow rec-right"
+          }
+        >
+          {pointer}
+        </button>
+      </>
+
+    );
+  };
+
+  const gotoRef4 = useRef(null);
+  const goToSlide = (slideIndex) => {
+    gotoRef4.current.goTo(slideIndex);
+  };
 
 
   return (
     <>
       <div id="support" className="supporters">
-        <Carousel className={currentPageIndex ==0 ?"support_slide1":""} renderArrow={myArrow} onChange={handleOnChange} >
-          <div className=" ">
+        <Carousel ref={gotoRef4} className={currentPageIndex ==0 ?"support_slide1":""} renderArrow={myArrow} onChange={handleOnChange} >
+          <div className="col-10 d-flex justify-content-center align-items-center ">
 
            
-          {currentPageIndex ==0 ? <Slide1 /> :""}
+          {currentPageIndex ==0 ? <Slide1 index={currentPageIndex}/> :""}
 
           </div>
           <div>
@@ -59,6 +89,9 @@ export const Supporters = () => {
           </div>
           
         </Carousel>
+        <button onClick={() => goToSlide(0)} className={currentPageIndex != 0 ? 'gototext Lato-300 pointer_class' : "d-none"} >
+          back to main slide
+        </button>
       </div>
     </>
   )

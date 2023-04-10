@@ -18,36 +18,34 @@ import Stateheads from '../Assets/Images/Icons/State-heads.svg'
 export const Verticla2 = () => {
     const [currentPageIndex, setCurrentPageIndex] = useState(0);
     const myArrow = ({ type, onClick, isEdge }) => {
-        console.log(consts.PREV)
         const pointer =
             type === consts.PREV ? (
                 <img
-                    className={currentPageIndex == 0 ? "d-none" : ""}
+                    className={currentPageIndex == 0 ? "d-none left_arrow_image" : "left_arrow_image"}
                     src={arrowleft}
                 />
             ) : (
                 <img
-                    className={currentPageIndex !== 4 ? "" : "d-none"}
+                    className={currentPageIndex !== 4 ? "rigth_arrow_image" : "d-none rigth_arrow_image"}
                     src={arrowright}
                 />
             );
 
         return (
-            <button
-                onClick={() => {
-                    console.log(type)
-                    onClick()
-                }
-                }
-                disabled={isEdge}
-            // className={
-            //   type != "NEXT"
-            //     ? "elastic-carousel__arrow--left "
-            //     : "elastic-carousel__arrow--right "
-            // }
-            >
-                {pointer}
-            </button>
+            <>
+                <button
+                    onClick={onClick}
+                    disabled={isEdge}
+                    className={
+                        type  != "NEXT"
+                            ? " elastic-carousel__arrow rec-left "
+                            : currentPageIndex ==0? "elastic-carousel__1stslidearrow rec-right ":"elastic-carousel__arrow rec-right"
+                    }
+                >
+                    {pointer}
+                </button>
+            </>
+
         );
     };
     const [setclassforlist, setsetclassforlist] = useState("")
@@ -68,18 +66,28 @@ export const Verticla2 = () => {
     const delay = 500; // ms
 
     const animStr = (i) => `fadeIn ${duration}ms ease-out ${delay * (i + 1)}ms forwards`;
+    const gotoRef = useRef(null);
 
-
+    const goToSlide = (slideIndex) => {
+        console.log("hello")
+        gotoRef.current.goTo(slideIndex);
+    };
+   
 
     return (
         <>
             <div id="vert2_slide" className="styling-example">
+                {/* <div className={currentPageIndex != 0 ? 'gototext Lato-300' : "d-none"}>
+                    
+
+                </div> */}
+                
                 <Carousel
+                    ref={gotoRef}
                     // enableAutoPlay autoPlaySpeed={7000} 
                     className='vertical2-slide_main' renderArrow={myArrow} itemsToShow={1} onChange={handleOnChange}
-                // onSlideChange={(pageIndex) => setCurrentPageIndex(pageIndex)}
                 >
-                    <div className='vertical2-slide d-flex justi'>
+                    <div className='vertical2-slide d-flex flex-column '>
 
                         <div className='col-12'>
                             <div className='row d-flex first_vertical_slider_slide1 '>
@@ -100,11 +108,13 @@ export const Verticla2 = () => {
                                 </div>
                             </div>
                         </div>
+
+
                     </div>
                     <div className='vertical2-slide d-flex '>
                         <div className='col-12'>
                             <div className='row'>
-                                <div className='col-md-12 col-lg-7 col-xl-7 col-12'>
+                                <div className="col-md-12 col-lg-7 col-xl-7 col-12 ">
                                     <div className='vertical-slide2-img'>
                                         <img className={currentPageIndex == 1 ? 'vert1-slide2-img animate__animated animate__fadeIn ' : " vert1-slide2-img d-none"} src={fab_uk} />
                                     </div>
@@ -114,7 +124,7 @@ export const Verticla2 = () => {
                                         <p className='scaleknoledge'>Scale as a Knowledge Partner</p>
                                     </div>
                                     <div className={currentPageIndex == 1 ? "verticalslide1Head_1 animate__animated animate__fadeInUp time2 Lato        " : "d-none"}>
-                                        <p className='residenseoursystem col-10'>Redesigned our System Adoption team to be <br /> self-sufficient:</p>
+                                        <p className='residenseoursystem col--md-10 col-xl-10 col-lg-10 col-12'>Redesigned our System Adoption team to be <br /> self-sufficient:</p>
                                     </div>
 
                                     <div className='verticalslide1Head3 col-10'>
@@ -135,7 +145,7 @@ export const Verticla2 = () => {
 
                                                 State heads overseeing project <br /> teams of experts and generalists,
                                             </li>
-                                            <li className='marginstate animatedlisttext  mt-5  d-flex Lato'>
+                                            <li className='marginstate animatedlisttext  mt-md-5 mt-lg-5 mt-xl-5 mt-0  d-flex Lato'>
                                                 <span className='animatedlisticon'>
                                                     {/* <img className=' animatedlisticon2 mx-4' src={Stateheads} /> */}
                                                     <img className='animatedlisticon  animatedlisticon3 mx-4 ' src={industrylead} />
@@ -213,6 +223,10 @@ export const Verticla2 = () => {
                     <div>{currentPageIndex == 4 ? <SecondCircleUi /> : ""}</div>
 
                 </Carousel>
+
+                <button onClick={() => goToSlide(0)} className={currentPageIndex != 0 ? 'gototext Lato-300 pointer_class' : "d-none"} >
+                        back to main slide
+                </button>
             </div>
 
         </>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import Carousel, { consts } from "react-elastic-carousel";
 import "../Style/Team.css"
 import { Slide1 } from '../SubComponent/Team/Slide1';
@@ -19,14 +19,44 @@ export const TeamCapability = () => {
   };
 
   const myArrow = ({ type, onClick, isEdge }) => {
-    // console.log("currentPageIndex-------------------",currentPageIndex)
-    const pointer = type === consts.PREV ? currentPageIndex == 0 ? "" : <img className={currentPageIndex == 0 ? 'arrow_left d-none' : "arrow_left_1"} src={arrowleft} /> : <img className={currentPageIndex == 0 ? 'arrow_right' : "arrow_right_1"} src={arrowright} />
+    const pointer =
+      type === consts.PREV ? (
+        <img
+          className={currentPageIndex == 0 ? "d-none left_arrow_image" : "left_arrow_image"}
+          src={arrowleft}
+        />
+      ) : (
+        <img
+          className={currentPageIndex !== 3 ? "rigth_arrow_image" : "d-none rigth_arrow_image"}
+          src={arrowright}
+        />
+      );
+
+
+
+
     return (
-      <button className={currentPageIndex != 0 ? "" : ""} onClick={onClick} disabled={isEdge}>
-        {pointer}
-      </button>
-    )
-  }
+      <>
+        <button
+          onClick={onClick}
+          disabled={isEdge}
+          className={
+            type != "NEXT"
+              ? " elastic-carousel__arrow rec-left "
+              : currentPageIndex == 0 ? "elastic-carousel__1stslidearrow rec-right " : "elastic-carousel__arrow rec-right"
+          }
+        >
+          {pointer}
+        </button>
+      </>
+
+    );
+  };
+
+  const gotoRef3 = useRef(null);
+  const goToSlide = (slideIndex) => {
+    gotoRef3.current.goTo(slideIndex);
+  };
 
 
 
@@ -36,6 +66,7 @@ export const TeamCapability = () => {
       <div id="TeamCapabilities" className="TeamCapability">
         <Carousel
           // enableAutoPlay autoPlaySpeed={9000} 
+          ref={gotoRef3}
           className='Team_main' renderArrow={myArrow} onChange={handleOnChange}>
           <div className=" col-10 TeamCapability_Slide1 d-flex justify-content-center align-items-center ">
             {currentPageIndex == 0 ? <Slide1 index={currentPageIndex} /> : ""}
@@ -55,8 +86,11 @@ export const TeamCapability = () => {
 
           </div>
 
-
+        
         </Carousel>
+        <button onClick={() => goToSlide(0)} className={currentPageIndex != 0 ? 'gototext Lato-300 pointer_class' : "d-none"} >
+          back to main slide
+        </button>
       </div>
 
 

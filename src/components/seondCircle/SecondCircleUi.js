@@ -15,10 +15,10 @@ const SecondCircleUi = function SecondCircleUi() {
             <div className='row'>
                 <div className='col-12'>
                         <div className='row align-items-center'>
-                            <div className='col-6 second_main_heading animate__animated animate__fadeInUp time1'>
+                            <div className='col-md-6 col-xl-6 col-lg-6 col-12 second_main_heading animate__animated animate__fadeInUp time1'>
                                 Elevate on-the-job vocational training in Haryana
                             </div>
-                            <div className='col-6 second_headingPara animate__animated animate__fadeInUp time2'>
+                            <div className='col-md-6 col-xl-6 col-lg-6 col-12 second_headingPara animate__animated animate__fadeInUp time2'>
                             Over the next 2 years, we will help the Skill Development and Industrial Training Department, Haryana (SDIT-Haryana) scale their dual-system of training model for vocational education students by:
                             </div>
                         </div>

@@ -5,6 +5,7 @@ import afzal from "../../Assets/Images/Team/Afzal.png";
 import sanjul from "../../Assets/Images/Team/Sanjul.png";
 import saurabh from "../../Assets/Images/Team/saurabh.png";
 import KrithikaRam from "../../Assets/Images/Team/KrithikaRam.png";
+import Bhawnaimg from '../../Assets/Images/Team/BhavnaJaisingh.png'
 
 
 // import IndicatorDots from './indicator-dots'
@@ -60,6 +61,10 @@ const turnToPage = (newPageIndex) => {
                                 {
                                     breakpoint: 990,
                                     cols: 2
+                                },
+                                {
+                                    breakpoint: 600,
+                                    cols: 1
                                 }
                             ]}
                             // ref={carouselRef}
@@ -69,8 +74,8 @@ const turnToPage = (newPageIndex) => {
 
 
                             {<Carousel.Item>
-                                <div className='child'>
-                                    <img className='border-50 animate__animated animate__fadeInUp time1' src="https://picsum.photos/800/600?random=1" />
+                                <div className='child '>
+                                    <img className='border-50 bhawna_image animate__animated animate__fadeInUp time1' src={Bhawnaimg} />
                                     <div className='vl animate__animated animate__fadeInUp time2'></div>
                                     <div className='team_slide2_1 animate__animated animate__fadeInUp time2' >
                                         <p className='team_slider2_paratext'>
@@ -105,7 +110,7 @@ const turnToPage = (newPageIndex) => {
                                     </div>
                                 </div>
                             </Carousel.Item>}
-                            {<Carousel.Item>
+                            <Carousel.Item>
                                 <div className='child4'>
                                     <img className='border-50 animate__animated animate__fadeInUp time7' src={sanjul} />
                                     <div className='vl animate__animated animate__fadeInUp time8'></div>
@@ -115,7 +120,7 @@ const turnToPage = (newPageIndex) => {
                                         </p>
                                     </div>
                                 </div>
-                            </Carousel.Item>}
+                            </Carousel.Item>
                             {<Carousel.Item>
                                 <div className='child5'>
                                     <img className='border-50 animate__animated animate__fadeInUp time2' src={afzal} />
