@@ -55,8 +55,12 @@
 }
 @media  (max-width: 600px) {
     .careerPrep_head_text{
+        font-size: 1.5rem;
+    }
+    .Career_prep_number{
         font-size: 2rem;
     }
+    
     
     .carrerprep_1_slide{
         display: flex;

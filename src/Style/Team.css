@@ -75,6 +75,7 @@
     margin-top: 15%;
     position: relative;
     left: 25%;
+    /* text-align: center; */
 }
 
 .child2 {
@@ -94,14 +95,14 @@
     margin-top: 15%;
     position: relative;
     width: 15rem;
-    margin-left: 15%;
+    margin-left: 70%;
 }
 
 .child5 {
     margin-top: 15%;
     position: relative;
     width: 15rem;
-    margin-left: 15%;
+    margin-left: 55%;
 }
 
 .eXIdQs {
@@ -163,7 +164,7 @@
     .Subhra_image{
         
       height: 50vh;
-      margin-top: 10%;
+      /* margin-top: 10%; */
     }
     .stories{
     top: 0;
@@ -171,13 +172,24 @@
     left: 0;
     }
     .team_slide1_heading_text{
-        font-size: 2.5rem;
+        font-size: 1.5rem;
+    line-height: 2rem;
     }
    
     .team_slide1_para_text{
-        font-size:1.2rem ;
+        font-size:1rem ;
     }
     .Team_Slide4_head{
-        font-size: 2rem;
+        font-size: 1.5rem;
+    }
+    .team_slide_content_text{
+        font-size: 1rem;
+    }
+    .Icon_slide4{
+        width: 4rem;
+        height: 4rem;
+    }
+    .team_slide4_icons{
+        width: 2rem;
     }
 }

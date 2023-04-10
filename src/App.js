@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import './App.css';
+import './media.css'
 import "./app.scss"
 import ReactFullpage from '@fullpage/react-fullpage';
 import { FirstComponent } from './components/FirstComponent';

@@ -1,0 +1,50 @@
+
+@media  (max-width: 600px){
+    .our_allum{
+        position: static;
+    }
+    .uppercontent-head{
+        font-size: 1.5rem;
+    }
+    .uppercontent-text{
+        font-size: 1rem;
+    }
+    .rigth_arrow_image, .left_arrow_image{
+        width: 2rem;
+    }
+    .elastic-carousel__arrow.rec-left{
+        right: 3.5rem !important;
+      }
+      .elastic-carousel__arrow.rec-right{
+        right: 1rem !important;
+      }
+      .slide_2_strength_heading{
+        font-size: 1.5rem;
+        line-height: 2rem;
+      }
+      .slide_2_strength_text{
+        font-size: 1rem;
+      }
+      .list li:nth-child(3){
+        margin-top: 10% !important;
+      }
+      .list li:nth-child(2){
+        margin-top: 10% !important;
+      }
+      .list li:nth-child(1){
+        margin-top: 15% !important;
+      }
+      .grayed_bubble{
+        height: 5rem !important;
+      }
+      .orange_bubble{
+        height: 5rem !important;
+      }
+      .arrow-svg{
+        display: none;
+      }
+      .team_slide2_heading_text{
+        font-size: 1rem;
+      }
+      /* class="marginstate animatedlisttext  mt-5  d-flex Lato" */
+}
