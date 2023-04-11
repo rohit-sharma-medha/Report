@@ -116,7 +116,7 @@ export const Innovatiing = () => {
           // enableAutoPlay autoPlaySpeed={8000} 
           ref={gotoRef1}
           className={currentclass} onChange={handleOnChange} renderArrow={myArrow}>
-          <div className="Inovate_slide Inovate_slide_1  d-flex flex-column align-item-start">
+          <div id='innovate_first_slide' className="Inovate_slide Inovate_slide_1  d-flex flex-column align-item-start">
             <div className="col-12">
               <div className="row d-flex align-item-center justify-content-center">
                 <div className="col-md-9 col-lg-9 col-xl-9 col-12">
@@ -124,7 +124,7 @@ export const Innovatiing = () => {
                     AND INNOVATING IN OUR DIRECT PROGRAMS AND <br /> ACTIVITIES WITH STUDENTS TO REMAIN QUALITY-DRIVEN
                   </p>
                 </div>
-                <div className="col-md-10 col-lg-10 col-xl-10 col-12 mt-5" >
+                <div id="INNOVATE_SLIDE1_para_text_id" className="col-md-10 col-lg-10 col-xl-10 col-12 mt-5" >
                   <p className="INNOVATE_SLIDE1_para_text Lato ">
                     There’s no point getting aggressive about scale if it adversely impacts the quality <br /> of your direct student engagement. That’s why we’re always keeping students <br />and their changing aspirations first.
 
@@ -200,13 +200,15 @@ export const Innovatiing = () => {
 
           </div>
 
-          <div className={currentPageIndex == 2 ? "innovative_slide3 " : ""}>
+          <div id="manish" className={currentPageIndex == 2 ? "innovative_slide3 " : ""}>
             {width > 600 ? <div className={currentPageIndex === 2 ? "typed-out" : ""}>
               {currentPageIndex == 2 ?
                 <Para index={currentPageIndex === 2 ? "cursor" : ""} subject="The Chapter Head election was a great learning space where I experimented with all my skills — communicating to get votes, using my problem-solving and critical thinking abilities to make a phenomenal campaign, and leading a successful chapter in Gorakhpur after winning the election.<br/> <br/>  <br/>I have a keen interest in community mobilization. I want to focus on my Chapter head position, do well for my community, and finish my graduation well.” <br/>  &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp; &nbsp;  &nbsp; <span style=color:#282828;>-  Manish, student and Medhavi</span>" />
                 : ""}
             </div> :
-              <MobilePara subject="The Chapter Head election was a great learning space where I experimented with all my skills — communicating to get votes, using my problem-solving and critical thinking abilities to make a phenomenal campaign, and leading a successful chapter in Gorakhpur after winning the election.<br/> <br/>  <br/>I have a keen interest in community mobilization. I want to focus on my Chapter head position, do well for my community, and finish my graduation well.” <br/>  &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp; &nbsp;  &nbsp; <span style=color:#282828;>-  Manish, student and Medhavi</span>" />}
+              <MobilePara 
+              person="manish"
+              subject="The Chapter Head election was a great learning space where I experimented with all my skills — communicating to get votes, using my problem-solving and critical thinking abilities to make a phenomenal campaign, and leading a successful chapter in Gorakhpur after winning the election.<br/> <br/>  <br/>I have a keen interest in community mobilization. I want to focus on my Chapter head position, do well for my community, and finish my graduation well.” <br/>  <span style='color:#282828;font-weight: 700;'>-  Manish, student and Medhavi</span>" />}
           </div>
           <div>
             <div className='d-flex  '>
@@ -270,21 +272,21 @@ export const Innovatiing = () => {
               </div>
             </div>
           </div>
-          <div className={currentPageIndex == 4 ? "innovative_slide3 " : ""}>
+          <div id='manish' className={currentPageIndex == 4 ? "innovative_slide3 " : ""}>
             {width > 600 ?
               <div className={currentPageIndex === 4 ? "type" : ""}>
                 {
                   currentPageIndex == 4 ?
                     <Para className="cursor1" index={currentPageIndex === 4 ? "cursor1" : "d-none"} 
-                    subject={"When I got introduced to freelancing, I was thrilled to know I could continue following my passion on the side. I built my technical and marketing skills, and got a clearer sense of my future.<br/> <br/><br/> Today, I often assist my father (a wedding photographer) at wedding shoots. When people question my choice, he shows confidence in my skills and does not let it discourage us.” <br/> <br/>   &nbsp; &nbsp;&nbsp; <span style=color:#282828; font-size:1rem;>-  Kajal, student and Swarambh alumnus</span>"}
+                    subject={"When I got introduced to freelancing, I was thrilled to know I could continue following my passion on the side. I built my technical and marketing skills, and got a clearer sense of my future.<br/> <br/><br/> Today, I often assist my father (a wedding photographer) at wedding shoots. When people question my choice, he shows confidence in my skills and does not let it discourage us.” <br/> <br/>   &nbsp; &nbsp;&nbsp; <span style='color:#282828;font-weight: 700;' >-  Kajal, student and Swarambh alumnus</span>"}
                      />
                     : ""
                 }
               </div> 
               :
               <MobilePara 
-              subject={"When I got introduced to freelancing, I was thrilled to know I could continue following my passion on the side. I built my technical and marketing skills, and got a clearer sense of my future.<br/> <br/><br/> Today, I often assist my father (a wedding photographer) at wedding shoots. When people question my choice, he shows confidence in my skills and does not let it discourage us.” <br/> <br/>   &nbsp; &nbsp;&nbsp; <span style=color:#282828; font-size:1rem;>-  Kajal, student and Swarambh alumnus</span>"}
-              
+              Person={"kajal"}
+              subject="When I got introduced to freelancing, I was thrilled to know I could continue following my passion on the side. I built my technical and marketing skills, and got a clearer sense of my future.<br/> <br/> Today, I often assist my father (a wedding photographer) at wedding shoots. When people question my choice, he shows confidence in my skills and does not let it discourage us.” <br/> <br/>     <span style='color:#282828;font-weight: 700;'>-  Kajal, student and Swarambh alumnus</span>"
               />
               
             }

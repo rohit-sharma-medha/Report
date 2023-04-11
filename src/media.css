@@ -92,5 +92,11 @@
         background-color: #31B89D;
         width: 30rem;
       }
+      .manish_image{
+        height: 30rem;
+        width: 100%;
+        position: absolute;
+        bottom: 1px;
+      }
       /* class="marginstate animatedlisttext  mt-5  d-flex Lato" */
 }
