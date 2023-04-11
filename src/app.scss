@@ -342,7 +342,13 @@
     }
 
     .second_main_heading {
-      font-size: 2rem;
+      font-size: 1.5rem;
+      margin-left: 13%
+    }
+    .second_headingPara{
+      font-size: 1rem;
+      padding-left: 15%;
+      padding-right: 10%;
     }
   }
 }
@@ -441,7 +447,7 @@
 
   .rec-carousel-item-4 {
     position: relative;
-    top: 10%;
+    // top: 10%;
   }
 
   .rec-carousel{
@@ -489,6 +495,9 @@
   @media  (max-width: 600px){
     ul{
       margin-bottom: 3rem;
+    }
+    .rec-carousel-item-2{
+      top: 0;
     }
   }
 
