@@ -116,9 +116,9 @@
     .elastic-carousel__1stslidearrow{
       right: 45%;
     }
-    br {
-      display: none;
-    }
+    // br {
+    //   display: none;
+    // }
   }
 
 
@@ -353,6 +353,13 @@
   }
 }
 
+.INNOVATE_SLIDE1_para_text_id{
+  @media  (max-width: 600px){
+    br{
+      display: none;
+    }
+  }
+}
 #support {
   .rec-carousel {
     height: 100vh !important;
