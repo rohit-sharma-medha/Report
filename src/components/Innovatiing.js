@@ -12,13 +12,14 @@ import BlendedCAB from '../Assets/Images/Icons/BlendedCAB.svg';
 import Freelance from '../Assets/Images/Icons/Freelance.svg'
 import Skills from '../Assets/Images/Icons/Skills.svg'
 import Entrepreneur from '../Assets/Images/Icons/Entrepreneur.svg'
+import { MobilePara } from "../Data/MobilePara";
 // import Item from "./Item"; BlendedCAB.svg Freelance.svg Skills.svg 
 // import "./styles.css"; Entrepreneur.svg 
 
 
 
 export const Innovatiing = () => {
-
+  const [width, setwidth] = useState(window.innerWidth)
   const [currentPageIndex, setCurrentPageIndex] = useState(0);
   const [currentclass, setcurrentclass] = useState("carousel-wrapper_innovate_other");
 
@@ -91,10 +92,10 @@ export const Innovatiing = () => {
       setcurrentclass("carousel-wrapper_innovate")
     }
 
-    else if (currentPageIndex === 2) {
+    else if (currentPageIndex === 2 && width > 600) {
       setcurrentclass(currentclass + " Manish_back")
     }
-    else if (currentPageIndex === 4) {
+    else if (currentPageIndex === 4 && width > 600) {
       setcurrentclass(" Kajal_back")
     }
     else {
@@ -200,10 +201,12 @@ export const Innovatiing = () => {
           </div>
 
           <div className={currentPageIndex == 2 ? "innovative_slide3 " : ""}>
-            <div className={currentPageIndex === 2 ? "typed-out" : ""}>
+            {width > 600 ? <div className={currentPageIndex === 2 ? "typed-out" : ""}>
               {currentPageIndex == 2 ?
                 <Para index={currentPageIndex === 2 ? "cursor" : ""} subject="The Chapter Head election was a great learning space where I experimented with all my skills — communicating to get votes, using my problem-solving and critical thinking abilities to make a phenomenal campaign, and leading a successful chapter in Gorakhpur after winning the election.<br/> <br/>  <br/>I have a keen interest in community mobilization. I want to focus on my Chapter head position, do well for my community, and finish my graduation well.” <br/>  &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp; &nbsp;  &nbsp; <span style=color:#282828;>-  Manish, student and Medhavi</span>" />
-                : ""} </div>
+                : ""}
+            </div> :
+              <MobilePara subject="The Chapter Head election was a great learning space where I experimented with all my skills — communicating to get votes, using my problem-solving and critical thinking abilities to make a phenomenal campaign, and leading a successful chapter in Gorakhpur after winning the election.<br/> <br/>  <br/>I have a keen interest in community mobilization. I want to focus on my Chapter head position, do well for my community, and finish my graduation well.” <br/>  &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp; &nbsp;  &nbsp; <span style=color:#282828;>-  Manish, student and Medhavi</span>" />}
           </div>
           <div>
             <div className='d-flex  '>
@@ -268,13 +271,25 @@ export const Innovatiing = () => {
             </div>
           </div>
           <div className={currentPageIndex == 4 ? "innovative_slide3 " : ""}>
-            <div className={currentPageIndex === 4 ? "type" : ""}>
-              {
-                currentPageIndex == 4 ?
-                  <Para className="cursor1" index={currentPageIndex === 4 ? "cursor1" : "d-none"} subject={"When I got introduced to freelancing, I was thrilled to know I could continue following my passion on the side. I built my technical and marketing skills, and got a clearer sense of my future.<br/> <br/><br/> Today, I often assist my father (a wedding photographer) at wedding shoots. When people question my choice, he shows confidence in my skills and does not let it discourage us.” <br/> <br/>   &nbsp; &nbsp;&nbsp; <span style=color:#282828; font-size:1rem;>-  Kajal, student and Swarambh alumnus</span>"} />
-                  : ""
-              }
-            </div>
+            {width > 600 ?
+              <div className={currentPageIndex === 4 ? "type" : ""}>
+                {
+                  currentPageIndex == 4 ?
+                    <Para className="cursor1" index={currentPageIndex === 4 ? "cursor1" : "d-none"} 
+                    subject={"When I got introduced to freelancing, I was thrilled to know I could continue following my passion on the side. I built my technical and marketing skills, and got a clearer sense of my future.<br/> <br/><br/> Today, I often assist my father (a wedding photographer) at wedding shoots. When people question my choice, he shows confidence in my skills and does not let it discourage us.” <br/> <br/>   &nbsp; &nbsp;&nbsp; <span style=color:#282828; font-size:1rem;>-  Kajal, student and Swarambh alumnus</span>"}
+                     />
+                    : ""
+                }
+              </div> 
+              :
+              <MobilePara 
+              subject={"When I got introduced to freelancing, I was thrilled to know I could continue following my passion on the side. I built my technical and marketing skills, and got a clearer sense of my future.<br/> <br/><br/> Today, I often assist my father (a wedding photographer) at wedding shoots. When people question my choice, he shows confidence in my skills and does not let it discourage us.” <br/> <br/>   &nbsp; &nbsp;&nbsp; <span style=color:#282828; font-size:1rem;>-  Kajal, student and Swarambh alumnus</span>"}
+              
+              />
+              
+            }
+            
+            
           </div>
 
 
