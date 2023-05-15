@@ -32,9 +32,9 @@ export const FirstComponent = () => {
 
                 <div className="">
                     <div className='text-head FirstSlide_text'>
-                        <p className={isVisible ? 'animate__animated animate__fadeInUp Audacious_text BebasNeue':""}>AN AUDACIOUS YEAR AT MEDHA</p>
-                        <div className={isVisible ?"animate__animated animate__fadeInUp line":""}></div>
-                        <p className={isVisible ? "animate__animated animate__fadeInUp Annual_text Lato":""}>ANNUAL REPORT</p>
+                        <p className={isVisible ? 'animate__animated animate__fadeInUp Audacious_text BebasNeue font-100':""}>AN AUDACIOUS YEAR AT MEDHA</p>
+                        <div className={isVisible ?"animate__animated animate__fadeInUp line ":""}></div>
+                        <p className={isVisible ? "animate__animated animate__fadeInUp Annual_text Lato font-30":""}>ANNUAL REPORT</p>
                         <p className={isVisible ? "animate__animated animate__fadeInUp Time_text Lato":""}>2021 - 2022</p>
                     </div>
                 </div>

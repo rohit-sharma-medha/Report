@@ -21,7 +21,7 @@ export const Slide2 = () => {
         <div className='col-12'>
             <div className='row d-flex align-items-center'>
               <div className='supporter_Heading'>
-                <p className='supporter_Heading_text text-center Lato-700 animate__animated animate__fadeInUp'>
+                <p className='supporter_Heading_text text-center Lato-700 animate__animated animate__fadeInUp font-50 mt-5'>
                 Our supporters
                 </p>
               </div>
@@ -29,13 +29,13 @@ export const Slide2 = () => {
                     <div className='mr-md-3 mr-lg-3 mr-xl-3 mr-0 text-center col-md-3 col-xl-3 col-lg-3 col-5 animate__animated animate__fadeInUp time1 '>
                         <img className='supporter_img' src={AccentureSqaure}/>
                     </div>
-                    <div className='mx-md-3 mx-lg-3 mx-xl-3 mx-0  text-center col-md-3 col-xl-3 col-lg-3 col-5 animate__animated animate__fadeInUp time2'>
+                    <div className='mx-md-3 mx-lg-3 mx-xl-3 mx-0  text-center col-md-3 col-xl-3 col-lg-3 col-5 animate__animated animate__fadeInUp time1'>
                         <img className='supporter_img' src={AxisBankFoundationforwebsitesquare}/>
                     </div>
-                    <div className='mx-md-3 mx-lg-3 mx-xl-3 mx-0  text-center col-md-3 col-xl-3 col-lg-3 col-5 animate__animated animate__fadeInUp time3'>
+                    <div className='mx-md-3 mx-lg-3 mx-xl-3 mx-0  text-center col-md-3 col-xl-3 col-lg-3 col-5 animate__animated animate__fadeInUp time1'>
                         <img className='supporter_img' src={BainSquare}/>
                     </div>
-                    <div className='mx-md-3 mx-lg-3 mx-xl-3 mx-0  text-center col-md-3 col-xl-3 col-lg-3 col-5 animate__animated animate__fadeInUp time4'>
+                    <div className='mx-md-3 mx-lg-3 mx-xl-3 mx-0  text-center col-md-3 col-xl-3 col-lg-3 col-5 animate__animated animate__fadeInUp time1'>
                         <img className='supporter_img' src={BankofAmericaSquare}/>
                     </div>
                     
@@ -73,7 +73,7 @@ export const Slide2 = () => {
                 </div>
                 
                 <div className='d-flex justify-content-center'>
-                    <div className=''>
+                    <div className='animate__animated animate__fadeInUp time3'>
                         <img className='supporter_img' src={MUFG}/>
                     </div>
                     

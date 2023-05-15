@@ -14,6 +14,8 @@ import { Strengthen } from './components/Strengthen';
 import { TeamCapability } from './components/TeamCapability';
 import { CareerPrep } from './components/CareerPrep';
 import { Supporters } from './components/Supporters';
+import { Heading } from './SubComponent/common/Heading';
+import { IconwithMsg } from './SubComponent/common/IconwithMsg';
 // import { Innovating1 } from './components/Innovating1';
 
 const fullpageOptions = {
@@ -69,11 +71,15 @@ function App() {
             <ReactFullpage.Wrapper>
               <div className="section">
                 <FirstComponent />
-                {/* <button onClick={() => fullpageApi.moveSectionDown()}>
-                  Click me to move down
-                </button> */}
+
               </div>
-               <div className="section">
+
+              {/* <div className="section">
+                <IconwithMsg/>
+
+              </div> */}
+
+              <div className="section">
                 <Second />
               </div>
               <div className="section section3">
@@ -86,11 +92,11 @@ function App() {
               <div className={`section ${activeSection === 2 ? "active" : ""}`}>
                 <Verticla2 />
               </div>
-              
-              
+
+
               <div className="section ">
                 <Innovatiing />
-              </div> 
+              </div>
 
               <div className="section ">
                 <Strengthen />
