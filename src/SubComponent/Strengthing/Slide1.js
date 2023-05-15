@@ -7,13 +7,13 @@ export const Slide1 = () => {
 
 
             {/* <CarrrouselArraows className="arrowbuttons" handlenext={handleNextClick} handleprev={handlePrevClick} /> */}
-            <div className=''>
-                <div className='col-12'>
+            <div className='row d-flex justify-content-center align-items-center'>
+                <div className='col-12 '>
                     <div className='row slide_1_strength row d-flex flex-column justify-content-center '>
-                        <p className='col-12 slide_1_strength_heading animate__animated animate__fadeInUp time1 BebasNeue'>
-                            While strengthening our data and impact<br/> systems to better understand, communicate<br/> and drive change on the ground
+                        <p className='col-12 slide_1_strength_heading animate__animated animate__fadeInUp time1 BebasNeue font-70'>
+                        WHILE STRENGTHENING OUR DATA AND IMPACT <br/>SYSTEMS TO BETTER UNDERSTAND, COMMUNICATE  <br/> AND DRIVE CHANGE ON THE GROUND 
                         </p>
-                        <p className='col-md-12 text-center slide_1_strength_text animate__animated animate__fadeInUp time2 Lato'>
+                        <p className='col-md-12 text-center slide_1_strength_text animate__animated animate__fadeInUp time2 Lato font-30'>
                             A common complaint against non-profits is that they let data and insights from work<br/> catch dust. We’re breaking away from that stereotype to maintain transparency,<br/> uncover insights, and advocate for change using data by:
                         </p>
                     </div>

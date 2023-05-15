@@ -52,7 +52,7 @@ export const Second= () => {
     
     
         <div id="Second_slide"   className='Seond_slide '>
-            <p ref={elementRef} className={isVisible ? " animate__animated animate__fadeInUp time2  second_slide_text BebasNeue":"font-0"} style={{}}>
+            <p ref={elementRef} className={isVisible ? " animate__animated animate__fadeInUp time2  second_slide_text BebasNeue font-70":"font-0"} style={{}}>
             OVER THE PAST DECADE, <span className="yellow-text"> 85,000+</span> PASSIONATE YOUTH HAVE <br /> ENGAGED WITH US TO <span className="yellow-text">START CAREERS THEY ENJOY </span>
             </p>
         </div>

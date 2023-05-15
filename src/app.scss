@@ -91,9 +91,9 @@
     position: absolute;
     bottom: 2%;
     left: 1%;
-    color: #4e4e4e;
+    color: #000000 !important;
     text-decoration: underline;
-    text-decoration-color:#4e4e4e;
+    text-decoration-color:#000000 !important;
     cursor: pointer;
     // text-decoration-thickness: 1px ;
     
@@ -155,9 +155,9 @@
     position: absolute;
     bottom: 2%;
     left: 1%;
-    color: #4e4e4e;
+    color: #000000;
     text-decoration: underline;
-    text-decoration-color:#4e4e4e;
+    text-decoration-line: underline;
     cursor: pointer;
     // text-decoration-thickness: 1px ;
     
@@ -368,8 +368,8 @@
   
     .rec-carousel-item-0 {
       display: flex;
-      position:relative;
-      top: 85%;
+      position:initial;
+      // top: 85%;
     }
   .rec-carousel-item-0 {
     display: flex;
@@ -386,8 +386,9 @@
 // First Slide Animation Handling
 
 .FirstSlide_text {
-  bottom: 3rem;
-
+  // position: relative;
+  // bottom: 7% !important;
+  // right: 25%;
   .Audacious_text {
     height: 5rem;
   }
@@ -488,9 +489,9 @@
     position: absolute;
     bottom: 2%;
     left: 1%;
-    color: #4e4e4e;
+    color: #000000;
     text-decoration: underline;
-    text-decoration-color:#4e4e4e;
+    text-decoration-color:#000000;
     cursor: pointer;
     // text-decoration-thickness: 1px ;
     

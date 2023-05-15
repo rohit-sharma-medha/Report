@@ -11,7 +11,7 @@ export const Slide3 = () => {
             <div className='col-12'>
                 <div className='row '>
                     <div className='supporter_Heading'>
-                        <p className='supporter_Heading_text text-center Lato-700 animate__animated animate__fadeInUp time1'>
+                        <p className='supporter_Heading_text text-center Lato-700 animate__animated animate__fadeInUp time1 mt-5'>
                             Our government partners
                         </p>
                     </div>
@@ -19,16 +19,16 @@ export const Slide3 = () => {
                     <div className='d-flex justify-content-evenly flex-md-row flex-lg-row flex-xl-row flex-column supporter_Cards_slide3'>
                         <div className='text-center animate__animated animate__fadeInUp time2 '>
                             <img className='supporter_img_slide3 ' src={UpGov} />
-                            <p className='Lato text-center supporter_text_slide3'>Directorate of Technical <br/> Education, Uttar Pradesh</p>
+                            <p className='Lato text-center supporter_text_slide3 font-30'>Directorate of Technical <br/> Education, Uttar Pradesh</p>
                         </div>
                         <div className='mx-5 text-center animate__animated animate__fadeInUp time3'>
                             <img className=' supporter__slide3_img2' src={HaryanaGov} />
-                            <p className='Lato text-center supporter_text_slide3'>Department of Higher <br/> Education, Haryana</p>
+                            <p className='Lato text-center supporter_text_slide3 font-30'>Department of Higher <br/> Education, Haryana</p>
                             {/* <img className='supporter_img' src={AxisBankFoundationforwebsitesquare} /> */}
                         </div>
                         <div className='text-center animate__animated animate__fadeInUp time4'>
                             <img className='supporter_img_slide3' src={SDIT} />
-                            <p className='Lato text-center supporter_text_slide3'>Skill Development and Industrial <br/>Training Department, Haryana</p>
+                            <p className='Lato text-center supporter_text_slide3 font-30'>Skill Development and Industrial <br/>Training Department, Haryana</p>
                             {/* <img className='supporter_img' src={BankofAmericaSquare} /> */}
 
                         </div>

@@ -1,6 +1,13 @@
 .Swati_words{
     font-size: 1.2rem ;
 }
+.Strength-item1{
+    display: flex;
+    justify-content: center;
+}
+.gototext{
+    color: #000000 !important;
+  }
 @media (max-width:600px) {
     .Swati_words{
         font-size: 0.9rem;

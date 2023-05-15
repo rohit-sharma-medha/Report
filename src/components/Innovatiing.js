@@ -13,6 +13,8 @@ import Freelance from '../Assets/Images/Icons/Freelance.svg'
 import Skills from '../Assets/Images/Icons/Skills.svg'
 import Entrepreneur from '../Assets/Images/Icons/Entrepreneur.svg'
 import { MobilePara } from "../Data/MobilePara";
+import { Heading } from "../SubComponent/common/Heading";
+import { IconwithMsg } from "../SubComponent/common/IconwithMsg";
 // import Item from "./Item"; BlendedCAB.svg Freelance.svg Skills.svg 
 // import "./styles.css"; Entrepreneur.svg 
 
@@ -120,12 +122,12 @@ export const Innovatiing = () => {
             <div className="col-12">
               <div className="row d-flex align-item-center justify-content-center">
                 <div className="col-md-9 col-lg-9 col-xl-9 col-12">
-                  <p className="INNOVATE_SLIDE1_heading_text BebasNeue">
+                  <p className="INNOVATE_SLIDE1_heading_text BebasNeue font-70">
                     AND INNOVATING IN OUR DIRECT PROGRAMS AND <br /> ACTIVITIES WITH STUDENTS TO REMAIN QUALITY-DRIVEN
                   </p>
                 </div>
-                <div id="INNOVATE_SLIDE1_para_text_id" className="col-md-10 col-lg-10 col-xl-10 col-12 mt-5" >
-                  <p className="INNOVATE_SLIDE1_para_text Lato ">
+                <div id="INNOVATE_SLIDE1_para_text_id" className="col-md-10 col-lg-10 col-xl-10 col-12 mt-2" >
+                  <p className="INNOVATE_SLIDE1_para_text Lato font-30">
                     There’s no point getting aggressive about scale if it adversely impacts the quality <br /> of your direct student engagement. That’s why we’re always keeping students <br />and their changing aspirations first.
 
                     Last year:
@@ -137,62 +139,73 @@ export const Innovatiing = () => {
 
           </div>
           <div className="">
-            <div className='d-flex  '>
+            <div className='d-flex '>
               <div className='col-12 '>
-                <div className='row mt-5 our_allum  d-flex flex-start justify-content-center'>
-                  <div className={currentPageIndex == 1 ? "col-md-5 col-lg-5 col-xl-5 col-12 " : "d-none"} >
-                    <p className={currentPageIndex == 1 ? " uppercontent-head  animate__animated animate__fadeInUp time1 Lato-700" : "d-none"}>Our alumni community <br /> became independent!</p>
-                  </div>
-                  <div className='col-md-6 col-lg-6 col-xl-6 col-12  ml-0'>
-                    <p className={currentPageIndex == 1 ? "uppercontent-text animate__animated animate__fadeInUp time2 Lato" : "d-none"}>Registered as the Medhavi Association, they represent <br /> the spirit of young people pursuing varied interests and charting offbeat career paths with passion.</p>
-                  </div>
+                <div className=''>
+                 
+
+
+                  {
+                    currentPageIndex == 1 ?
+                      <Heading
+                      content_head_common={"content-head-2"}
+                      // class={`prl-2`}
+                      paraclass={"content-para-2"}
+                      headclass={`position-fixed`}
+                      HeadingText={`Our alumni community \n became independent!`}
+                        paratext={`Registered as the Medhavi Association, they represent \n the spirit of young people pursuing varied interests and \n charting offbeat career paths with passion.`}
+                      /> : ""
+
+                  }
+
                 </div>
 
 
-                <div className="row ">
-                  <div className="col-12 mt-0  mt-md-5">
-                    <div className="px-md-5 px-lg-5 px-xl-5 px-0 row d-flex justify-content-between">
+                <div className="row w-100 icon_with_msg ">
+                  <div className="col-12 mt-0  mt-md-5 mrgin-up">
+                    <div className=" row d-flex justify-content-between">
                       <div className=" col-md-12 col-lg-6 col-xl-6 col-12 mt-0 mt-lg-5 mt-xl-5 mt-md-5 ">
                         <div className={currentPageIndex == 1 ? " d-flex mt-5 animate__animated animate__fadeInUp time3" : "d-flex mt-5 d-none"} >
-                          <span className="dot mx-md-5 mx-lg-5 mx-xl-5 mx-0 changemaker">
+                          <span className="dot mx-md-5 mx-lg-5 mx-xl-5 mx-0  mx-0 changemaker">
                             <img className="alumuni_shared" src={changemaker} />
 
                           </span>
-                          <p className={currentPageIndex == 1 ? "innovative_slide2_para_text  col-md-6 col-xl-6 col-lg-6 col-9 Lato" : "d-none"}>28 young community leaders <br /> came together on a changemaking <br /> journey</p>
+                          <p className={currentPageIndex == 1 ? "innovative_slide2_para_text  col-md-6 col-xl-6 col-lg-6 col-9 Lato font-30" : "d-none"}>28 young community leaders <br /> came together on a changemaking <br /> journey</p>
                         </div>
                       </div>
-                      <div className="pr-5 col-md-6 col-lg-6 col-xl-6 col-12 mt-0 mt-lg-5 mt-xl-5 mt-md-5 ">
+                      <div className=" col-md-6 col-lg-6 col-xl-6 col-12 mt-0 mt-lg-5 mt-xl-5 mt-md-5 icon_with_msg_1st_part2">
                         <div className={currentPageIndex == 1 ? "animate__animated animate__fadeInUp time4 d-flex  mt-5" : "d-flex mt-5 d-none"}>
                           <span className="dot mx-md-5 mx-lg-5 mx-xl-5 mx-0 simmer">
                             <img className="alumuni_shared" src={chapterelection} />
 
                           </span>
-                          <p className={currentPageIndex == 1 ? "innovative_slide2_para_text time_4s col-md-6 col-xl-6 col-lg-6 col-9 w3-animate-top Lato" : "d-none"}>Women alumni launched Simmer,<br /> a community for all the strong<br /> women speaking their truth</p>
+                          <p className={currentPageIndex == 1 ? "innovative_slide2_para_text time_4s col-md-6 col-xl-6 col-lg-6 col-9 w3-animate-top Lato font-30" : "d-none"}>5 alumni in UP got elected as <br /> Alumni Chapter Heads to lead <br />volunteerism efforts in their cities</p>
                         </div>
                       </div>
                     </div>
 
 
-                    <div className="px-md-5 px-lg-5 px-xl-5 pl-5 row d-flex justify-content-between">
+                    <div className="row  ">
                       <div className=" col-md-6 col-lg-6 col-xl-6 col-12  ">
                         <div className={currentPageIndex == 1 ? "animate__animated animate__fadeInUp  time5 d-flex  mt-5  " : "d-flex mt-5 d-none"}>
                           <span className="dot mx-md-5 mx-lg-5 mx-xl-5 mx-0 chapter_election">
                             <img className="alumuni_shared" src={simmer} />
                           </span>
-                          <p className={currentPageIndex == 1 ? "innovative_slide2_para_text  col-md-6 col-xl-6 col-lg-6 col-9  Lato" : "d-none"}>5 alumni in UP got elected as <br /> Alumni Chapter Heads to lead <br />volunteerism efforts in their cities</p>
+                          <p className={currentPageIndex == 1 ? "innovative_slide2_para_text  col-md-6 col-xl-6 col-lg-6 col-9  Lato font-30" : "d-none"}>Women alumni launched Simmer,a  community for all the strong women speaking their truth</p>
                         </div>
                       </div>
-                      <div className="col-md-6 col-lg-6 col-xl-6 col-12  ">
+                      <div className="col-md-6 col-lg-6 col-xl-6 col-12  icon_with_msg_1st_part2">
                         <div className={currentPageIndex == 1 ? "animate__animated animate__fadeInUp time6 d-flex  mt-5" : "d-flex mt-5 d-none"}>
                           <span className="dot mx-md-5 mx-lg-5 mx-xl-5 mx-0 text-center">
 
                             <img className="alumuni_shared" src={allum_shared} />
                           </span>
-                          <p className={currentPageIndex == 1 ? "innovative_slide2_para_text  col-md-6 col-xl-6 col-lg-6 col-9 Lato" : "d-none"}>6000 alumni shared the<br /> pandemic’s effect on their career<br /> and life</p>
+                          <p className={currentPageIndex == 1 ? "innovative_slide2_para_text  col-md-6 col-xl-6 col-lg-6 col-9 Lato font-30" : "d-none"}>6000 alumni shared the<br /> pandemic’s effect on their career<br /> and life</p>
                         </div>
                       </div>
                     </div>
                   </div>
+                
                 </div>
               </div>
             </div>
@@ -206,98 +219,114 @@ export const Innovatiing = () => {
                 <Para index={currentPageIndex === 2 ? "cursor" : ""} subject="The Chapter Head election was a great learning space where I experimented with all my skills — communicating to get votes, using my problem-solving and critical thinking abilities to make a phenomenal campaign, and leading a successful chapter in Gorakhpur after winning the election.<br/> <br/>  <br/>I have a keen interest in community mobilization. I want to focus on my Chapter head position, do well for my community, and finish my graduation well.” <br/>  &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp; &nbsp;  &nbsp; <span style=color:#282828;>-  Manish, student and Medhavi</span>" />
                 : ""}
             </div> :
-              <MobilePara 
-              person="manish"
-              subject="The Chapter Head election was a great learning space where I experimented with all my skills — communicating to get votes, using my problem-solving and critical thinking abilities to make a phenomenal campaign, and leading a successful chapter in Gorakhpur after winning the election.<br/> <br/>  <br/>I have a keen interest in community mobilization. I want to focus on my Chapter head position, do well for my community, and finish my graduation well.” <br/>  <span style='color:#282828;font-weight: 700;'>-  Manish, student and Medhavi</span>" />}
+              <MobilePara
+                person="manish"
+                subject="The Chapter Head election was a great learning space where I experimented with all my skills — communicating to get votes, using my problem-solving and critical thinking abilities to make a phenomenal campaign, and leading a successful chapter in Gorakhpur after winning the election.<br/> <br/>  <br/>I have a keen interest in community mobilization. I want to focus on my Chapter head position, do well for my community, and finish my graduation well.” <br/>  <span style='color:#282828;font-weight: 700;'>-  Manish, student and Medhavi</span>" />}
           </div>
-          <div>
-            <div className='d-flex  '>
+          <div className="row">
+            <div className='d-flex '>
               <div className='col-12 '>
-                <div className='row mt-5 ml-md-5 ml-xl-5 ml-lg-5 mr-0 ml-1  d-flex flex-start justify-content-center'>
-                  <div className={currentPageIndex == 3 ? "col-md-12 col-lg-5 col-xl-5 col-11" : ""} >
-                    <p className={currentPageIndex == 3 ? " uppercontent-head animate__animated animate__fadeInUp time_0s Lato-700" : "d-none"}>Our programs answered <br /> students’ changing needs</p>
+                <div className='mb-5'>
+                  {/* <div className={currentPageIndex == 1 ? "col-md-5 col-lg-5 col-xl-5 col-12 " : "d-none"} >
+                    <p className={currentPageIndex == 1 ? " uppercontent-head  animate__animated animate__fadeInUp time1 Lato-700 font-50" : "d-none"}>Our alumni community <br /> became independent!</p>
                   </div>
-                  <div className='col-md-12 col-lg-6 col-xl-6 col-11 '>
-                    <p className={currentPageIndex == 3 ? "uppercontent-text animate__animated animate__fadeInUp time_1s Lato" : "d-none"}>Young people are looking for the flexibility to improve their skills from where they are, while experimenting with freelancing and entrepreneurship as supporting or alternate career routes. Our programs followed suit, as:</p>
-                  </div>
+                  <div className='col-md-6 col-lg-6 col-xl-6 col-12  ml-0'>
+                    <p className={currentPageIndex == 1 ? "uppercontent-text animate__animated animate__fadeInUp time2 Lato font-30" : "d-none"}>Registered as the Medhavi Association, they represent <br /> the spirit of young people pursuing varied interests and charting offbeat career paths with passion.</p>
+                  </div> */}
+
+
+                  {
+                    currentPageIndex == 3 ?
+                      <Heading
+                      // paraclass={`ml-44`}
+                      paraclass={"content-para-3"}
+                      content_head_common={"content-head-3"}
+                      HeadingText={`Our programs answered \n students’ changing needs`}
+                        paratext={`Young people are looking for the flexibility to improve \n their skills from where they are, while experimenting with \n freelancing and entrepreneurship as supporting or \n alternate career routes. Our programs followed suit, as:`}
+                      /> : ""
+
+                  }
+
                 </div>
 
 
-                <div className="row ">
-                  <div className="col-12 ">
-                    <div className="mt-md-5 mt-lg-5 mt-xl-5 mt-3 row d-flex justify-content-between">
-                      <div className="col-md-12 col-lg-6 col-xl-6 col-12 mt-0 mt-lg-5 mt-xl-5 mt-md-5 ">
-                        <div className={currentPageIndex == 3 ? "animate__animated animate__fadeInUp time3 d-flex time3" : "d-none mt-5"} >
-                          <span className="dot mx-lg-5 mx-md-5 mx-xl-5 mx-1">
-                            <img className="alumuni_shared" src={BlendedCAB} />
+                <div className="row w-100 icon_with_msg1">
+                  <div className="col-12 mt-0  ">
+                    <div className="  row d-flex justify-content-between ">
+                      <div className=" col-md-12 col-lg-6 col-xl-6 col-12 mt-0 mt-lg-5 mt-xl-5 mt-md-5 ">
+                        <div className={currentPageIndex == 3 ? " d-flex mt-5 animate__animated animate__fadeInUp time3" : "d-flex mt-5 d-none"} >
+                          <span className="dot mx-md-5 mx-lg-5 mx-xl-5 mx-0 changemaker">
+                            <img className="alumuni_shared" src={changemaker} />
 
                           </span>
-                          <p className={currentPageIndex == 3 ? "innovative_slide2_para_text time_2s col-md-6 col-lg-6 col-xl-6 col-8 Lato" : "d-none"}>CAB, the career advancement bootcamp, adapted to blended delivery</p>
+                          <p className={currentPageIndex == 3 ? "innovative_slide2_para_text  col-md-6 col-xl-6 col-lg-6 col-9 Lato font-30" : "d-none"}>28 young community leaders <br /> came together on a changemaking <br /> journey</p>
                         </div>
                       </div>
-                      <div className="col-md-12 col-lg-6 col-xl-6 col-12 mt-0 mt-lg-5 mt-xl-5 mt-md-5">
-                        <div className={currentPageIndex == 3 ? "animate__animated animate__fadeInUp time4 d-flex  " : "d-none mt-5"}>
-                          <span className="dot mx-lg-5 mx-md-5 mx-xl-5 mx-1">
-                            <img className="alumuni_shared" src={Freelance} />
+                      <div className=" col-md-6 col-lg-6 col-xl-6 col-12 mt-0 mt-lg-5 mt-xl-5 mt-md-5 ">
+                        <div className={currentPageIndex == 3 ? "animate__animated animate__fadeInUp time4 d-flex  mt-5" : "d-flex mt-5 d-none"}>
+                          <span className="dot mx-md-5 mx-lg-5 mx-xl-5 mx-0 simmer">
+                            <img className="alumuni_shared" src={chapterelection} />
 
                           </span>
-                          <p className={currentPageIndex == 3 ? "innovative_slide2_para_text  col-md-6 col-lg-6 col-xl-6 col-8  Lato" : ""}>Swarambh, which helps young people start freelancing careers, moved from communities to </p>
+                          <p className={currentPageIndex == 3 ? "innovative_slide2_para_text time_4s col-md-6 col-xl-6 col-lg-6 col-9 w3-animate-top Lato font-30" : "d-none"}>Women alumni launched Simmer, a community for all the strong<br /> women speaking their truth</p>
                         </div>
                       </div>
                     </div>
 
 
-                    <div className="mt-md-5 mt-lg-5 mt-xl-5 mt-3 row d-flex justify-content-between">
-                      <div className="col-md-12 col-lg-6 col-xl-6 col-12 ">
-                        <div className={currentPageIndex == 3 ? "animate__animated animate__fadeInUp time5 d-flex  " : "d-none mt-5"}>
-                          <span className="dot mx-lg-5 mx-md-5 mx-xl-5 mx-1">
-                            <img className="alumuni_shared" src={Skills} />
-
+                    <div className=" row ">
+                      <div className=" col-md-6 col-lg-6 col-xl-6 col-12  ">
+                        <div className={currentPageIndex == 3 ? "animate__animated animate__fadeInUp  time5 d-flex  mt-5  " : "d-flex mt-5 d-none"}>
+                          <span className="dot mx-md-5 mx-lg-5 mx-xl-5 mx-0 chapter_election">
+                            <img className="alumuni_shared" src={simmer} />
                           </span>
-                          <p className={currentPageIndex == 3 ? "innovative_slide2_para_text  col-md-6 col-lg-6 col-xl-6 col-8  Lato" : ""}>Svapoorna, a life skills-building program for adolescents, scaled to new schools</p>
+                          <p className={currentPageIndex == 3 ? "innovative_slide2_para_text  col-md-6 col-xl-6 col-lg-6 col-9  Lato font-30" : "d-none"}>5 alumni in UP got elected as <br /> Alumni Chapter Heads to lead <br />volunteerism efforts in their cities</p>
                         </div>
                       </div>
-                      <div className="col-md-12 col-lg-6 col-xl-6 col-12  ">
-                        <div className={currentPageIndex == 3 ? "animate__animated animate__fadeInUp time6 d-flex  " : "d-none mt-5"}>
-                          <span className="dot mx-lg-5 mx-md-5 mx-xl-5 mx-1">
-                            <img className="alumuni_shared" src={Entrepreneur} />
+                      <div className="col-md-6 col-lg-6 col-xl-6 col-12  ">
+                        <div className={currentPageIndex == 3 ? "animate__animated animate__fadeInUp time6 d-flex  mt-5" : "d-flex mt-5 d-none"}>
+                          <span className="dot mx-md-5 mx-lg-5 mx-xl-5 mx-0 text-center">
 
+                            <img className="alumuni_shared" src={allum_shared} />
                           </span>
-                          <p className={currentPageIndex == 3 ? "innovative_slide2_para_text  col-md-6 col-lg-6 col-xl-6 col-8  Lato" : ""}>Youthscape, an entrepreneurial competition, led to a program on designing business model</p>
+                          <p className={currentPageIndex == 3 ? "innovative_slide2_para_text  col-md-6 col-xl-6 col-lg-6 col-9 Lato font-30" : "d-none"}>6000 alumni shared the<br /> pandemic’s effect on their career<br /> and life</p>
                         </div>
                       </div>
                     </div>
                   </div>
+                  {/* <IconwithMsg /> */}
                 </div>
               </div>
             </div>
+            {/* <CarrrouselArraows className="arrowbuttons" handlenext={handleNextClick} handleprev={handlePrevClick} /> */}
+
           </div>
           <div id='manish' className={currentPageIndex == 4 ? "innovative_slide3 " : ""}>
             {width > 600 ?
               <div className={currentPageIndex === 4 ? "type" : ""}>
                 {
                   currentPageIndex == 4 ?
-                    <Para className="cursor1" index={currentPageIndex === 4 ? "cursor1" : "d-none"} 
-                    subject={"When I got introduced to freelancing, I was thrilled to know I could continue following my passion on the side. I built my technical and marketing skills, and got a clearer sense of my future.<br/> <br/><br/> Today, I often assist my father (a wedding photographer) at wedding shoots. When people question my choice, he shows confidence in my skills and does not let it discourage us.” <br/> <br/>   &nbsp; &nbsp;&nbsp; <span style='color:#282828;font-weight: 700;' >-  Kajal, student and Swarambh alumnus</span>"}
-                     />
+                    <Para className="cursor1" index={currentPageIndex === 4 ? "cursor1" : "d-none"}
+                      subject={"When I got introduced to freelancing, I was thrilled to know I could continue following my passion on the side. I built my technical and marketing skills, and got a clearer sense of my future.<br/> <br/><br/> Today, I often assist my father (a wedding photographer) at wedding shoots. When people question my choice, he shows confidence in my skills and does not let it discourage us.” <br/> <br/>   &nbsp; &nbsp;&nbsp; <span style='color:#282828;font-weight: 700;' >-  Kajal, student and Swarambh alumnus</span>"}
+                    />
                     : ""
                 }
-              </div> 
+              </div>
               :
-              <MobilePara 
-              Person={"kajal"}
-              subject="When I got introduced to freelancing, I was thrilled to know I could continue following my passion on the side. I built my technical and marketing skills, and got a clearer sense of my future.<br/> <br/> Today, I often assist my father (a wedding photographer) at wedding shoots. When people question my choice, he shows confidence in my skills and does not let it discourage us.” <br/> <br/>     <span style='color:#282828;font-weight: 700;'>-  Kajal, student and Swarambh alumnus</span>"
+              <MobilePara
+                Person={"kajal"}
+                subject="When I got introduced to freelancing, I was thrilled to know I could continue following my passion on the side. I built my technical and marketing skills, and got a clearer sense of my future.<br/> <br/> Today, I often assist my father (a wedding photographer) at wedding shoots. When people question my choice, he shows confidence in my skills and does not let it discourage us.” <br/> <br/>     <span style='color:#282828;font-weight: 700;'>-  Kajal, student and Swarambh alumnus</span>"
               />
-              
+
             }
-            
-            
+
+
           </div>
 
 
 
         </ElasticCarousel>
-        <button onClick={() => goToSlide(0)} className={currentPageIndex != 0 ? 'gototext Lato-300 pointer_class' : "d-none"} >
+        <button onClick={() => goToSlide(0)} className={currentPageIndex != 0 ? 'gototext Lato pointer_class' : "d-none"} >
           back to main slide
         </button>
       </div >

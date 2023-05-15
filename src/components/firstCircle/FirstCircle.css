@@ -17,15 +17,24 @@
   font-family: Lato;
 
 }
-
+.Firstcircle{
+  position: relative;
+  /* right: 7%; */
+}
 .headingPara {
     color: #000000;
     font-size: 1.5rem;
     line-height: 2.2rem;
     font-weight: 400;
     font-family: Lato-Ragular;
+    position: relative;
+    left: 5%;
 }
 
+.halforbit{
+  position: relative;
+  top: 5rem !important;
+}
 .grayed_bubble {
   background-color: #F2F2F2;
   border-radius: 112px;
