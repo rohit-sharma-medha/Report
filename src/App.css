@@ -8,7 +8,7 @@ body {
   color: #FF9700;
 }
 .font-color{
-  color: #282828;
+  color: #282828 !important;
 }
 
 .mr-2 {
@@ -577,6 +577,7 @@ body {
   font-size: 1.2rem;
   color: #FFF;
   padding: 0 2rem;
+  margin: 1rem 2rem;
 }
 
 
@@ -754,8 +755,10 @@ body {
 
 .vert1-slide2-img {
   /* width: 70%; */
+  object-fit: none;
   height: 30rem;
   border-radius: 50%;
+  
 }
 
 /* .marginstate {
@@ -1473,7 +1476,9 @@ body {
 }
 
 
-
+.represent{
+  max-width: 80%;
+}
 
 /* slides hold */
 
@@ -1496,6 +1501,7 @@ body {
     .first-row-cards{
       flex-direction: column !important;
     }
+
 }
 
 @media (max-width: 600px) {
@@ -1503,11 +1509,19 @@ body {
   .font-100 {
     font-size: 2.5rem !important;
   }
+  .Align_to_center{
+    align-items: center;
+  }
   .font-70 {
     font-size: 2rem !important;
+    line-height: 2.5rem;
   }
   .font-30 {
     font-size: 1rem !important;
+}
+.font-50{
+  font-size: 1.5rem !important;
+  line-height: 2rem !important;
 }
   .fistslide {
     width: 100%;
@@ -1583,7 +1597,7 @@ body {
   }
 
   .vert_cards_text {
-    font-size: 1.5rem;
+    padding: 0 2.5rem;
   }
 
   #vertical_slider_circle_container {
@@ -1596,8 +1610,8 @@ body {
     height: auto !important;
   } */
   .circle {
-    width: 12rem;
-    height: 12rem;
+    width: 10rem;
+    height: 10rem;
     font-size: 1rem;
 
   }
@@ -1616,9 +1630,12 @@ body {
 
   .vert1-slide1-img,
   .vert1-slide2-img {
-    /* width: 100%; */
+    width: 100%;
     border-radius: 0;
     height: 25rem;
+  }
+  .vertical-slide2-img{
+    left: 0 !important;
   }
 
   .verticalslide1Head-text {
@@ -1751,6 +1768,44 @@ body {
     font-size: 2.5rem !important;
     line-height: 3rem;
   }
+  .vert1-slide2-img{
+    object-fit: none;
+    top: 10%;
+  }
+  .verticalslide1Head_1{
+    right: 0;
+    bottom: 0;
+    top: 20%;
+    left: 10%;
+  }
+  .verticalslide1Head3 {
+    position: relative;
+    top: 20% !important;
+  }
+  .list li{
+    right: 0;
+  }
+  .list li:nth-child(1){
+    margin-top: 5% !important;
+  }
+  .list li:nth-child(2){
+    margin-top: 2% !important;
+  }
+  .list li:nth-child(3){
+    margin-top: 2% !important;
+  }
+  .font-50{
+    font-size: 2rem !important;
+  }
+  .font-30{
+    font-size: 1rem !important;
+  }
+  .Align_to_center{
+    align-items: center;
+  }
+  .circle{
+    padding: 0;
+  }
   .Audacious_text {
 
     font-size: 4.5rem;
@@ -1764,7 +1819,7 @@ body {
   .vert1-slide2-img {
     width: 100%;
     border-radius: 0;
-    height: 25rem;
+    height: 35rem;
   }
 
   .cards3rd {
@@ -1783,8 +1838,8 @@ body {
 
   .circle {
     background: #31B89D;
-    width: 12rem;
-    height: 12rem;
+    width: 10rem;
+    height: 10rem;
     font-size: 1.2rem;
   }
 
@@ -1796,6 +1851,10 @@ body {
   .vert1-slide2-img {
     position: relative;
     right: 5rem;
+    top: 5rem !important;
+  }
+  .vert_cards_text{
+    padding: 0 4rem;
   }
 
 

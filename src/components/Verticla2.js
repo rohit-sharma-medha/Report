@@ -122,7 +122,7 @@ export const Verticla2 = () => {
                                 </div>
                                 <div className='col-md-12 col-lg-5 col-xl-5 col-12'>
                                     <div className={currentPageIndex == 1 ? "verticalslide1Head_1 animate__animated animate__fadeInUp time1 BebasNeue" : "d-none"}>
-                                        <p className='scaleknoledge font-50 Lato-700'>Scale as a Knowledge Partner</p>
+                                        <p className='scaleknoledge font-50 Lato-700 col-12 '>Scale as a Knowledge Partner</p>
                                     </div>
                                     <div className={currentPageIndex == 1 ? "verticalslide1Head_1 animate__animated animate__fadeInUp time2 Lato        " : "d-none"}>
                                         <p className='residenseoursystem col--md-10 col-xl-10 col-lg-10 col-12 Lato font-30'>Redesigned our System Adoption team to be <br /> self-sufficient:</p>
@@ -130,7 +130,7 @@ export const Verticla2 = () => {
 
                                     <div className='verticalslide1Head3 col-10'>
                                         <ul className={currentPageIndex == 1 ? "list" : "d-none"} >
-                                            <li className='marginstate animatedlisttext mt-5 d-flex Lato '>
+                                            <li className='marginstate animatedlisttext mt-5 mt-md-0 mt-lg-5 mt-xl-5 mt- d-flex Lato '>
                                                 <span className='animatedlisticon'>
                                                     {/* <img className=' animatedlisticon2 mx-4' src={Stateheads} /> */}
                                                     <img className='animatedlisticon mx-4' src={proffesional} />
@@ -141,7 +141,7 @@ export const Verticla2 = () => {
 
                                                 </span>
                                             </li>
-                                            <li className='marginstate animatedlisttext  mt-5  d-flex  Lato '>
+                                            <li className='marginstate animatedlisttext  mt-5 mt-md-0 mt-lg-5 mt-xl-5  d-flex  Lato '>
                                                 <span className='animatedlisticon'>
                                                     <img className=' animatedlisticon2 mx-4' src={Stateheads} />
 
@@ -152,7 +152,7 @@ export const Verticla2 = () => {
                                                 </span>
 
                                             </li>
-                                            <li className='marginstate animatedlisttext  mt-md-5 mt-lg-5 mt-xl-5 mt-0  d-flex Lato'>
+                                            <li className='marginstate animatedlisttext  mt-md-0 mt-lg-5 mt-xl-5 mt-0  d-flex Lato'>
                                                 <span className='animatedlisticon'>
                                                     {/* <img className=' animatedlisticon2 mx-4' src={Stateheads} /> */}
                                                     <img className='animatedlisticon  animatedlisticon3 mx-4 ' src={industrylead} />

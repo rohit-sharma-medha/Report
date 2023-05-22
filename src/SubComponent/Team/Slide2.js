@@ -78,7 +78,7 @@ const turnToPage = (newPageIndex) => {
                                     <img className='border-50 bhawna_image animate__animated animate__fadeInUp time1' src={Bhawnaimg} />
                                     <div className='vl animate__animated animate__fadeInUp time2'></div>
                                     <div className='team_slide2_1 animate__animated animate__fadeInUp time2' >
-                                        <p className='team_slider2_paratext'>
+                                        <p className='team_slider2_paratext font-color'>
                                             <span className='yellow-text'>Bhavna</span> has 12+ years of experience working across places like the World Bank and the Indian Ministry of Finance. A student of public policy, economics, and Bharatanatyam, she believes art is essential for thriving in life.
                                         </p>
                                     </div>
@@ -92,7 +92,7 @@ const turnToPage = (newPageIndex) => {
                                     <img className='border-50 animate__animated animate__fadeInUp time3' src={KrithikaRam} />
                                     <div className='vl1 animate__animated animate__fadeInUp time4'></div>
                                     <div className='team_slide2_1 animate__animated animate__fadeInUp time4' >
-                                        <p className='team_slider2_paratext'>
+                                        <p className='team_slider2_paratext font-color'>
                                             With over 15+ years of leadership<br /> experience,<span className='yellow-text'>Krithika</span>  has directed pan-India programs, led CSR strategies, and built an influential voice on LinkedIn. You can trust her to distill clarity from chaos with a smile.
                                         </p>
                                     </div>
@@ -103,7 +103,7 @@ const turnToPage = (newPageIndex) => {
                                     <img className='border-50 animate__animated animate__fadeInUp time5' src={saurabh}/>
                                     <div className='vl animate__animated animate__fadeInUp time6'></div>
                                     <div className='team_slide2_1 animate__animated animate__fadeInUp time6' >
-                                        <p className='team_slider2_paratext'>
+                                        <p className='team_slider2_paratext font-color'>
                                             <span className='yellow-text'>Saurabh </span>
                                             has engaged multiple state governments at places like the Azim Premji, Piramal, and Agha Khan Foundation in the last 17 years. He loves experimenting with food in his kitchen when not strategizing for scale!
                                         </p>
@@ -115,7 +115,7 @@ const turnToPage = (newPageIndex) => {
                                     <img className='border-50 animate__animated animate__fadeInUp time7' src={sanjul} />
                                     <div className='vl animate__animated animate__fadeInUp time8'></div>
                                     <div className='team_slide2_1 animate__animated animate__fadeInUp time8' >
-                                        <p className='team_slider2_paratext'>
+                                        <p className='team_slider2_paratext font-color'>
                                             With 13+ years of cross-functional experience in corporates and non-profits, Sanjul is an operations and strategy expert. A student of various subjects from engineering to Vipassana, he's also a much-loved life coach.
                                         </p>
                                     </div>
@@ -126,7 +126,7 @@ const turnToPage = (newPageIndex) => {
                                     <img className='border-50 animate__animated animate__fadeInUp time2' src={afzal} />
                                     <div className='vl'></div>
                                     <div className='team_slide2_1' >
-                                        <p className='team_slider2_paratext'>
+                                        <p className='team_slider2_paratext font-color'>
                                             <span className='yellow-text'>Afzal </span>
                                             has built his expertise in financial accounting, analysis, and audit in the last 16 years, working at places like Oxfam and Pratham. You can trust him to catch tiny but mighty details with quiet composure!
                                         </p>

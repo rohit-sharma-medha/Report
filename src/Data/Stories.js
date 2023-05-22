@@ -14,7 +14,7 @@ export const Stories = (props) => {
     <>
       <div className='stories'>
         
-        <div className='animate__animated animate__fadeIn Swati_words time1 Lato' dangerouslySetInnerHTML={ { __html: magicName}} />
+        <div className='animate__animated animate__fadeIn Swati_words time1 Lato font-color' dangerouslySetInnerHTML={ { __html: magicName}} />
 
         
       </div>
