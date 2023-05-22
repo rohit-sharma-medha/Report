@@ -32,6 +32,7 @@ export const Second= () => {
 
   const callbackFunction = (entries) => {
     const [ entry ] = entries
+    console.log("entry.isIntersecting",entry.isIntersecting);
     setIsVisible(entry.isIntersecting)
   }
   

@@ -122,10 +122,10 @@ export const Verticla2 = () => {
                                 </div>
                                 <div className='col-md-12 col-lg-5 col-xl-5 col-12'>
                                     <div className={currentPageIndex == 1 ? "verticalslide1Head_1 animate__animated animate__fadeInUp time1 BebasNeue" : "d-none"}>
-                                        <p className='scaleknoledge font-50'>Scale as a Knowledge Partner</p>
+                                        <p className='scaleknoledge font-50 Lato-700'>Scale as a Knowledge Partner</p>
                                     </div>
                                     <div className={currentPageIndex == 1 ? "verticalslide1Head_1 animate__animated animate__fadeInUp time2 Lato        " : "d-none"}>
-                                        <p className='residenseoursystem col--md-10 col-xl-10 col-lg-10 col-12 font-30'>Redesigned our System Adoption team to be <br /> self-sufficient:</p>
+                                        <p className='residenseoursystem col--md-10 col-xl-10 col-lg-10 col-12 Lato font-30'>Redesigned our System Adoption team to be <br /> self-sufficient:</p>
                                     </div>
 
                                     <div className='verticalslide1Head3 col-10'>
@@ -136,7 +136,7 @@ export const Verticla2 = () => {
                                                     <img className='animatedlisticon mx-4' src={proffesional} />
 
                                                 </span>
-                                                <span className='mt-2 font-30'>
+                                                <span className='mt-2 font-30 Lato'>
                                                 Seasoned professionals <br />leading 6 diverse verticals,
 
                                                 </span>
@@ -146,7 +146,7 @@ export const Verticla2 = () => {
                                                     <img className=' animatedlisticon2 mx-4' src={Stateheads} />
 
                                                 </span>
-                                                <span className='font-30 mt-2'>
+                                                <span className='font-30 mt-2 Lato'>
                                                 State heads overseeing project <br /> teams of experts and generalists,
 
                                                 </span>
@@ -158,7 +158,7 @@ export const Verticla2 = () => {
                                                     <img className='animatedlisticon  animatedlisticon3 mx-4 ' src={industrylead} />
 
                                                 </span>
-                                                <span className='font-30 mt-2'>
+                                                <span className='font-30 mt-2 Lato'>
                                                 An industry veteran <br />leading the team.
 
                                                 </span>
@@ -179,7 +179,7 @@ export const Verticla2 = () => {
                     <div className='vertical2-slide d-flex justi'>
                         <div className='col-12 '>
                             
-                            <div className='px-6'>
+                            <div className=''>
                                 {
                                     currentPageIndex == 3 ?
                                     <Heading 

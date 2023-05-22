@@ -16,6 +16,9 @@ import { CareerPrep } from './components/CareerPrep';
 import { Supporters } from './components/Supporters';
 import { Heading } from './SubComponent/common/Heading';
 import { IconwithMsg } from './SubComponent/common/IconwithMsg';
+import { Millionyoutuh } from './components/Millionyoutuh';
+import { Socialchange } from './components/Socialchange';
+import { Impact } from './components/Impact';
 // import { Innovating1 } from './components/Innovating1';
 
 const fullpageOptions = {
@@ -86,7 +89,14 @@ function App() {
                 <Thirslide />
               </div>
               <div className="section section_4 ">
-                <Vertical_slider />
+                <Millionyoutuh />
+              </div>
+              <div className="section section_4 ">
+                <Socialchange />
+              </div>
+
+              <div className="section section_4 ">
+                <Impact />
               </div>
 
               <div className={`section ${activeSection === 2 ? "active" : ""}`}>

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Head_Subhead } from '../../Data/head_Subhead'
 
 export const Heading = (props) => {
   return (
@@ -19,6 +20,7 @@ export const Heading = (props) => {
             </div>
         </div>
     
+    {/* <Head_Subhead /> */}
     </>
   )
 }
