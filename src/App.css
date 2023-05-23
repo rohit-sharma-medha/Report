@@ -616,10 +616,10 @@ body {
 
 .vert1-slide1-img {
   /* width: 100%; */
-  height: 30rem;
+  height: 32rem;
   border-radius: 50%;
-  transform: scale(1.2);
 }
+
 
 .greentext {
   color: #31B89D;
@@ -1523,15 +1523,21 @@ body {
   font-size: 1.5rem !important;
   line-height: 2rem !important;
 }
+.Heading_common{
+  margin-bottom: 15%;
+}
+
   .fistslide {
     width: 100%;
     background-size: auto;
   }
 
-  .Audacious_text {
-    font-size: 2rem;
-
+  .vert1-slide1-img ,.vert1-slide2-img{
+    width: 100%;
+    height: auto;
   }
+ 
+
 
   .FirstSlide_text .Audacious_text {
     height: 2.5rem !important;
@@ -1630,9 +1636,9 @@ body {
 
   .vert1-slide1-img,
   .vert1-slide2-img {
-    width: 100%;
-    border-radius: 0;
-    height: 25rem;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
   }
   .vertical-slide2-img{
     left: 0 !important;
@@ -1772,12 +1778,20 @@ body {
     object-fit: none;
     top: 10%;
   }
+  .vertical-slide1-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .verticalslide1Head_1{
     right: 0;
     bottom: 0;
     top: 20%;
     left: 10%;
   }
+  .first_vertical_slider_slide1 {
+    flex-direction: column-reverse !important;
+}
   .verticalslide1Head3 {
     position: relative;
     top: 20% !important;
@@ -1811,15 +1825,14 @@ body {
     font-size: 4.5rem;
   }
 
-  .vertical2-slide {
-    height: auto;
-  }
+  
 
   .vert1-slide1-img,
   .vert1-slide2-img {
     width: 100%;
-    border-radius: 0;
-    height: 35rem;
+    border-radius: 50%;
+    object-fit: cover;
+    height: auto;
   }
 
   .cards3rd {
@@ -1843,10 +1856,7 @@ body {
     font-size: 1.2rem;
   }
 
-  .vert1-slide1-img {
-    position: relative;
-    left: 2rem;
-  }
+  
 
   .vert1-slide2-img {
     position: relative;
@@ -2043,3 +2053,29 @@ body {
 @media screen and (max-width: 1480px) {
   
 }
+.vert1-slide1-img,
+  .vert1-slide2-img{
+    object-fit: cover;
+  }
+
+
+
+
+/* 
+.row.w-100.icon_with_msg {
+left:unset !important;
+}
+
+
+.slide-section_heading{
+  width: 1480px !important;
+
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+
+.col-12.mt-0.mt-md-5.mrgin-up{
+
+} */
