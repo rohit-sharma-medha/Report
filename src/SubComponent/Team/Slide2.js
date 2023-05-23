@@ -1,8 +1,7 @@
 import React, { useRef, useState } from 'react';
 import swati_image from "../../Assets/Images/swati_medha_employee.png";
 import Carousel from 'react-grid-carousel'
-import afzal from "../../Assets/Images/Team/Afzal.png";
-import sanjul from "../../Assets/Images/Team/Sanjul.png";
+
 import saurabh from "../../Assets/Images/Team/saurabh.png";
 import KrithikaRam from "../../Assets/Images/Team/KrithikaRam.png";
 import Bhawnaimg from '../../Assets/Images/Team/BhavnaJaisingh.png'
@@ -25,19 +24,19 @@ const MyDot = ({ isActive }) => (
 
 export const Slide2 = () => {
 
-//     const carouselRef = useRef(null);
+    //     const carouselRef = useRef(null);
 
-//   const handlePageChange = () => {
-//     const currentPageIndex = carouselRef.current.state.currentIndex;
-//     console.log("currentPageIndex------------",currentPageIndex); // or update state variable
-//   };
+    //   const handlePageChange = () => {
+    //     const currentPageIndex = carouselRef.current.state.currentIndex;
+    //     console.log("currentPageIndex------------",currentPageIndex); // or update state variable
+    //   };
 
-const [currentPageIndex, setCurrentPageIndex] = useState(0);
+    const [currentPageIndex, setCurrentPageIndex] = useState(0);
 
-  
-const turnToPage = (newPageIndex) => {
-    setCurrentPageIndex(newPageIndex);
-  };
+
+    const turnToPage = (newPageIndex) => {
+        setCurrentPageIndex(newPageIndex);
+    };
     return (
         <>
 
@@ -49,10 +48,10 @@ const turnToPage = (newPageIndex) => {
                     </div>
 
 
-                    <div className='container d-flex justify-content-between Team_capability_slider '>
+                    <div className=' d-flex justify-content-around  '>
 
 
-                        <Carousel
+                        {/* <Carousel
                             responsiveLayout={[
                                 {
                                     breakpoint: 1200,
@@ -74,41 +73,16 @@ const turnToPage = (newPageIndex) => {
 
 
                             {<Carousel.Item>
-                                <div className='child '>
-                                    <img className='border-50 bhawna_image animate__animated animate__fadeInUp time1' src={Bhawnaimg} />
-                                    <div className='vl animate__animated animate__fadeInUp time2'></div>
-                                    <div className='team_slide2_1 animate__animated animate__fadeInUp time2' >
-                                        <p className='team_slider2_paratext font-color'>
-                                            <span className='yellow-text'>Bhavna</span> has 12+ years of experience working across places like the World Bank and the Indian Ministry of Finance. A student of public policy, economics, and Bharatanatyam, she believes art is essential for thriving in life.
-                                        </p>
-                                    </div>
-                                </div>
+                                
 
 
 
                             </Carousel.Item>}
                             {<Carousel.Item>
-                                <div className='child2'>
-                                    <img className='border-50 animate__animated animate__fadeInUp time3' src={KrithikaRam} />
-                                    <div className='vl1 animate__animated animate__fadeInUp time4'></div>
-                                    <div className='team_slide2_1 animate__animated animate__fadeInUp time4' >
-                                        <p className='team_slider2_paratext font-color'>
-                                            With over 15+ years of leadership<br /> experience,<span className='yellow-text'>Krithika</span>  has directed pan-India programs, led CSR strategies, and built an influential voice on LinkedIn. You can trust her to distill clarity from chaos with a smile.
-                                        </p>
-                                    </div>
-                                </div>
+                                
                             </Carousel.Item>}
                             {<Carousel.Item>
-                                <div className='child3'>
-                                    <img className='border-50 animate__animated animate__fadeInUp time5' src={saurabh}/>
-                                    <div className='vl animate__animated animate__fadeInUp time6'></div>
-                                    <div className='team_slide2_1 animate__animated animate__fadeInUp time6' >
-                                        <p className='team_slider2_paratext font-color'>
-                                            <span className='yellow-text'>Saurabh </span>
-                                            has engaged multiple state governments at places like the Azim Premji, Piramal, and Agha Khan Foundation in the last 17 years. He loves experimenting with food in his kitchen when not strategizing for scale!
-                                        </p>
-                                    </div>
-                                </div>
+                                
                             </Carousel.Item>}
                             <Carousel.Item>
                                 <div className='child4'>
@@ -139,7 +113,37 @@ const turnToPage = (newPageIndex) => {
 
 
 
-                        </Carousel>
+                        </Carousel> */}
+
+                        <div className='child '>
+                            <img className='border-50 bhawna_image animate__animated animate__fadeInUp time1' src={Bhawnaimg} />
+                            <div className='vl animate__animated animate__fadeInUp time2'></div>
+                            <div className='team_slide2_1 animate__animated animate__fadeInUp time2' >
+                                <p className='team_slider2_paratext font-color'>
+                                    <span className='yellow-text'>Bhavna</span> has 12+ years of experience working across places like the World Bank and the Indian Ministry of Finance. A student of public policy, economics, and Bharatanatyam, she believes art is essential for thriving in life.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className='child2'>
+                            <img className='border-50 animate__animated animate__fadeInUp time3' src={KrithikaRam} />
+                            <div className='vl1 animate__animated animate__fadeInUp time4'></div>
+                            <div className='team_slide2_1 animate__animated animate__fadeInUp time4' >
+                                <p className='team_slider2_paratext font-color'>
+                                    With over 15+ years of leadership<br /> experience,<span className='yellow-text'>Krithika</span>  has directed pan-India programs, led CSR strategies, and built an influential voice on LinkedIn. You can trust her to distill clarity from chaos with a smile.
+                                </p>
+                            </div>
+                        </div>
+                        <div className='child3'>
+                            <img className='border-50 animate__animated animate__fadeInUp time5' src={saurabh} />
+                            <div className='vl animate__animated animate__fadeInUp time6'></div>
+                            <div className='team_slide2_1 animate__animated animate__fadeInUp time6' >
+                                <p className='team_slider2_paratext font-color'>
+                                    <span className='yellow-text'>Saurabh </span>
+                                    has engaged multiple state governments at places like the Azim Premji, Piramal, and Agha Khan Foundation in the last 17 years. He loves experimenting with food in his kitchen when not strategizing for scale!
+                                </p>
+                            </div>
+                        </div>
                         {/* <p>Current page index: {currentPageIndex}</p> */}
                     </div>
                 </div>

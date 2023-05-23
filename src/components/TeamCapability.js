@@ -7,6 +7,7 @@ import arrowleft from '../Assets/Images/Arrow_left_black.png'
 import arrowright from '../Assets/Images/arrow_right_black.png'
 import { Slide4 } from '../SubComponent/Team/Slide4';
 import { Slide5 } from '../SubComponent/Team/Slide5';
+import { Slidenew } from '../SubComponent/Team/Slidenew';
 
 export const TeamCapability = () => {
 
@@ -77,12 +78,18 @@ export const TeamCapability = () => {
 
           </div>
 
+          <div className="item">
+            {currentPageIndex == 2 ? <Slidenew /> : ""}
+
+          </div>
+          
+
           <div className=" ">
-            {currentPageIndex == 2 ? <Slide4 index={currentPageIndex} /> : ""}
+            {currentPageIndex == 3 ? <Slide4 index={currentPageIndex} /> : ""}
 
           </div>
           <div className=" ">
-            {currentPageIndex == 3 ? <Slide5 index={currentPageIndex} /> : ""}
+            {currentPageIndex == 4 ? <Slide5 index={currentPageIndex} /> : ""}
 
           </div>
 

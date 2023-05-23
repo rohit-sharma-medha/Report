@@ -248,7 +248,7 @@ export const Innovatiing = () => {
 
                 <div className="row  icon_with_msg1">
                   <div className="col-12 mt-0  ">
-                    <div className="  row d-flex justify-content-between ">
+                    <div className="  row d-flex justify-content-between  ">
                       <div className=" col-md-12 col-lg-6 col-xl-6 col-12 mt-0 mt-lg-5 mt-xl-5 mt-md-5 ">
                         <div className={currentPageIndex == 3 ? " d-flex mt-5 animate__animated animate__fadeInUp time3" : "d-flex mt-5 d-none"} >
                           <span className="dot mx-md-5 mx-lg-5 mx-xl-5 mx-0 changemaker">
@@ -258,7 +258,7 @@ export const Innovatiing = () => {
                           <p className={currentPageIndex == 3 ? "innovative_slide2_para_text  col-md-6 col-xl-6 col-lg-6 col-9 Lato font-30 font-color mt-2" : "d-none"}>CAB, the career advancement <br/>bootcamp, adapted to blended delivery</p>
                         </div>
                       </div>
-                      <div className=" col-md-6 col-lg-6 col-xl-6 col-12 mt-0 mt-lg-5 mt-xl-5 mt-md-5 ">
+                      <div className=" col-md-12 col-lg-6 col-xl-6 col-12 mt-0 mt-lg-5 mt-xl-5 mt-md-1 ">
                         <div className={currentPageIndex == 3 ? "animate__animated animate__fadeInUp time4 d-flex  mt-5" : "d-flex mt-5 d-none"}>
                           <span className="dot mx-md-5 mx-lg-5 mx-xl-5 mx-0 simmer">
                             <img className="alumuni_shared" src={Freelance} />
@@ -271,7 +271,7 @@ export const Innovatiing = () => {
 
 
                     <div className=" row ">
-                      <div className=" col-md-6 col-lg-6 col-xl-6 col-12  ">
+                      <div className=" col-md-12 col-lg-6 col-xl-6 col-12  ">
                         <div className={currentPageIndex == 3 ? "animate__animated animate__fadeInUp  time5 d-flex  mt-5  " : "d-flex mt-5 d-none"}>
                           <span className="dot mx-md-5 mx-lg-5 mx-xl-5 mx-0 chapter_election">
                             <img className="alumuni_shared" src={Skills} />
@@ -279,9 +279,9 @@ export const Innovatiing = () => {
                           <p className={currentPageIndex == 3 ? "innovative_slide2_para_text  col-md-6 col-xl-6 col-lg-6 col-9  Lato font-30 font-color mt-3" : "d-none"}>Svapoorna helped adolescents build life skills in more schools</p>
                         </div>
                       </div>
-                      <div className="col-md-6 col-lg-6 col-xl-6 col-12  ">
+                      <div className="col-md-12 col-lg-6 col-xl-6 col-12  ">
                         <div className={currentPageIndex == 3 ? "animate__animated animate__fadeInUp time6 d-flex  mt-5" : "d-flex mt-5 d-none"}>
-                          <span className="dot mx-md-5 mx-lg-5 mx-xl-5 mx-0 text-center">
+                          <span className="dot mx-md-1 mx-lg-5 mx-xl-5 mx-0 text-center">
 
                             <img className="alumuni_shared" src={Entrepreneur} />
                           </span>
