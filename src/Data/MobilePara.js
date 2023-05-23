@@ -9,7 +9,7 @@ export const MobilePara = (props) => {
 
       <div className='d-flex flex-column'>
         <div>
-          <div dangerouslySetInnerHTML={{ __html: props.subject }} />
+          <div className='font-color' dangerouslySetInnerHTML={{ __html: props.subject }} />
         </div>
         <div className='flex-end'>
             <img className='manish_image' src={props.person == 'manish' ? manish:kajal}/>

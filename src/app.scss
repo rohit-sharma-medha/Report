@@ -189,9 +189,12 @@
 #Strength {
   @media (max-width: 600px) {
     .swati_image {
-      height: 55vh;
-      top: 3%;
+      height: 40vh;
+      top: 10%;
       margin-top: 15%;
+      width: auto;
+      
+      // right: 55%;
     }
     .slide_1_strength_text{
       font-size: 1rem;
@@ -402,6 +405,10 @@
 
 .card {
   background-color: transparent;
+  height: 100% !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .pulse {
@@ -525,4 +532,16 @@
 .elastic-carousel__arrow {
   display: flex;
   align-items: end;
+}
+#socialchange ,#youth ,#impact{
+  @media (min-width: 600px) and (max-width: 1000px) {
+    br{
+      display: none;
+    }
+  }
+  @media  (max-width: 600px) {
+    br{
+      display: none;
+    }
+  }
 }

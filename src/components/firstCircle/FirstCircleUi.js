@@ -13,10 +13,10 @@ const FirstCircleUi = function FirstCircleUi() {
             <div className='row'>
                 <div className='col-12'>
                         <div className='row align-items-center Firstcircle'>
-                            <div className='col-md-6 col-xl-6 col-lg-6 col-12 main_heading animate__animated animate__fadeInUp time1 mb-lg-0 mb-xl-0 mb-md-0 mb-2 font-50 Lato-700'>
+                            <div className='col-md-6 col-xl-6 col-lg-6 col-12 main_heading animate__animated font-color animate__fadeInUp time1 mb-lg-0 mb-xl-0 mb-md-0 mb-2 font-50 Lato-700'>
                             Make vocational education <br/> aspirational in UP
                             </div>
-                            <div className='col-md-6 col-xl-6 col-lg-6 col-12 headingPara animate__animated animate__fadeInUp time2 mb-lg-0 mb-xl-0 mb-md-0 mb-2 font-30 Lato'>
+                            <div className=' col-md-6 col-xl-6 col-lg-6 col-12 headingPara animate__animated animate__fadeInUp time2 mb-lg-0 mb-xl-0 mb-md-0 mb-2 font-30 Lato font-color'>
                             We renewed our 8-year-old partnership with the<br/> Department of Technical Education, Uttar Pradesh (DTE-UP) to strengthen polytechnic education, by:
                             </div>
                         </div>
@@ -41,7 +41,7 @@ const FirstCircleUi = function FirstCircleUi() {
                                 </div>
                                 <div className='row justify-content-center'>
                                     <div className='col-4 grayed_bubble text-center grayed_bubble animate__animated animate__fadeInUp time5 mb-lg-0 mb-xl-0 mb-md-0 mb-2 font-30' id='thirdBubble'>
-                                        <div>
+                                        <div className='font-color'>
                                         Improving the physical learning facilities,
                                         </div>
                                     
@@ -50,26 +50,26 @@ const FirstCircleUi = function FirstCircleUi() {
 
                                 <div className='row justify-content-around mb-lg-4 mb-md-4 mb-xl-4 mb-0'>
                                         <div className='col-auto grayed_bubble text-center animate__animated animate__fadeInUp time4 mb-lg-0 mb-xl-0 mb-md-0 mb-2 ' id='SecondBubble'>
-                                            <div>
+                                            <div className='font-color'>
                                                     Introducing an industry-relevant curriculum,
 
                                             </div>
                                    
                                         </div>
-                                        <div className='col-auto grayed_bubble text-center animate__animated animate__fadeInUp time6 mb-lg-0 mb-xl-0 mb-md-0 mb-2 ' id='fourthBubble'>
+                                        <div className='col-auto font-color grayed_bubble text-center animate__animated animate__fadeInUp time6 mb-lg-0 mb-xl-0 mb-md-0 mb-2 ' id='fourthBubble'>
                                         Helping industry and academia work closely
                                         </div>
 
                                     </div>
 
-                                <div className='row justify-content-between'>
-                                        <div className="col-auto grayed_bubble text-center animate__animated animate__fadeInUp time3 mb-lg-0 mb-xl-0 mb-md-0 mb-2 " id="firstBubble">
+                                <div className='row justify-content-center justify-content-md-center justify-content-lg-between  justify-content-xl-between '>
+                                        <div className="col-auto font-color grayed_bubble text-center animate__animated animate__fadeInUp time3 mb-lg-0 mb-xl-0 mb-md-0 mb-2 " id="firstBubble">
                                         Building experiential facilitation skill in teachers,
 
                                         </div>
                                         
                                        
-                                        <div className='col-auto grayed_bubble text-center animate__animated animate__fadeInUp time7 mb-lg-0 mb-xl-0 mb-md-0 mb-2' id='fifthBubble'>
+                                        <div className='col-auto font-color grayed_bubble text-center animate__animated animate__fadeInUp time7 mb-lg-0 mb-xl-0 mb-md-0 mb-2' id='fifthBubble'>
                                         Driving data-backed governance in the system
                                         </div>
                                     </div>

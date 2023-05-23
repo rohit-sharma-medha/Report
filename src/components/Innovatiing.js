@@ -140,7 +140,7 @@ export const Innovatiing = () => {
           </div>
           <div className="">
             <div className='d-flex '>
-              <div className='col-12 '>
+              <div className=' new_width '>
                 <div className=''>
                  
 
@@ -170,37 +170,37 @@ export const Innovatiing = () => {
                             <img className="alumuni_shared" src={changemaker} />
 
                           </span>
-                          <p className={currentPageIndex == 1 ? "innovative_slide2_para_text  col-md-6 col-xl-6 col-lg-6 col-9 Lato font-30" : "d-none"}>28 young community leaders <br /> came together on a changemaking <br /> journey</p>
+                          <p className={currentPageIndex == 1 ? "innovative_slide2_para_text  col-md-6 col-xl-6 col-lg-6 col-9 Lato font-30 font-color" : "d-none"}>28 young community leaders <br /> came together on a changemaking <br /> journey</p>
                         </div>
                       </div>
-                      <div className=" col-md-6 col-lg-6 col-xl-6 col-12 mt-0 mt-lg-5 mt-xl-5 mt-md-5 icon_with_msg_1st_part2">
-                        <div className={currentPageIndex == 1 ? "animate__animated animate__fadeInUp time4 d-flex  mt-5" : "d-flex mt-5 d-none"}>
+                      <div className=" col-md-12 col-lg-6 col-xl-6 col-12 mt-0 mt-lg-5 mt-xl-5 mt-md-5 icon_with_msg_1st_part2">
+                        <div className={currentPageIndex == 1 ? " d-flex mt-5 animate__animated animate__fadeInUp time3" : "d-flex mt-5 d-none"}>
                           <span className="dot mx-md-5 mx-lg-5 mx-xl-5 mx-0 simmer">
                             <img className="alumuni_shared" src={chapterelection} />
 
                           </span>
-                          <p className={currentPageIndex == 1 ? "innovative_slide2_para_text time_4s col-md-6 col-xl-6 col-lg-6 col-9 w3-animate-top Lato font-30" : "d-none"}>5 alumni in UP got elected as <br /> Alumni Chapter Heads to lead <br />volunteerism efforts in their cities</p>
+                          <p className={currentPageIndex == 1 ? "innovative_slide2_para_text time_4s col-md-6 col-xl-6 col-lg-6 col-9 w3-animate-top Lato font-30 font-color" : "d-none"}>5 alumni in UP got elected as <br /> Alumni Chapter Heads to lead <br />volunteerism efforts in their cities</p>
                         </div>
                       </div>
                     </div>
 
 
                     <div className="row  ">
-                      <div className=" col-md-6 col-lg-6 col-xl-6 col-12  ">
+                      <div className=" col-md-12 col-lg-6 col-xl-6 col-12  ">
                         <div className={currentPageIndex == 1 ? "animate__animated animate__fadeInUp  time5 d-flex  mt-5  " : "d-flex mt-5 d-none"}>
-                          <span className="dot mx-md-5 mx-lg-5 mx-xl-5 mx-0 chapter_election">
+                          <span className="dot mx-md-0 mx-lg-5 mx-xl-5 mx-0 chapter_election">
                             <img className="alumuni_shared" src={simmer} />
                           </span>
-                          <p className={currentPageIndex == 1 ? "innovative_slide2_para_text  col-md-6 col-xl-6 col-lg-6 col-9  Lato font-30" : "d-none"}>Women alumni launched Simmer,a  community for all the strong women speaking their truth</p>
+                          <p className={currentPageIndex == 1 ? "innovative_slide2_para_text  col-md-6 col-xl-6 col-lg-6 col-9  Lato font-30 font-color" : "d-none"}>Women alumni launched Simmer,a  community for all the strong women speaking their truth</p>
                         </div>
                       </div>
-                      <div className="col-md-6 col-lg-6 col-xl-6 col-12  icon_with_msg_1st_part2">
+                      <div className="col-md-12 col-lg-6 col-xl-6 col-12  icon_with_msg_1st_part2">
                         <div className={currentPageIndex == 1 ? "animate__animated animate__fadeInUp time6 d-flex  mt-5" : "d-flex mt-5 d-none"}>
                           <span className="dot mx-md-5 mx-lg-5 mx-xl-5 mx-0 text-center">
 
                             <img className="alumuni_shared" src={allum_shared} />
                           </span>
-                          <p className={currentPageIndex == 1 ? "innovative_slide2_para_text  col-md-6 col-xl-6 col-lg-6 col-9 Lato font-30" : "d-none"}>6000 alumni shared the<br /> pandemic’s effect on their career<br /> and life</p>
+                          <p className={currentPageIndex == 1 ? "innovative_slide2_para_text  col-md-6 col-xl-6 col-lg-6 col-9 Lato font-30 font-color" : "d-none"}>6000 alumni shared the<br /> pandemic’s effect on their career<br /> and life</p>
                         </div>
                       </div>
                     </div>
@@ -223,26 +223,22 @@ export const Innovatiing = () => {
                 person="manish"
                 subject="The Chapter Head election was a great learning space where I experimented with all my skills — communicating to get votes, using my problem-solving and critical thinking abilities to make a phenomenal campaign, and leading a successful chapter in Gorakhpur after winning the election.<br/> <br/>  <br/>I have a keen interest in community mobilization. I want to focus on my Chapter head position, do well for my community, and finish my graduation well.” <br/>  <span style='color:#282828;font-weight: 700;'>-  Manish, student and Medhavi</span>" />}
           </div>
-          <div className="row">
+          <div className="">
             <div className='d-flex '>
-              <div className='col-12 '>
-                <div className='mb-5'>
-                  {/* <div className={currentPageIndex == 1 ? "col-md-5 col-lg-5 col-xl-5 col-12 " : "d-none"} >
-                    <p className={currentPageIndex == 1 ? " uppercontent-head  animate__animated animate__fadeInUp time1 Lato-700 font-50" : "d-none"}>Our alumni community <br /> became independent!</p>
-                  </div>
-                  <div className='col-md-6 col-lg-6 col-xl-6 col-12  ml-0'>
-                    <p className={currentPageIndex == 1 ? "uppercontent-text animate__animated animate__fadeInUp time2 Lato font-30" : "d-none"}>Registered as the Medhavi Association, they represent <br /> the spirit of young people pursuing varied interests and charting offbeat career paths with passion.</p>
-                  </div> */}
+              <div className='new_width '>
+                <div className=''>
+                 
 
 
                   {
                     currentPageIndex == 3 ?
                       <Heading
-                      // paraclass={`ml-44`}
-                      paraclass={"content-para-3"}
-                      content_head_common={"content-head-3"}
-                      HeadingText={`Our programs answered \n students’ changing needs`}
-                        paratext={`Young people are looking for the flexibility to improve \n their skills from where they are, while experimenting with \n freelancing and entrepreneurship as supporting or \n alternate career routes. Our programs followed suit, as:`}
+                      content_head_common={"content-head-2"}
+                      // class={`prl-2`}
+                      paraclass={"content-para-2"}
+                      headclass={`position-fixed`}
+                      HeadingText={`Our alumni community \n became independent!`}
+                        paratext={`Registered as the Medhavi Association, they represent \n the spirit of young people pursuing varied interests and \n charting offbeat career paths with passion.`}
                       /> : ""
 
                   }
@@ -250,25 +246,25 @@ export const Innovatiing = () => {
                 </div>
 
 
-                <div className="row w-100 icon_with_msg1">
+                <div className="row  icon_with_msg1">
                   <div className="col-12 mt-0  ">
                     <div className="  row d-flex justify-content-between ">
                       <div className=" col-md-12 col-lg-6 col-xl-6 col-12 mt-0 mt-lg-5 mt-xl-5 mt-md-5 ">
                         <div className={currentPageIndex == 3 ? " d-flex mt-5 animate__animated animate__fadeInUp time3" : "d-flex mt-5 d-none"} >
                           <span className="dot mx-md-5 mx-lg-5 mx-xl-5 mx-0 changemaker">
-                            <img className="alumuni_shared" src={changemaker} />
+                            <img className="alumuni_shared" src={BlendedCAB} />
 
                           </span>
-                          <p className={currentPageIndex == 3 ? "innovative_slide2_para_text  col-md-6 col-xl-6 col-lg-6 col-9 Lato font-30" : "d-none"}>28 young community leaders <br /> came together on a changemaking <br /> journey</p>
+                          <p className={currentPageIndex == 3 ? "innovative_slide2_para_text  col-md-6 col-xl-6 col-lg-6 col-9 Lato font-30 font-color mt-2" : "d-none"}>CAB, the career advancement <br/>bootcamp, adapted to blended delivery</p>
                         </div>
                       </div>
                       <div className=" col-md-6 col-lg-6 col-xl-6 col-12 mt-0 mt-lg-5 mt-xl-5 mt-md-5 ">
                         <div className={currentPageIndex == 3 ? "animate__animated animate__fadeInUp time4 d-flex  mt-5" : "d-flex mt-5 d-none"}>
                           <span className="dot mx-md-5 mx-lg-5 mx-xl-5 mx-0 simmer">
-                            <img className="alumuni_shared" src={chapterelection} />
+                            <img className="alumuni_shared" src={Freelance} />
 
                           </span>
-                          <p className={currentPageIndex == 3 ? "innovative_slide2_para_text time_4s col-md-6 col-xl-6 col-lg-6 col-9 w3-animate-top Lato font-30" : "d-none"}>Women alumni launched Simmer, a community for all the strong<br /> women speaking their truth</p>
+                          <p className={currentPageIndex == 3 ? "innovative_slide2_para_text time_4s col-md-6 col-xl-6 col-lg-6 col-9 w3-animate-top Lato font-30 font-color mt-3" : "d-none"}>Swarambh helped college-going <br/> women start freelancing careers</p>
                         </div>
                       </div>
                     </div>
@@ -278,18 +274,18 @@ export const Innovatiing = () => {
                       <div className=" col-md-6 col-lg-6 col-xl-6 col-12  ">
                         <div className={currentPageIndex == 3 ? "animate__animated animate__fadeInUp  time5 d-flex  mt-5  " : "d-flex mt-5 d-none"}>
                           <span className="dot mx-md-5 mx-lg-5 mx-xl-5 mx-0 chapter_election">
-                            <img className="alumuni_shared" src={simmer} />
+                            <img className="alumuni_shared" src={Skills} />
                           </span>
-                          <p className={currentPageIndex == 3 ? "innovative_slide2_para_text  col-md-6 col-xl-6 col-lg-6 col-9  Lato font-30" : "d-none"}>5 alumni in UP got elected as <br /> Alumni Chapter Heads to lead <br />volunteerism efforts in their cities</p>
+                          <p className={currentPageIndex == 3 ? "innovative_slide2_para_text  col-md-6 col-xl-6 col-lg-6 col-9  Lato font-30 font-color mt-3" : "d-none"}>Svapoorna helped adolescents build life skills in more schools</p>
                         </div>
                       </div>
                       <div className="col-md-6 col-lg-6 col-xl-6 col-12  ">
                         <div className={currentPageIndex == 3 ? "animate__animated animate__fadeInUp time6 d-flex  mt-5" : "d-flex mt-5 d-none"}>
                           <span className="dot mx-md-5 mx-lg-5 mx-xl-5 mx-0 text-center">
 
-                            <img className="alumuni_shared" src={allum_shared} />
+                            <img className="alumuni_shared" src={Entrepreneur} />
                           </span>
-                          <p className={currentPageIndex == 3 ? "innovative_slide2_para_text  col-md-6 col-xl-6 col-lg-6 col-9 Lato font-30" : "d-none"}>6000 alumni shared the<br /> pandemic’s effect on their career<br /> and life</p>
+                          <p className={currentPageIndex == 3 ? "innovative_slide2_para_text  col-md-6 col-xl-6 col-lg-6 col-9 Lato font-30 font-color mt-2" : "d-none"}>An entrepreneurial competition<br/> led to a new program on designing business models</p>
                         </div>
                       </div>
                     </div>
@@ -301,6 +297,7 @@ export const Innovatiing = () => {
             {/* <CarrrouselArraows className="arrowbuttons" handlenext={handleNextClick} handleprev={handlePrevClick} /> */}
 
           </div>
+         
           <div id='manish' className={currentPageIndex == 4 ? "innovative_slide3 " : ""}>
             {width > 600 ?
               <div className={currentPageIndex === 4 ? "type" : ""}>
