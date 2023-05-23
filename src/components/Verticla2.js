@@ -86,9 +86,9 @@ export const Verticla2 = () => {
                 <Carousel
                     ref={gotoRef}
                     // enableAutoPlay autoPlaySpeed={7000} 
-                    className='vertical2-slide_main' renderArrow={myArrow} itemsToShow={1} onChange={handleOnChange}
+                    className='vertical2-slide_main ' renderArrow={myArrow} itemsToShow={1} onChange={handleOnChange}
                 >
-                    <div className='vertical2-slide d-flex flex-column '>
+                    <div className='vertical2-slide d-flex flex-column font-color'>
 
                         <div className='col-12'>
                             <div className='row d-flex first_vertical_slider_slide1 '>
@@ -240,7 +240,7 @@ export const Verticla2 = () => {
 
                 </Carousel>
 
-                <button onClick={() => goToSlide(0)} className={currentPageIndex != 0 ? 'gototext Lato-300 pointer_class' : "d-none"} >
+                <button onClick={() => goToSlide(0)} className={currentPageIndex != 0 ? 'gototext  Lato pointer_class ' : "d-none"} >
                         back to main slide
                 </button>
             </div>

@@ -89,7 +89,7 @@ export const Supporters = () => {
           </div>
           
         </Carousel>
-        <button onClick={() => goToSlide(0)} className={currentPageIndex != 0 ? 'gototext Lato-300 pointer_class' : "d-none"} >
+        <button onClick={() => goToSlide(0)} className={currentPageIndex != 0 ? 'gototext Lato pointer_class' : "d-none"} >
           back to main slide
         </button>
       </div>

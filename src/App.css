@@ -1519,6 +1519,9 @@ body {
   .font-30 {
     font-size: 1rem !important;
 }
+.icon_with_msg1{
+    top: 50% !important;
+  }
 .font-50{
   font-size: 1.5rem !important;
   line-height: 2rem !important;
@@ -1774,6 +1777,16 @@ body {
     font-size: 2.5rem !important;
     line-height: 3rem;
   }
+  .font-100{
+    font-size: 3.5rem !important;
+    line-height: 3rem;
+  }
+  .icon_with_msg1{
+    top: 50% !important;
+  }
+  .icon_with_msg_1st_part2{
+    right: 0 !important;
+  }
   .vert1-slide2-img{
     object-fit: none;
     top: 10%;
@@ -1985,7 +1998,7 @@ body {
 .content-head-1{
   position: relative;
   bottom: 20%;
-  right: 1%;
+  left: 5%;
 }
 .content-head-2{
   position: relative;
@@ -2079,3 +2092,9 @@ left:unset !important;
 .col-12.mt-0.mt-md-5.mrgin-up{
 
 } */
+.gototext{
+  color: #000000 !important;
+}
+.backtomain{
+
+}
