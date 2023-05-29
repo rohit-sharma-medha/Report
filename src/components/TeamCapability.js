@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Carousel, { consts } from "react-elastic-carousel";
 import "../Style/Team.css"
 import { Slide1 } from '../SubComponent/Team/Slide1';
@@ -28,7 +28,7 @@ export const TeamCapability = () => {
         />
       ) : (
         <img
-          className={currentPageIndex !== 3 ? "rigth_arrow_image" : "d-none rigth_arrow_image"}
+          className={currentPageIndex !== 4 ? "rigth_arrow_image" : "d-none rigth_arrow_image"}
           src={arrowright}
         />
       );
@@ -58,6 +58,10 @@ export const TeamCapability = () => {
   const goToSlide = (slideIndex) => {
     gotoRef3.current.goTo(slideIndex);
   };
+  useEffect(() => {
+    console.log(currentPageIndex)
+  }, [currentPageIndex])
+  
 
 
 

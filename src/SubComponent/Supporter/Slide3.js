@@ -11,7 +11,7 @@ export const Slide3 = () => {
             <div className='col-12'>
                 <div className='row '>
                     <div className='supporter_Heading'>
-                        <p className='supporter_Heading_text font-color text-center Lato-700 animate__animated animate__fadeInUp time1 mt-5'>
+                        <p className='supporter_Heading_text font-color text-center Lato-700 animate__animated animate__fadeInUp time1 mt-md-0 mt-lg-5 mt-xl-5 mt-0'>
                             Our government partners
                         </p>
                     </div>

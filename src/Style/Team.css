@@ -195,3 +195,17 @@
         width: 2rem;
     }
 }
+
+@media (min-width: 600px) and (max-width: 1000px) {
+    .Subhra_image{
+        height: 45vh;
+        width: auto;
+        margin-right: 0 !important;
+        position: absolute;
+        right: 1%;
+        bottom: 0;
+    }  
+    .stories{
+        position: initial;
+    }
+}

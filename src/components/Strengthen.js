@@ -109,7 +109,7 @@ export const Strengthen = () => {
             {
               currentPageIndex ==6 ?
               <Slide3 empclass="emp_slide_3" headClass="head_slide_3" index={currentPageIndex} className="cursor_slide3" head="I can better showcase my area." 
-              subject = "<span class='head_slide_1 Lato' >I can better showcase my area.</span> <<br/> SIS's third version has made our work incredibly convenient on the ground. We can update all details in a single place and in real time while registration and certification details are updated automatically. <br/> <br/> For facilitators, with many details to track, SIS eases their admin work and leaves more time to focus on students. It also helps me see my area's growth and showcase its story using registration or internship numbers. <br/> <br/> <span class=Lato-700 style=color:#282828;>-  Shivangi, Core Programs, Medha</span>" 
+              subject = "<span class='head_slide_1 Lato' >I can better showcase my area. </span> <br/> SIS's third version has made our work incredibly convenient on the ground. We can update all details in a single place and in real time while registration and certification details are updated automatically. <br/> <br/> For facilitators, with many details to track, SIS eases their admin work and leaves more time to focus on students. It also helps me see my area's growth and showcase its story using registration or internship numbers. <br/> <br/> <span class=Lato-700 style=color:#282828;>-  Shivangi, Core Programs, Medha</span>" 
               
               emp="-  Shivangi, Core Programs, Medha"  img={shivnagi} />
           :""              

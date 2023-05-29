@@ -21,7 +21,7 @@ export const Slide2 = () => {
         <div className='col-12'>
             <div className='row d-flex align-items-center'>
               <div className='supporter_Heading'>
-                <p className='font-color supporter_Heading_text text-center Lato-700 animate__animated animate__fadeInUp font-50 mt-5'>
+                <p className='font-color supporter_Heading_text text-center Lato-700 animate__animated animate__fadeInUp font-50 mt-md-0 mt-lg-5 mt-xl-5 mt-0'>
                 Our supporters
                 </p>
               </div>

@@ -86,7 +86,7 @@ const SecondCircleUi = function SecondCircleUi() {
     }
 
     return (
-        <div className='row flex-column justify-content-around' >
+        <div className='row flex-column justify-content-around mt-6' >
             <div className='row'>
                 <div className='col-12'>
                     <div className=' d-flex justify-content-center mx-5 mt-5 Secondcircle '>

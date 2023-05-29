@@ -9,7 +9,7 @@ import './FirstCircle.css';
 const FirstCircleUi = function FirstCircleUi() {
 
   return (
-    <div className='row flex-column justify-content-around mt-5'>
+    <div className='row flex-column justify-content-around mt-6'>
             <div className='row'>
                 <div className='col-12'>
                         <div className='row align-items-center Firstcircle'>
