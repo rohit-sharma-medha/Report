@@ -93,16 +93,16 @@ export const Verticla2 = () => {
                         <div className='col-12'>
                             <div className='row d-flex first_vertical_slider_slide1 '>
                                 <div className='col-md-12 col-lg-7 col-xl-7 col-12 '>
-                                    <div className='verticalslide1Head col-md-12 col-lg-7 col-xl-7 col-12'>
+                                    <div className='verticalslide1Head '>
                                         <p className={currentPageIndex == 0 ? "verticalslide1Head-text font-color animate__animated animate__fadeInUp time1 BebasNeue font-70" : "verticalslide1Head-text d-none"} >
                                             BY DRIVING GREATER ADOPTION OF ‘THE <br /> MEDHA WAY’ WITH STATE GOVERNMENTS <br /> TO IMPACT MORE STUDENTS
                                         </p>
                                     </div>
-                                    <div className='verticalslide1Head col-md-12 col-lg-7 col-xl-7 col-12'>
+                                    <div className='verticalslide1Head '>
                                         <p className={currentPageIndex == 0 ? "font-color verticalslide1Head-text-1 animate__animated animate__fadeInUp time2 Lato font-30" : "verticalslide1Head-text-1 d-none"} >Partnering with more <span className='greentext'>like-minded</span> state education departments,<br /> industry leaders, and peers will help us elevate the learning<br /> experience <span className='greentext'>and bring career opportunities youth care about to <br /> more than 100,000 students per year.</span>  Last year, we took steps to:</p>
                                     </div>
                                 </div>
-                                <div className='col-md-8 col-lg-5 col-xl-5 col-sm-12 '>
+                                <div className='col-md-12 col-lg-5 col-xl-5 col-sm-12 '>
                                     <div className='vertical-slide1-img'>
                                         <img className={currentPageIndex == 0 ? "vert1-slide1-img animate__animated animate__fadeInRight " : "vert1-slide1-img d-none"} src={fab_uk} />
                                     </div>
@@ -125,11 +125,11 @@ export const Verticla2 = () => {
                                         <p className='scaleknoledge font-50 Lato-700 col-12 font-color'>Scale as a Knowledge Partner</p>
                                     </div>
                                     <div className={currentPageIndex == 1 ? "verticalslide1Head_1 animate__animated animate__fadeInUp time2 Lato        " : "d-none"}>
-                                        <p className='residenseoursystem col--md-10 col-xl-10 col-lg-10 col-12 Lato font-30 font-color'>Redesigned our System Adoption team to be <br /> self-sufficient:</p>
+                                        <p className='residenseoursystem  Lato font-30 font-color'>Redesigned our System Adoption team to be <br /> self-sufficient:</p>
                                     </div>
 
-                                    <div className='verticalslide1Head3 col-10 ml-1'>
-                                        <ul className={currentPageIndex == 1 ? "list" : "d-none"} >
+                                    <div className='verticalslide1Head3 col-12 ml-1'>
+                                        <ul className={currentPageIndex == 1 ? "list font-color" : "d-none"} >
                                             <li className='marginstate animatedlisttext mt-5 mt-md-0 mt-lg-5 mt-xl-5 mt- d-flex Lato '>
                                                 <span className='animatedlisticon'>
                                                     {/* <img className=' animatedlisticon2 mx-4' src={Stateheads} /> */}
@@ -196,13 +196,13 @@ export const Verticla2 = () => {
                             <div className='row'>
 
                                 <div className="col-12 cards_3 d-flex  justify-content-center">
-                                    <div className="row   d-flex justify-content-center align-items-center flex-md-column flex-column flex-lg-row flex-xl-row">
-                                        <div className="col-xl-4 col-lg-4 col-md-12 col-6">
+                                    <div className="row card_3rd_vert_slide   d-flex justify-content-center align-items-center flex-md-row flex-column flex-lg-row flex-xl-row">
+                                        <div className="col-xl-4 col-lg-4 col-md-6 col-6">
                                             <div className="border-0 h-100 mr-2">
                                                 <img src={fab_uk} className={currentPageIndex == 3 ? "card-img-top small-image-vertical2 animate__animated animate__fadeInUp time3" : "card-img-top small-image-vertical2 d-none"} alt="..." />
                                                 <div className="card-body">
                                                     {/* <h5 className="card-title fw-bold">Card title</h5> */}
-                                                    <p className={currentPageIndex == 3 ? "card-text text-center card_3vert2_text animate__animated animate__fadeInUp time4 Lato font-30" : "card-text text-center card_3vert2_text d-none"}>
+                                                    <p className={currentPageIndex == 3 ? "card-text text-center card_3vert2_text animate__animated animate__fadeInUp time4 Lato font-30 font-color" : "card-text text-center card_3vert2_text d-none"}>
                                                         Provided hands-on coaching<br /> to 130 teachers and skill instructors
                                                     </p>
                                                 </div>
@@ -213,7 +213,7 @@ export const Verticla2 = () => {
                                                 <img src={fab_uk} className={currentPageIndex == 3 ? "card-img-top small-image-vertical2 animate__animated animate__fadeInUp time5" : "card-img-top small-image-vertical2 d-none"} alt="..." />
                                                 <div className="card-body">
                                                     {/* <h5 className="card-title fw-bold">Card title</h5> */}
-                                                    <p className={currentPageIndex == 3 ? "card-text text-center card_3vert2_text animate__animated animate__fadeInUp time6 Lato font-30" : "card-text text-center card_3vert2_text d-none"}>
+                                                    <p className={currentPageIndex == 3 ? "card-text text-center card_3vert2_text animate__animated animate__fadeInUp time6 Lato font-30 font-color" : "card-text text-center card_3vert2_text d-none"}>
                                                         Hosted career-focused webinars <br /> with employer partners
                                                     </p>
                                                 </div>
@@ -224,7 +224,7 @@ export const Verticla2 = () => {
                                                 <img src={fab_uk} className={currentPageIndex == 3 ? "card-img-top small-image-vertical2 animate__animated animate__fadeInUp time7" : "card-img-top small-image-vertical2 d-none"} alt="..." />
                                                 <div className="card-body">
                                                     {/* <h5 className="card-title fw-bold">Card title</h5> */}
-                                                    <p className={currentPageIndex == 3 ? "card-text text-center card_3vert2_text animate__animated animate__fadeInUp time8 Lato font-30" : "card-text text-center card_3vert2_text d-none"}>
+                                                    <p className={currentPageIndex == 3 ? "card-text text-center card_3vert2_text animate__animated animate__fadeInUp time8 Lato font-30 font-color" : "card-text text-center card_3vert2_text d-none"}>
                                                         Improved classroom learning <br /> experience and career exposure<br /> for ~3000 students
                                                     </p>
                                                 </div>

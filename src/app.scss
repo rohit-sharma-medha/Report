@@ -545,3 +545,39 @@
     }
   }
 }
+
+
+@media (min-width: 600px) and (max-width: 1000px){
+  #vert2_slide{
+    br{
+      display: none;
+    }
+    .new-line{
+      // display: flex;
+      white-space:nowrap;
+    }
+    .verticalslide1Head{
+      br{
+        display: none;
+      }
+      padding-left: 2rem;
+      padding-right: 5%;
+    }
+    .residenseoursystem{
+      br{
+
+      }
+    }
+  }
+
+  #innovate_slide{
+    .content-para-1{
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+    .content-head-2{
+      justify-content: center !important;
+    }
+  }
+}

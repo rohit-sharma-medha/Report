@@ -28,12 +28,12 @@ export const Slide3 = (props) => {
 
             <div className='col-12'>
                 <div className='row'>
-                    <div className='col-md-2 col-xl-2 col-lg-2 col-12 Lato'>
+                    <div className='col-md-12 col-xl-2 col-lg-2 col-12 Lato'>
                         
                         <Stories head_class={props.headClass} empclass={props.empclass} headclass={props.headClass} index={props.index} className={props.className} sub={subject} head={heading} emp={employee}  />
                         
                     </div>
-                    <div className='col-md-10 d-flex justify-content-center col-xl-10 col-lg-10 col-12 animate__animated animate__fadeIn time2'>
+                    <div className='col-md-12 d-flex justify-content-center col-xl-9 col-lg-9 col-12 animate__animated animate__fadeIn time2'>
                         <img className='swati_image img-fluid ' src={img ? img : swati_image1}/>
                     </div>
                 </div>
